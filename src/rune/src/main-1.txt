@@ -1,0 +1,178 @@
+#include <opencv2/core/core.hpp>  
+#include <opencv2/highgui/highgui.hpp>  
+#include <opencv2/imgproc/imgproc.hpp>  
+#include <iostream>  
+#include <cmath>
+#include "findRect.hpp"
+#include "MnistRecognizer.h"
+#include "DigitRecognizer.h"
+#include "Settings.h"
+#include "angleSol.h"
+#include "ros/ros.h"
+#include "geometry_msgs/Point.h"
+#include <sstream>
+using namespace std;
+using namespace cv;
+int RiLowH = 0;
+int RiHighH = 35;
+int RiLowS =10;
+int RiHighS = 230;
+int RiLowV = 250;
+int RiHighV = 255;
+void preprocessHSV(Mat& image, Mat& result)
+{
+    Mat tempHSV;
+	vector<Mat> hsvSplit;
+	cvtColor(image, tempHSV, COLOR_BGR2HSV);
+	split(tempHSV, hsvSplit);
+	equalizeHist(hsvSplit[2], hsvSplit[2]);
+	merge(hsvSplit, tempHSV);
+	inRange(tempHSV, Scalar(RiLowH, RiLowS, RiLowV), Scalar(RiHighH, RiHighS, RiHighV), result);
+    morphologyEx(result,result,MORPH_CLOSE,getStructuringElement(MORPH_RECT,Size(3,3)));
+	imshow("HSV", result);
+    return;
+}
+int main(int argc, char** argv)
+{
+    int a = argv[1][0] - '0';
+    VideoCapture cap(a);
+    if(!cap.isOpened())
+    {
+        return -1;
+    }
+    cout<<"start"<<endl;
+    Settings s("setting.xml","1.yml");
+    if(!s.load())
+    {
+	cout<<"where is my setting file?"<<endl;        
+	return -1;
+    }
+    ros::init(argc,argv,"rune");
+    ros::NodeHandle n;
+    ros::Publisher rune_pub = n.advertise<geometry_msgs::Point>("rune_locations",5);
+    clock_t start, end;
+    geometry_msgs::Point target;
+    cout<<"ros publisher initialized"<<endl;
+    DigitRecognizer dt;
+    int previousDigits[5];
+    int prevoiusSudokus[9];
+    int hitIndex = 0;
+    while(true)
+    {
+        start = clock();
+        Mat img;
+        cap>>img;
+        imshow("input",img);
+        Mat img1;
+        cap >> img1;
+        dt.preprocessRGB(img1,img1);
+        // if(dt.findDigits(img1))
+        // {
+        //     if(dt.getAns())
+        //     {
+        //         if(previousDigits[0] == -1);
+        //         {
+        //             for(int i = 0;i<5;i++)
+        //                 previousDigits[i] = dt.answers[i];
+        //         }
+        //     }
+        //     else
+        //     {
+        //         continue;
+        //     }
+        // }
+        // else
+        // {
+        //     continue;
+        // }
+        
+        Mat image;
+        cvtColor(img, image, CV_BGR2GRAY);
+        Mat binary;
+        threshold(image,binary,150,255,CV_THRESH_BINARY);
+        //imshow("binary",binary);
+        morphologyEx( binary,  binary, MORPH_OPEN, getStructuringElement(MORPH_RECT,Size(3,3)));
+        //imshow("close-open", binary); 
+        vector<vector<Point> > squares;
+        findSquaresBinary(binary,squares);
+        vector<RotatedRect> rects;
+        if(checkRects(binary,squares,rects))
+        {
+            bool outOfImg = false;
+            MnistRecognizer MR;
+            for(int i = 0; i<9;i++)
+            {
+                cout<<"!"<<endl;
+                Rect t = rects[i].boundingRect();
+                if(!(0 <= t.x && 0 <= t.width && t.x + t.width <= img.cols && 0 <= t.y && 0 <= t.height && t.y + t.height <= img.rows))
+                {
+                    outOfImg = true;
+                    break;
+                }
+                MR.mnistImgs.push_back(img(rects[i].boundingRect()));
+            }
+            if(outOfImg)
+            {
+                waitKey(10);
+                continue;
+            }
+             if(MR.classify())
+            {   
+                for(int i = 1;i<=9;i++)
+                putText(img,to_string(i),rects[MR.mnistLabels[i]].center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
+                imshow("a",img);
+		bool repeat = false;
+                // for(int i = 0;i<5;i++)
+                // {
+                //     if(previousDigits[i] != dt.answers[i])
+                //         {   
+                //             hitIndex = 0;
+                //             repeat = true;
+                //         }
+                // }
+                if(!repeat && hitIndex<8)
+                { hitIndex++;}
+                Rect t = rects[hitIndex].boundingRect();
+                AngleSolver ag;
+                ag.setDistortionCoefficients(s);
+	            ag.setCameraMAtrix(s);
+	            ag.setRealWorldTargetS(s);
+                vector<Point2f> input;
+                input.push_back(Point2f(t.x,t.y));
+                input.push_back(Point2f(t.x,t.y+t.height));
+                input.push_back(Point2f(t.x+t.width,t.y));
+                input.push_back(Point2f(t.x+t.width,t.y+t.height));
+	            if(!ag.setImageTargetS(input,img))
+	 	        {
+                    cout<< "setImageTarget gg " <<endl;
+                }
+                else
+                {
+	                ag.getRotation_Translation_Matrix();
+	                ag.getPositionInfo(target.x,target.y,target.z);
+                    rune_pub.publish(target);
+                   	ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
+	                ag.sendAns(img);
+                }
+            }
+             else
+            {
+                waitKey(10);
+                continue;
+            }
+            
+            
+        }
+        else
+        {
+            target.x = -1;
+	        target.y = -1;
+	        target.z = -1;
+	        rune_pub.publish(target);
+	        ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
+	        cout<<"not enough mnists"<<endl;
+        }
+        waitKey(30);
+    }
+
+}
