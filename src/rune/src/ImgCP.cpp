@@ -17,8 +17,8 @@ using namespace cv;
 volatile unsigned int pIdx = 0;
 volatile unsigned int cIdx = 0;
 int previousDigits[5] = {-3,-3,-3,-3,-3};
-volatile int previousIndex = -1;
-volatile bool failure = false;
+int previousIndex = -1;
+ bool failure = false;
 struct ImageData {
 	Mat img;
 	unsigned int frame;
@@ -33,23 +33,27 @@ void DigitThread(Mat img,int& ans,bool failure)
     {
         //cout<<"thread 3 end 1"<<endl;
         ans = -1;
+        for(int i = 0; i<5;i++)
+       cout<< "  "<< dt.ans[i] ;
         return;
     }
     if(!dt.getAns())
     {
        // cout<<"thread 3 end 2"<<endl;
         ans = -1;
+        for(int i = 0; i<5;i++)
+        cout<< "  "<< dt.ans[i];
         return;
     }
     bool repeat = true;
     for(int i = 0; i<5;i++)
     {
-        if(previousDigits[i] != dt.answers[i] )
+        if(previousDigits[i] != dt.ans[i] )
         {
             repeat = false;
         }
-        previousDigits[i] = dt.answers[i];
-        cout<< "  "<< previousDigits[i] ;
+        previousDigits[i] = dt.ans[i];
+        //
     }
     cout<<endl;
     if(!repeat && !failure)
@@ -60,8 +64,10 @@ void DigitThread(Mat img,int& ans,bool failure)
     {
         previousIndex++;
     }
-    ans = dt.answers[previousIndex];
+    ans = dt.ans[previousIndex];
     cout<<"thread 3 end 3, we shoot number "<< ans <<endl;
+    for(int i = 0; i<5;i++)
+    cout<< "  "<< dt.ans[i] ;
     return;
 }
 void ImgCP::ImageProducer()
@@ -103,7 +109,7 @@ void ImgCP::ImageProducer()
 		cap.info();
 		while(1)
 		{
-            cout<<"image producer running"<<endl;
+            //cout<<"image producer running"<<endl;
         	while (pIdx - cIdx >= BUFFER_SIZE);
 			cap >> data[pIdx % BUFFER_SIZE].img;
 			data[pIdx % BUFFER_SIZE].frame = cap.getFrameCount();
@@ -133,13 +139,12 @@ void ImgCP::ImageConsumer(int argc, char** argv)
     waitKey(100);
     start = clock();
     cout<<"start loop"<<endl;
+
     while(true)
     {
-        cout<<"*"<<endl;
         end = clock();
         cout<<"hz "<<1/((double)(end-start)/CLOCKS_PER_SEC)<<endl;
-        while (pIdx - cIdx <= 0)
-        cout<<"no image input, pidx: "<< pIdx << "  cIdx: "<< cIdx<<endl;
+        while (pIdx - cIdx == 0);
         start = clock();
         Mat img,img1;
 		data[cIdx % BUFFER_SIZE].img.copyTo(img);
@@ -148,93 +153,101 @@ void ImgCP::ImageConsumer(int argc, char** argv)
 		unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
 		++cIdx;
         int hitIndex ;
-        imshow("original",img1);
-        waitKey(10);
-        thread t3(DigitThread,img1,std::ref(hitIndex),failure);
-        Mat image;
-        cvtColor(img, image, CV_BGR2GRAY);
-        Mat binary;
-        threshold(image,binary,150,255,CV_THRESH_BINARY);
-        morphologyEx( binary,  binary, MORPH_OPEN, getStructuringElement(MORPH_RECT,Size(3,3)));
-        vector<vector<Point> > squares;
-        findSquaresBinary(binary,squares);
-        vector<RotatedRect> rects;
-        t3.join();
-        if(hitIndex == -1)
-        {
-            waitKey(5);
-            failure = true;
-            continue;
-        }
-        if(!checkRects(binary,squares,rects))
-        {
-            //t3.join();
-            target.x = -1;
-	        target.y = -1;
-	        target.z = -1;
-	        rune_pub.publish(target);
-	        ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
-            cout<<"not enough mnists"<<endl;
-            failure = true;
-            continue;
-        }
-        bool outOfImg = false;
-        MnistRecognizer MR;
-        for(int i = 0; i<9;i++)
-        {
-            cout<<"!"<<endl;
-            Rect t = rects[i].boundingRect();
-            if(!(0 <= t.x && 0 <= t.width && t.x + t.width <= img.cols && 0 <= t.y && 0 <= t.height && t.y + t.height <= img.rows))
-            {
-                outOfImg = true;
-                break;
-            }
-            MR.mnistImgs.push_back(img(rects[i].boundingRect()));
-            }
-            if(outOfImg)
-            {
-               // waitKey(10);
-                failure = true;
-                continue;
-            }
-            if(MR.classify())
-            {   
-                for(int i = 1;i<=9;i++)
-                putText(img,to_string(i),rects[MR.mnistLabels[i]].center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
-                //imshow("a",img);
-                Rect t = rects[hitIndex].boundingRect();
-                AngleSolver ag;
-                ag.setDistortionCoefficients(s);
-	            ag.setCameraMAtrix(s);
-	            ag.setRealWorldTargetS(s);
-                vector<Point2f> input;
-                input.push_back(Point2f(t.x,t.y));
-                input.push_back(Point2f(t.x,t.y+t.height));
-                input.push_back(Point2f(t.x+t.width,t.y));
-                input.push_back(Point2f(t.x+t.width,t.y+t.height));
-	            if(!ag.setImageTargetS(input,img))
-	 	        {
-                    cout<< "setImageTarget gg " <<endl;
-                }
-                else
-                {
-	                ag.getRotation_Translation_Matrix();
-	                ag.getPositionInfo(target.x,target.y,target.z);
-                    rune_pub.publish(target);
-                   	ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
-                    waitKey(shootingDelay);
-	                ag.sendAns(img);
-                    failure = false;
-                }
-            }
-            else
-            {
-               // waitKey(10);
-                failure = true;
-                continue;
-            }
+        imshow("original",img);
+        waitKey(3);
+       // thread t3(DigitThread,img1,std::ref(hitIndex),failure);
+        DigitThread(img1,hitIndex,failure);
+        // Mat image;
+        // cvtColor(img, image, CV_BGR2GRAY);
+        // Mat binary;
+        // double Mean = mean(image)[0];
+        // threshold(image,binary,Mean*2.3,255,CV_THRESH_BINARY);                            
+        // morphologyEx( binary,  binary, MORPH_ERODE, getStructuringElement(MORPH_RECT,Size(3,3)));
+        // vector<vector<Point> > squares;
+        // imshow("binary",binary);
+        // findSquaresBinary(binary,squares);
+        // drawSquares(img1,squares);
+        // vector<RotatedRect> rects;
+        // //t3.join();
+        // if(hitIndex == -1)
+        // {
+        //     waitKey(20);
+        //     failure = true;
+        //     //continue;
+        // }
+        // if(!checkRects(binary,squares,rects))
+        // {
+        //     //t3.join();
+        //     target.x = -1;
+	    //     target.y = -1;
+	    //     target.z = -1;
+	    //     rune_pub.publish(target);
+	    //     ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
+        //     cout<<"not enough mnists"<<endl;
+        //     failure = true;
+        //     continue;
+        // }
+        // bool outOfImg = false;
+        // MnistRecognizer MR;
+        // for(int i = 0; i<9;i++)
+        // {
+        //     cout<<"!"<<endl;
+        //     Rect t = rects[i].boundingRect();
+        //     if(!(0 <= t.x && 0 <= t.width && t.x + t.width <= img.cols && 0 <= t.y && 0 <= t.height && t.y + t.height <= img.rows))
+        //     {
+        //         outOfImg = true;
+        //         break;
+        //     }
+        //     MR.mnistImgs.push_back(img(rects[i].boundingRect()));
+        //     }
+        //     if(outOfImg)
+        //     {
+        //         waitKey(10);
+        //         failure = true;
+        //         continue;
+        //     }
+        //     if(MR.classify())
+        //     {   
+        //         for(int i = 1;i<=9;i++)
+        //         putText(img,to_string(i),rects[MR.mnistLabels[i]].center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
+        //         imshow("a",img);
+        //         Rect t = rects[hitIndex].boundingRect();
+        //         AngleSolver ag;
+        //         ag.setDistortionCoefficients(s);
+	    //         ag.setCameraMAtrix(s);
+	    //         ag.setRealWorldTargetS(s);
+        //         vector<Point2f> input;
+        //         input.push_back(Point2f(t.x,t.y));
+        //         input.push_back(Point2f(t.x,t.y+t.height));
+        //         input.push_back(Point2f(t.x+t.width,t.y));
+        //         input.push_back(Point2f(t.x+t.width,t.y+t.height));
+        //         string filename = "record/pic" + to_string(cIdx)+".png";
+        //         imwrite(filename,img);
+        //         MR.recordResults(cIdx);
+	    //         if(!ag.setImageTargetS(input,img))
+	 	//         {
+        //             cout<< "setImageTarget gg " <<endl;
+        //         }
+        //         else
+        //         {
+	    //             ag.getRotation_Translation_Matrix();
+	    //             ag.getPositionInfo(target.x,target.y,target.z);
+        //             rune_pub.publish(target);
+        //            	ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
+        //             waitKey(shootingDelay);
+	    //             ag.sendAns(img);
+        //             failure = false;
+        //         }
+        //     }
+        //     else
+        //     {
+        //         //MR.reflect(cIdx);             
+        //         //waitKey(20);
+        //         failure = true;
+        //         continue;
+        //     }
             
-                waitKey(5);
+        //         //waitKey(20);
      }
 }
 

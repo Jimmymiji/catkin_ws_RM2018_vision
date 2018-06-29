@@ -5,7 +5,7 @@ preprocessRGB(Mat& image,Mat& result)
 thresholding by RGB value, red > 200 && red > 1.1 * blue
 colse to eliminate tiny gaps and noise
 */
-void DigitRecognizer::preprocessRGB(Mat& image,Mat& result)
+void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
 {
     vector<Mat> channels;
     split(image,channels); 
@@ -25,7 +25,7 @@ void DigitRecognizer::preprocessRGB(Mat& image,Mat& result)
     {
         for(int j = 0; j < Red.cols;j++)
         {
-            if(Red.at<uchar>(i,j)>redMean*1.5 && Red.at<uchar>(i,j)>Blue.at<uchar>(i,j)&&Red.at<uchar>(i,j)>Green.at<uchar>(i,j)&&Blue.at<uchar>(i,j)<blueMean&&Green.at<uchar>(i,j)<greenMean)
+            if(Red.at<uchar>(i,j)>redMean*1.1 && Red.at<uchar>(i,j)>Blue.at<uchar>(i,j)&&Red.at<uchar>(i,j)>Green.at<uchar>(i,j)&&Blue.at<uchar>(i,j)<blueMean*0.9&&Green.at<uchar>(i,j)<greenMean*0.9)
             {
                 Red.at<uchar>(i,j) = 255;
             }
@@ -39,9 +39,9 @@ void DigitRecognizer::preprocessRGB(Mat& image,Mat& result)
     morphologyEx(Red,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
     morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
     morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-#if show
+#if show1
     imshow("result",result);
-    waitKey(1);
+    waitKey(3);
 #endif
     return ;
 }
@@ -56,9 +56,9 @@ void DigitRecognizer:: preprocessHSV(Mat& image, Mat& result)
 	merge(hsvSplit, tempHSV);
 	inRange(tempHSV, Scalar(0,35, 10), Scalar(230, 255,255), result);
     morphologyEx(result,result,MORPH_CLOSE,getStructuringElement(MORPH_RECT,Size(7,7)));
-#if show
+#if show1
     imshow("result",result);
-    waitKey(1);
+    waitKey(3);
 #endif
     return;
 }
@@ -171,7 +171,7 @@ bool DigitRecognizer::findDigits(Mat& binary)
             p++;
         }
     }
-#if show
+#if show1
         imshow("p",binary);
 #endif
     if(possibleTargetRects.size()<5)

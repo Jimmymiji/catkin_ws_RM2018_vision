@@ -172,12 +172,24 @@ bool MnistRecognizer::classify()
 	{
 		if(!mnistLabels.count(scores[i].at(0).second))
 		{
-			mnistLabels.insert(pair<int,int>(scores[i].at(0).second,i));
+			continue;
 		}
 		else
 		{
 			double candidateNScore = scores[i].at(0).first;
-			double candidatePScore = scores[mnistLabels[scores[i].at(0).second]].at(0).first;
+			double candidatePScore;
+			for(int j = 0; j<9;j++)
+			{
+				if (j == i)
+				{
+					continue;
+				}
+				else
+				{
+					if(scores[j].at(0).second == scores[i].at(0).first)
+					candidatePScore = scores[j].at(0).first;
+				}
+			}
 			if(candidateNScore<candidatePScore)
 			{
 				continue;
@@ -186,6 +198,13 @@ bool MnistRecognizer::classify()
 			{
 				mnistLabels[scores[i].at(0).second] = i;
 			}
+		}
+	}
+	for(int i = 0;i<9;i++)
+	{
+		if(!mnistLabels.count(scores[i].at(0).second))
+		{
+			mnistLabels.insert(pair<int,int>(scores[i].at(0).second,i));
 		}
 	}
 	int missingLabel = -1;
@@ -222,7 +241,24 @@ bool MnistRecognizer::classify()
 	return false;
 	
 }
+void MnistRecognizer:: recordResults(int idx)
+{
+	ofstream myfile;
+	string filename = "./record/scores "+ to_string(idx)+".txt";
+  	myfile.open (filename);
+	myfile<< " -------------------"<<idx<<"------------"<<endl;
+  	for (int i = 0; i< 9; i++)
+	  {
+		  for (int j = 0;j<9;j++)
+		  {
+			  myfile<<"("<<scores[i][j].first<<" , "<<scores[i][j].second<<")  ";
+		  }
+		  myfile<<endl;
+	  }
+  	myfile.close();
+	return;
 
+}
 
 
 

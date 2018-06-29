@@ -65,7 +65,7 @@ void findSquares(const Mat& image, vector<vector<Point> >& squares)
 
             // find contours and store them all as a list
             findContours(gray, contours, RETR_LIST, CHAIN_APPROX_SIMPLE);
-
+            imshow("gay",gray);
             vector<Point> approx;
 
             // test each contour
@@ -109,7 +109,7 @@ void findSquaresBinary(const Mat& image,  vector<vector<Point> >& squares)
 {
     
     vector<vector<Point> > contours;
-    findContours(image, contours, RETR_LIST, CHAIN_APPROX_SIMPLE);
+    findContours(image, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_TC89_L1);
     vector<Point> approx;
 
             // test each contour
@@ -125,7 +125,7 @@ void findSquaresBinary(const Mat& image,  vector<vector<Point> >& squares)
                 // Note: absolute value of an area is used because
                 // area may be positive or negative - in accordance with the
                 // contour orientation
-                if (approx.size() == 4 &&
+                if ( (approx.size() == 4 || approx.size() == 3) &&
                     fabs(contourArea(Mat(approx))) > 1000 &&
                     isContourConvex(Mat(approx)))
                 {
@@ -159,11 +159,11 @@ static void drawSquares(Mat image, const vector<vector<Point> >& squares)
         if (p->x > 3 && p->y > 3)
             polylines(image, &p, &n, 1, true, Scalar(0, 255, 0), 3, CV_AA);
         
-        RotatedRect minRect = minAreaRect(squares[i]);
-        int h = minRect.size.height;
-        int w = minRect.size.width;
-        string text = "size : " + to_string(w) + " , "+ to_string(h);
-        putText(image,text,minRect.center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(255,255,255));
+        //RotatedRect minRect = minAreaRect(squares[i]);
+        //int h = minRect.size.height;
+        //int w = minRect.size.width;
+        //string text = "size : " + to_string(w) + " , "+ to_string(h);
+       // putText(image,text,minRect.center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(255,255,255));
         
 
     }
@@ -186,22 +186,22 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
     // too few squares
     if(squares.size()<9) 
     {
-#if debug
+////#if debug
         cout<<"squares.size()<9"<<endl;
-#endif
+//#endif
         return false;
     }
     rects.clear();
     // filtering rects by size & height/width ratio
-#if debug
+//#if debug
     cout<< "_________________________"<<endl;
-#endif
+//#endif
     for(int i = 0; i < squares.size();i++) 
     {
         RotatedRect minRect = minAreaRect(squares[i]);
-#if debug
+//#if debug
         cout<< "size of "<< i << "  "<<minRect.size.width << " , "<<minRect.size.height<<endl;
-#endif
+//#endif
         if(minRect.size.height<70||minRect.size.width<35)//||minRect.size.width>minRect.size.height*0.8)
         {
             continue;
@@ -211,14 +211,14 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
             rects.push_back(minRect);
         }
     }
-#if debug
+//#if debug
     cout<< "_________________________"<<endl;
 
     if(rects.size()<9)
     {
         cout<<"------rects.size()<9"<<endl;
     }
-#endif
+//#endif
     sort(rects.begin(),rects.end(),ascendingX);
     vector<RotatedRect>::iterator p = rects.begin();
    
@@ -236,24 +236,27 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
     }
 
     // too few rects
-#if debug
+//#if debug
     if(rects.size()<9)
     {
         cout<<"rects.size()<9"<<endl;
     }
-#endif
-    sort(rects.begin(),rects.end(),[](RotatedRect& a, RotatedRect& b){return a.size.area() > b.size.area();});
-    double Area= rects[3].size.area()*0.8;
-    // eliminate too small rects
-    for(vector<RotatedRect>::iterator p = rects.begin(); p < rects.end();)
+//#endif
+    if(rects.size()>0)
     {
-        if(p->size.area() < Area)
+        sort(rects.begin(),rects.end(),[](RotatedRect& a, RotatedRect& b){return a.size.area() > b.size.area();});
+        double Area= rects[3].size.area()*0.8;
+        // eliminate too small rects
+        for(vector<RotatedRect>::iterator p = rects.begin(); p < rects.end();)
         {
-            p = rects.erase(p);
-        }
-        else
-        {
-            p++;
+            if(p->size.area() < Area)
+            {
+                p = rects.erase(p);
+            }
+            else
+            {
+                p++;
+            }
         }
     }
     // pick 9 sudoku from them
@@ -304,10 +307,10 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
 		delete[] dist_map;
         // find the distance between other rect and center rect
         rectangle(img,rects[center_idx].boundingRect(),Scalar(0,255,255),5);
-#if show
+//#if show
         imshow("center",img);
         waitKey(1);
-#endif
+//#endif
         vector<RectWithDist> RWD;
         for(int i=0; i<rsize; i++)
         {
@@ -324,9 +327,9 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
         rects.clear();
         if(RWD.size()<9)
         {
-#if debug            
+//#if debug            
             cout<<"RWD.size()<9"<<endl;
-#endif
+//#endif
             return false;
         }
         int count = 0;
@@ -357,11 +360,11 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
         sort(rects.begin(),rects.begin()+3,ascendingX);          
         sort(rects.begin()+3,rects.begin()+6,ascendingX);
         sort(rects.begin()+6,rects.begin()+9,ascendingX);
-#if debug
+//#if debug
         cout<<"1 , 2 , 3"<<endl;
         cout<<"4 , 5 , 6"<<endl;
         cout<<"7 , 8 , 9"<<endl;
-#endif
+//#endif
         return true;
     }
     return false;
