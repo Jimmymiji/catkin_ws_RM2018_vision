@@ -23,6 +23,7 @@ public:
 	bool fitMnist( Mat& inputImg, Mat& resImg);
 	bool classify();
 	void clear();
+	void recordResults(int idx);
 	network<sequential> nn;
  	vector<vector<pair<double,int>>> scores;// 9（class） x 9(scores of one img for each class ) x <score,label>
     map<int, int> mnistLabels; // <label,index> 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/jimmy/catkin_ws/src/transformation_handler
+# Install script for directory: /home/jimmy/catkin_ws_backup/src/transformation_handler
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jimmy/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/jimmy/catkin_ws_backup/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jimmy/catkin_ws/build/transformation_handler/catkin_generated/installspace/transformation_handler.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jimmy/catkin_ws_backup/build/transformation_handler/catkin_generated/installspace/transformation_handler.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/transformation_handler/cmake" TYPE FILE FILES
-    "/home/jimmy/catkin_ws/build/transformation_handler/catkin_generated/installspace/transformation_handlerConfig.cmake"
-    "/home/jimmy/catkin_ws/build/transformation_handler/catkin_generated/installspace/transformation_handlerConfig-version.cmake"
+    "/home/jimmy/catkin_ws_backup/build/transformation_handler/catkin_generated/installspace/transformation_handlerConfig.cmake"
+    "/home/jimmy/catkin_ws_backup/build/transformation_handler/catkin_generated/installspace/transformation_handlerConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/transformation_handler" TYPE FILE FILES "/home/jimmy/catkin_ws/src/transformation_handler/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/transformation_handler" TYPE FILE FILES "/home/jimmy/catkin_ws_backup/src/transformation_handler/package.xml")
 endif()
 
