@@ -1,8 +1,8 @@
-prefix=/home/jimmy/catkin_ws_backup/devel
+prefix=/home/jimmy/catkin_ws/devel
 
 Name: rune
 Description: Description of rune
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/jimmy/catkin_ws_backup/devel/lib 
+Libs: -L/home/jimmy/catkin_ws/devel/lib 
 Requires: roscpp geometry_msgs message_runtime sensor_msgs cv_bridge std_msgs image_transport

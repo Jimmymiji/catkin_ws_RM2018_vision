@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jimmy/catkin_ws_backup/src
+CMAKE_SOURCE_DIR = /home/jimmy/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jimmy/catkin_ws_backup/build
+CMAKE_BINARY_DIR = /home/jimmy/catkin_ws/build
 
 # Utility rule file for std_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ beginner_tutorials/CMakeFiles/std_msgs_generate_messages_eus.dir/build: std_msgs
 .PHONY : beginner_tutorials/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 
 beginner_tutorials/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	cd /home/jimmy/catkin_ws_backup/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/jimmy/catkin_ws/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : beginner_tutorials/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 
 beginner_tutorials/CMakeFiles/std_msgs_generate_messages_eus.dir/depend:
-	cd /home/jimmy/catkin_ws_backup/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jimmy/catkin_ws_backup/src /home/jimmy/catkin_ws_backup/src/beginner_tutorials /home/jimmy/catkin_ws_backup/build /home/jimmy/catkin_ws_backup/build/beginner_tutorials /home/jimmy/catkin_ws_backup/build/beginner_tutorials/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jimmy/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jimmy/catkin_ws/src /home/jimmy/catkin_ws/src/beginner_tutorials /home/jimmy/catkin_ws/build /home/jimmy/catkin_ws/build/beginner_tutorials /home/jimmy/catkin_ws/build/beginner_tutorials/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : beginner_tutorials/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
 

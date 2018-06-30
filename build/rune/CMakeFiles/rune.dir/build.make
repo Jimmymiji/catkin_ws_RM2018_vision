@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jimmy/catkin_ws_backup/src
+CMAKE_SOURCE_DIR = /home/jimmy/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jimmy/catkin_ws_backup/build
+CMAKE_BINARY_DIR = /home/jimmy/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include rune/CMakeFiles/rune.dir/depend.make
@@ -57,42 +57,18 @@ include rune/CMakeFiles/rune.dir/progress.make
 # Include the compile flags for this target's objects.
 include rune/CMakeFiles/rune.dir/flags.make
 
-rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: rune/CMakeFiles/rune.dir/flags.make
-rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: /home/jimmy/catkin_ws_backup/src/rune/src/ImgCP.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws_backup/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/ImgCP.cpp.o -c /home/jimmy/catkin_ws_backup/src/rune/src/ImgCP.cpp
-
-rune/CMakeFiles/rune.dir/src/ImgCP.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rune.dir/src/ImgCP.cpp.i"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws_backup/src/rune/src/ImgCP.cpp > CMakeFiles/rune.dir/src/ImgCP.cpp.i
-
-rune/CMakeFiles/rune.dir/src/ImgCP.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rune.dir/src/ImgCP.cpp.s"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws_backup/src/rune/src/ImgCP.cpp -o CMakeFiles/rune.dir/src/ImgCP.cpp.s
-
-rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.requires:
-
-.PHONY : rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.requires
-
-rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.provides: rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.requires
-	$(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.provides.build
-.PHONY : rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.provides
-
-rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.provides.build: rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o
-
-
 rune/CMakeFiles/rune.dir/src/main.cpp.o: rune/CMakeFiles/rune.dir/flags.make
-rune/CMakeFiles/rune.dir/src/main.cpp.o: /home/jimmy/catkin_ws_backup/src/rune/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws_backup/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rune/CMakeFiles/rune.dir/src/main.cpp.o"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/main.cpp.o -c /home/jimmy/catkin_ws_backup/src/rune/src/main.cpp
+rune/CMakeFiles/rune.dir/src/main.cpp.o: /home/jimmy/catkin_ws/src/rune/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rune/CMakeFiles/rune.dir/src/main.cpp.o"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/main.cpp.o -c /home/jimmy/catkin_ws/src/rune/src/main.cpp
 
 rune/CMakeFiles/rune.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rune.dir/src/main.cpp.i"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws_backup/src/rune/src/main.cpp > CMakeFiles/rune.dir/src/main.cpp.i
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws/src/rune/src/main.cpp > CMakeFiles/rune.dir/src/main.cpp.i
 
 rune/CMakeFiles/rune.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rune.dir/src/main.cpp.s"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws_backup/src/rune/src/main.cpp -o CMakeFiles/rune.dir/src/main.cpp.s
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws/src/rune/src/main.cpp -o CMakeFiles/rune.dir/src/main.cpp.s
 
 rune/CMakeFiles/rune.dir/src/main.cpp.o.requires:
 
@@ -105,90 +81,18 @@ rune/CMakeFiles/rune.dir/src/main.cpp.o.provides: rune/CMakeFiles/rune.dir/src/m
 rune/CMakeFiles/rune.dir/src/main.cpp.o.provides.build: rune/CMakeFiles/rune.dir/src/main.cpp.o
 
 
-rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o: rune/CMakeFiles/rune.dir/flags.make
-rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o: /home/jimmy/catkin_ws_backup/src/rune/src/MnistRecognizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws_backup/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o -c /home/jimmy/catkin_ws_backup/src/rune/src/MnistRecognizer.cpp
-
-rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rune.dir/src/MnistRecognizer.cpp.i"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws_backup/src/rune/src/MnistRecognizer.cpp > CMakeFiles/rune.dir/src/MnistRecognizer.cpp.i
-
-rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rune.dir/src/MnistRecognizer.cpp.s"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws_backup/src/rune/src/MnistRecognizer.cpp -o CMakeFiles/rune.dir/src/MnistRecognizer.cpp.s
-
-rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.requires:
-
-.PHONY : rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.requires
-
-rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.provides: rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.requires
-	$(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.provides.build
-.PHONY : rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.provides
-
-rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.provides.build: rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o
-
-
-rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o: rune/CMakeFiles/rune.dir/flags.make
-rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o: /home/jimmy/catkin_ws_backup/src/rune/src/RMVideoCapture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws_backup/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o -c /home/jimmy/catkin_ws_backup/src/rune/src/RMVideoCapture.cpp
-
-rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rune.dir/src/RMVideoCapture.cpp.i"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws_backup/src/rune/src/RMVideoCapture.cpp > CMakeFiles/rune.dir/src/RMVideoCapture.cpp.i
-
-rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rune.dir/src/RMVideoCapture.cpp.s"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws_backup/src/rune/src/RMVideoCapture.cpp -o CMakeFiles/rune.dir/src/RMVideoCapture.cpp.s
-
-rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.requires:
-
-.PHONY : rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.requires
-
-rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.provides: rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.requires
-	$(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.provides.build
-.PHONY : rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.provides
-
-rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.provides.build: rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o
-
-
-rune/CMakeFiles/rune.dir/src/angleSol.cpp.o: rune/CMakeFiles/rune.dir/flags.make
-rune/CMakeFiles/rune.dir/src/angleSol.cpp.o: /home/jimmy/catkin_ws_backup/src/rune/src/angleSol.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws_backup/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object rune/CMakeFiles/rune.dir/src/angleSol.cpp.o"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/angleSol.cpp.o -c /home/jimmy/catkin_ws_backup/src/rune/src/angleSol.cpp
-
-rune/CMakeFiles/rune.dir/src/angleSol.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rune.dir/src/angleSol.cpp.i"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws_backup/src/rune/src/angleSol.cpp > CMakeFiles/rune.dir/src/angleSol.cpp.i
-
-rune/CMakeFiles/rune.dir/src/angleSol.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rune.dir/src/angleSol.cpp.s"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws_backup/src/rune/src/angleSol.cpp -o CMakeFiles/rune.dir/src/angleSol.cpp.s
-
-rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.requires:
-
-.PHONY : rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.requires
-
-rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.provides: rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.requires
-	$(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.provides.build
-.PHONY : rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.provides
-
-rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.provides.build: rune/CMakeFiles/rune.dir/src/angleSol.cpp.o
-
-
 rune/CMakeFiles/rune.dir/src/Settings.cpp.o: rune/CMakeFiles/rune.dir/flags.make
-rune/CMakeFiles/rune.dir/src/Settings.cpp.o: /home/jimmy/catkin_ws_backup/src/rune/src/Settings.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws_backup/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object rune/CMakeFiles/rune.dir/src/Settings.cpp.o"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/Settings.cpp.o -c /home/jimmy/catkin_ws_backup/src/rune/src/Settings.cpp
+rune/CMakeFiles/rune.dir/src/Settings.cpp.o: /home/jimmy/catkin_ws/src/rune/src/Settings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rune/CMakeFiles/rune.dir/src/Settings.cpp.o"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/Settings.cpp.o -c /home/jimmy/catkin_ws/src/rune/src/Settings.cpp
 
 rune/CMakeFiles/rune.dir/src/Settings.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rune.dir/src/Settings.cpp.i"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws_backup/src/rune/src/Settings.cpp > CMakeFiles/rune.dir/src/Settings.cpp.i
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws/src/rune/src/Settings.cpp > CMakeFiles/rune.dir/src/Settings.cpp.i
 
 rune/CMakeFiles/rune.dir/src/Settings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rune.dir/src/Settings.cpp.s"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws_backup/src/rune/src/Settings.cpp -o CMakeFiles/rune.dir/src/Settings.cpp.s
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws/src/rune/src/Settings.cpp -o CMakeFiles/rune.dir/src/Settings.cpp.s
 
 rune/CMakeFiles/rune.dir/src/Settings.cpp.o.requires:
 
@@ -202,17 +106,17 @@ rune/CMakeFiles/rune.dir/src/Settings.cpp.o.provides.build: rune/CMakeFiles/rune
 
 
 rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o: rune/CMakeFiles/rune.dir/flags.make
-rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o: /home/jimmy/catkin_ws_backup/src/rune/src/DigitRecognizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws_backup/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o -c /home/jimmy/catkin_ws_backup/src/rune/src/DigitRecognizer.cpp
+rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o: /home/jimmy/catkin_ws/src/rune/src/DigitRecognizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o -c /home/jimmy/catkin_ws/src/rune/src/DigitRecognizer.cpp
 
 rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rune.dir/src/DigitRecognizer.cpp.i"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws_backup/src/rune/src/DigitRecognizer.cpp > CMakeFiles/rune.dir/src/DigitRecognizer.cpp.i
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws/src/rune/src/DigitRecognizer.cpp > CMakeFiles/rune.dir/src/DigitRecognizer.cpp.i
 
 rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rune.dir/src/DigitRecognizer.cpp.s"
-	cd /home/jimmy/catkin_ws_backup/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws_backup/src/rune/src/DigitRecognizer.cpp -o CMakeFiles/rune.dir/src/DigitRecognizer.cpp.s
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws/src/rune/src/DigitRecognizer.cpp -o CMakeFiles/rune.dir/src/DigitRecognizer.cpp.s
 
 rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o.requires:
 
@@ -225,115 +129,211 @@ rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o.provides: rune/CMakeFiles/run
 rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o.provides.build: rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o
 
 
+rune/CMakeFiles/rune.dir/src/angleSol.cpp.o: rune/CMakeFiles/rune.dir/flags.make
+rune/CMakeFiles/rune.dir/src/angleSol.cpp.o: /home/jimmy/catkin_ws/src/rune/src/angleSol.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object rune/CMakeFiles/rune.dir/src/angleSol.cpp.o"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/angleSol.cpp.o -c /home/jimmy/catkin_ws/src/rune/src/angleSol.cpp
+
+rune/CMakeFiles/rune.dir/src/angleSol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rune.dir/src/angleSol.cpp.i"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws/src/rune/src/angleSol.cpp > CMakeFiles/rune.dir/src/angleSol.cpp.i
+
+rune/CMakeFiles/rune.dir/src/angleSol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rune.dir/src/angleSol.cpp.s"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws/src/rune/src/angleSol.cpp -o CMakeFiles/rune.dir/src/angleSol.cpp.s
+
+rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.requires:
+
+.PHONY : rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.requires
+
+rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.provides: rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.requires
+	$(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.provides.build
+.PHONY : rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.provides
+
+rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.provides.build: rune/CMakeFiles/rune.dir/src/angleSol.cpp.o
+
+
+rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: rune/CMakeFiles/rune.dir/flags.make
+rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: /home/jimmy/catkin_ws/src/rune/src/ImgCP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/ImgCP.cpp.o -c /home/jimmy/catkin_ws/src/rune/src/ImgCP.cpp
+
+rune/CMakeFiles/rune.dir/src/ImgCP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rune.dir/src/ImgCP.cpp.i"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws/src/rune/src/ImgCP.cpp > CMakeFiles/rune.dir/src/ImgCP.cpp.i
+
+rune/CMakeFiles/rune.dir/src/ImgCP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rune.dir/src/ImgCP.cpp.s"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws/src/rune/src/ImgCP.cpp -o CMakeFiles/rune.dir/src/ImgCP.cpp.s
+
+rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.requires:
+
+.PHONY : rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.requires
+
+rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.provides: rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.requires
+	$(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.provides.build
+.PHONY : rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.provides
+
+rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.provides.build: rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o
+
+
+rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o: rune/CMakeFiles/rune.dir/flags.make
+rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o: /home/jimmy/catkin_ws/src/rune/src/MnistRecognizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o -c /home/jimmy/catkin_ws/src/rune/src/MnistRecognizer.cpp
+
+rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rune.dir/src/MnistRecognizer.cpp.i"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws/src/rune/src/MnistRecognizer.cpp > CMakeFiles/rune.dir/src/MnistRecognizer.cpp.i
+
+rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rune.dir/src/MnistRecognizer.cpp.s"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws/src/rune/src/MnistRecognizer.cpp -o CMakeFiles/rune.dir/src/MnistRecognizer.cpp.s
+
+rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.requires:
+
+.PHONY : rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.requires
+
+rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.provides: rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.requires
+	$(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.provides.build
+.PHONY : rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.provides
+
+rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.provides.build: rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o
+
+
+rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o: rune/CMakeFiles/rune.dir/flags.make
+rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o: /home/jimmy/catkin_ws/src/rune/src/RMVideoCapture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jimmy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o -c /home/jimmy/catkin_ws/src/rune/src/RMVideoCapture.cpp
+
+rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rune.dir/src/RMVideoCapture.cpp.i"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jimmy/catkin_ws/src/rune/src/RMVideoCapture.cpp > CMakeFiles/rune.dir/src/RMVideoCapture.cpp.i
+
+rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rune.dir/src/RMVideoCapture.cpp.s"
+	cd /home/jimmy/catkin_ws/build/rune && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jimmy/catkin_ws/src/rune/src/RMVideoCapture.cpp -o CMakeFiles/rune.dir/src/RMVideoCapture.cpp.s
+
+rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.requires:
+
+.PHONY : rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.requires
+
+rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.provides: rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.requires
+	$(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.provides.build
+.PHONY : rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.provides
+
+rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.provides.build: rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o
+
+
 # Object files for target rune
 rune_OBJECTS = \
-"CMakeFiles/rune.dir/src/ImgCP.cpp.o" \
 "CMakeFiles/rune.dir/src/main.cpp.o" \
-"CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o" \
-"CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o" \
-"CMakeFiles/rune.dir/src/angleSol.cpp.o" \
 "CMakeFiles/rune.dir/src/Settings.cpp.o" \
-"CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o"
+"CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o" \
+"CMakeFiles/rune.dir/src/angleSol.cpp.o" \
+"CMakeFiles/rune.dir/src/ImgCP.cpp.o" \
+"CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o" \
+"CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o"
 
 # External object files for target rune
 rune_EXTERNAL_OBJECTS =
 
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/main.cpp.o
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/angleSol.cpp.o
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/Settings.cpp.o
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/build.make
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/libroscpp.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/librosconsole.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/librostime.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/libcpp_common.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stitching3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_superres3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videostab3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_aruco3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bgsegm3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bioinspired3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ccalib3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_cvv3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dpm3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_face3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_fuzzy3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_hdf3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_img_hash3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_line_descriptor3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_optflow3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_reg3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_rgbd3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_saliency3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stereo3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_structured_light3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_surface_matching3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_tracking3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xfeatures2d3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ximgproc3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xobjdetect3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_plot3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_text3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dnn3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ml3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_video3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_calib3d3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_features2d3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_highgui3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videoio3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_objdetect3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
-/home/jimmy/catkin_ws_backup/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jimmy/catkin_ws_backup/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable /home/jimmy/catkin_ws_backup/devel/lib/rune/rune"
-	cd /home/jimmy/catkin_ws_backup/build/rune && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rune.dir/link.txt --verbose=$(VERBOSE)
+/home/jimmy/catkin_ws/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/main.cpp.o
+/home/jimmy/catkin_ws/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/Settings.cpp.o
+/home/jimmy/catkin_ws/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o
+/home/jimmy/catkin_ws/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/angleSol.cpp.o
+/home/jimmy/catkin_ws/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o
+/home/jimmy/catkin_ws/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o
+/home/jimmy/catkin_ws/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o
+/home/jimmy/catkin_ws/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/build.make
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/libroscpp.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/librosconsole.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/librostime.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/libcpp_common.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stitching3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_superres3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videostab3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_aruco3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bgsegm3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_bioinspired3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ccalib3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_cvv3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dpm3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_face3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_fuzzy3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_hdf3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_img_hash3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_line_descriptor3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_optflow3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_reg3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_rgbd3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_saliency3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_stereo3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_structured_light3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_surface_matching3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_tracking3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xfeatures2d3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ximgproc3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xobjdetect3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_xphoto3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_shape3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_photo3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_datasets3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_plot3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_text3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_dnn3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ml3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_video3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_calib3d3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_features2d3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_highgui3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videoio3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_viz3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_phase_unwrapping3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_flann3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_objdetect3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
+/home/jimmy/catkin_ws/devel/lib/rune/rune: rune/CMakeFiles/rune.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jimmy/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable /home/jimmy/catkin_ws/devel/lib/rune/rune"
+	cd /home/jimmy/catkin_ws/build/rune && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rune.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-rune/CMakeFiles/rune.dir/build: /home/jimmy/catkin_ws_backup/devel/lib/rune/rune
+rune/CMakeFiles/rune.dir/build: /home/jimmy/catkin_ws/devel/lib/rune/rune
 
 .PHONY : rune/CMakeFiles/rune.dir/build
 
-rune/CMakeFiles/rune.dir/requires: rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.requires
 rune/CMakeFiles/rune.dir/requires: rune/CMakeFiles/rune.dir/src/main.cpp.o.requires
-rune/CMakeFiles/rune.dir/requires: rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.requires
-rune/CMakeFiles/rune.dir/requires: rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.requires
-rune/CMakeFiles/rune.dir/requires: rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.requires
 rune/CMakeFiles/rune.dir/requires: rune/CMakeFiles/rune.dir/src/Settings.cpp.o.requires
 rune/CMakeFiles/rune.dir/requires: rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o.requires
+rune/CMakeFiles/rune.dir/requires: rune/CMakeFiles/rune.dir/src/angleSol.cpp.o.requires
+rune/CMakeFiles/rune.dir/requires: rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o.requires
+rune/CMakeFiles/rune.dir/requires: rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o.requires
+rune/CMakeFiles/rune.dir/requires: rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o.requires
 
 .PHONY : rune/CMakeFiles/rune.dir/requires
 
 rune/CMakeFiles/rune.dir/clean:
-	cd /home/jimmy/catkin_ws_backup/build/rune && $(CMAKE_COMMAND) -P CMakeFiles/rune.dir/cmake_clean.cmake
+	cd /home/jimmy/catkin_ws/build/rune && $(CMAKE_COMMAND) -P CMakeFiles/rune.dir/cmake_clean.cmake
 .PHONY : rune/CMakeFiles/rune.dir/clean
 
 rune/CMakeFiles/rune.dir/depend:
-	cd /home/jimmy/catkin_ws_backup/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jimmy/catkin_ws_backup/src /home/jimmy/catkin_ws_backup/src/rune /home/jimmy/catkin_ws_backup/build /home/jimmy/catkin_ws_backup/build/rune /home/jimmy/catkin_ws_backup/build/rune/CMakeFiles/rune.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jimmy/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jimmy/catkin_ws/src /home/jimmy/catkin_ws/src/rune /home/jimmy/catkin_ws/build /home/jimmy/catkin_ws/build/rune /home/jimmy/catkin_ws/build/rune/CMakeFiles/rune.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : rune/CMakeFiles/rune.dir/depend
 

@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++14
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"transformation_handler\"
 
-CXX_INCLUDES = -I/home/jimmy/catkin_ws_backup/src/transformation_handler -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/jimmy/catkin_ws/src/transformation_handler -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

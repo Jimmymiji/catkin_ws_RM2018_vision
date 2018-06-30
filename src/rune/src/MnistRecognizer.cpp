@@ -244,7 +244,7 @@ bool MnistRecognizer::classify()
 void MnistRecognizer:: recordResults(int idx)
 {
 	ofstream myfile;
-	string filename = "./record/scores "+ to_string(idx)+".txt";
+	string filename = "./MNISTRecord/scores "+ to_string(idx)+".txt";
   	myfile.open (filename);
 	myfile<< " -------------------"<<idx<<"------------"<<endl;
   	for (int i = 0; i< 9; i++)

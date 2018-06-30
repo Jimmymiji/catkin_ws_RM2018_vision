@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/access.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/access.hpp
 type_traits
 -
 iostream
@@ -18,13 +18,13 @@ cereal/macros.hpp
 cereal/details/helpers.hpp
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/archives/binary.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/archives/binary.hpp
 cereal/cereal.hpp
 -
 sstream
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/archives/json.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/archives/json.hpp
 cereal/cereal.hpp
 -
 cereal/details/util.hpp
@@ -50,7 +50,7 @@ vector
 string
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/cereal.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/cereal.hpp
 type_traits
 -
 string
@@ -80,7 +80,7 @@ cereal/types/base_class.hpp
 cereal/types/common.hpp
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/details/helpers.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/details/helpers.hpp
 type_traits
 -
 cstdint
@@ -98,9 +98,9 @@ cereal/macros.hpp
 cereal/details/static_object.hpp
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/details/static_object.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/details/static_object.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/details/traits.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/details/traits.hpp
 type_traits
 -
 typeindex
@@ -110,7 +110,7 @@ cereal/macros.hpp
 cereal/access.hpp
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/details/util.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/details/util.hpp
 typeinfo
 -
 string
@@ -120,35 +120,35 @@ cxxabi.h
 cstdlib
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/base64.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/external/base64.hpp
 string
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/document.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/document.h
 reader.h
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/reader.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/reader.h
 internal/strfunc.h
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/internal/strfunc.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/internal/strfunc.h
 new
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/genericstream.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/genericstream.h
 rapidjson.h
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/rapidjson.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/rapidjson.h
 iostream
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/internal/pow10.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/internal/pow10.h
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/internal/stack.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/internal/stack.h
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/internal/strfunc.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/internal/strfunc.h
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/prettywriter.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/prettywriter.h
 writer.h
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/writer.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/writer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/rapidjson.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/rapidjson.h
 cstdlib
 -
 cstring
@@ -158,13 +158,13 @@ inttypes.h
 cassert
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/reader.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/reader.h
 rapidjson.h
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/rapidjson.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/rapidjson.h
 internal/pow10.h
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/internal/pow10.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/internal/pow10.h
 internal/stack.h
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/internal/stack.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/internal/stack.h
 csetjmp
 -
 limits
@@ -178,13 +178,13 @@ nmmintrin.h
 emmintrin.h
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/writer.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/writer.h
 rapidjson.h
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/rapidjson.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/rapidjson.h
 internal/stack.h
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/internal/stack.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/internal/stack.h
 internal/strfunc.h
-/home/jimmy/catkin_ws_backup/src/rune/cereal/external/rapidjson/internal/strfunc.h
+/home/jimmy/catkin_ws/src/rune/cereal/external/rapidjson/internal/strfunc.h
 cstdio
 -
 new
@@ -192,23 +192,23 @@ new
 limits
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/macros.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/macros.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/types/base_class.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/types/base_class.hpp
 cereal/details/traits.hpp
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/types/common.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/types/common.hpp
 cereal/cereal.hpp
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/types/deque.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/types/deque.hpp
 cereal/cereal.hpp
 -
 deque
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/types/memory.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/types/memory.hpp
 cereal/cereal.hpp
 -
 memory
@@ -216,35 +216,35 @@ memory
 cstring
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/types/string.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/types/string.hpp
 cereal/cereal.hpp
 -
 string
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/types/tuple.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/types/tuple.hpp
 cereal/cereal.hpp
 -
 tuple
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/types/utility.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/types/utility.hpp
 cereal/cereal.hpp
 -
 utility
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/cereal/types/vector.hpp
+/home/jimmy/catkin_ws/src/rune/cereal/types/vector.hpp
 cereal/cereal.hpp
 -
 vector
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/src/DigitRecognizer.cpp
+/home/jimmy/catkin_ws/src/rune/src/DigitRecognizer.cpp
 DigitRecognizer.h
-/home/jimmy/catkin_ws_backup/src/rune/src/DigitRecognizer.h
+/home/jimmy/catkin_ws/src/rune/src/DigitRecognizer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/src/DigitRecognizer.h
+/home/jimmy/catkin_ws/src/rune/src/DigitRecognizer.h
 opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -255,14 +255,16 @@ iostream
 -
 cmath
 -
+fstream
+-
 define.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/define.hpp
+/home/jimmy/catkin_ws/src/rune/src/define.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/src/ImgCP.cpp
+/home/jimmy/catkin_ws/src/rune/src/ImgCP.cpp
 RMVideoCapture.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/RMVideoCapture.hpp
+/home/jimmy/catkin_ws/src/rune/src/RMVideoCapture.hpp
 ImgCP.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/ImgCP.hpp
+/home/jimmy/catkin_ws/src/rune/src/ImgCP.hpp
 opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -274,47 +276,47 @@ iostream
 cmath
 -
 findRect.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/findRect.hpp
+/home/jimmy/catkin_ws/src/rune/src/findRect.hpp
 MnistRecognizer.h
-/home/jimmy/catkin_ws_backup/src/rune/src/MnistRecognizer.h
+/home/jimmy/catkin_ws/src/rune/src/MnistRecognizer.h
 DigitRecognizer.h
-/home/jimmy/catkin_ws_backup/src/rune/src/DigitRecognizer.h
+/home/jimmy/catkin_ws/src/rune/src/DigitRecognizer.h
 Settings.h
-/home/jimmy/catkin_ws_backup/src/rune/src/Settings.h
+/home/jimmy/catkin_ws/src/rune/src/Settings.h
 angleSol.h
-/home/jimmy/catkin_ws_backup/src/rune/src/angleSol.h
+/home/jimmy/catkin_ws/src/rune/src/angleSol.h
 ros/ros.h
-/home/jimmy/catkin_ws_backup/src/rune/src/ros/ros.h
+/home/jimmy/catkin_ws/src/rune/src/ros/ros.h
 geometry_msgs/Point.h
-/home/jimmy/catkin_ws_backup/src/rune/src/geometry_msgs/Point.h
+/home/jimmy/catkin_ws/src/rune/src/geometry_msgs/Point.h
 
-/home/jimmy/catkin_ws_backup/src/rune/src/ImgCP.hpp
+/home/jimmy/catkin_ws/src/rune/src/ImgCP.hpp
 opencv2/opencv.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/opencv2/opencv.hpp
+/home/jimmy/catkin_ws/src/rune/src/opencv2/opencv.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/src/MnistRecognizer.cpp
+/home/jimmy/catkin_ws/src/rune/src/MnistRecognizer.cpp
 iostream
 -
 string
 -
 MnistRecognizer.h
-/home/jimmy/catkin_ws_backup/src/rune/src/MnistRecognizer.h
+/home/jimmy/catkin_ws/src/rune/src/MnistRecognizer.h
 map
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/src/MnistRecognizer.h
+/home/jimmy/catkin_ws/src/rune/src/MnistRecognizer.h
 tiny_dnn/tiny_dnn.h
-/home/jimmy/catkin_ws_backup/src/rune/src/tiny_dnn/tiny_dnn.h
+/home/jimmy/catkin_ws/src/rune/src/tiny_dnn/tiny_dnn.h
 opencv2/opencv.hpp
 -
 define.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/define.hpp
+/home/jimmy/catkin_ws/src/rune/src/define.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/src/RMVideoCapture.cpp
+/home/jimmy/catkin_ws/src/rune/src/RMVideoCapture.cpp
 RMVideoCapture.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/RMVideoCapture.hpp
+/home/jimmy/catkin_ws/src/rune/src/RMVideoCapture.hpp
 linux/videodev2.h
-/home/jimmy/catkin_ws_backup/src/rune/src/linux/videodev2.h
+/home/jimmy/catkin_ws/src/rune/src/linux/videodev2.h
 stdio.h
 -
 unistd.h
@@ -326,23 +328,23 @@ sys/ioctl.h
 sys/mman.h
 -
 opencv2/highgui/highgui.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/opencv2/highgui/highgui.hpp
+/home/jimmy/catkin_ws/src/rune/src/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/opencv2/imgproc/imgproc.hpp
+/home/jimmy/catkin_ws/src/rune/src/opencv2/imgproc/imgproc.hpp
 iostream
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/src/RMVideoCapture.hpp
+/home/jimmy/catkin_ws/src/rune/src/RMVideoCapture.hpp
 opencv2/core/core.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/opencv2/core/core.hpp
+/home/jimmy/catkin_ws/src/rune/src/opencv2/core/core.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/src/Settings.cpp
+/home/jimmy/catkin_ws/src/rune/src/Settings.cpp
 opencv2/opencv.hpp
 -
 opencv2/highgui/highgui.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/opencv2/highgui/highgui.hpp
+/home/jimmy/catkin_ws/src/rune/src/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/opencv2/imgproc/imgproc.hpp
+/home/jimmy/catkin_ws/src/rune/src/opencv2/imgproc/imgproc.hpp
 vector
 -
 sys/stat.h
@@ -352,15 +354,15 @@ string
 fstream
 -
 Settings.h
-/home/jimmy/catkin_ws_backup/src/rune/src/Settings.h
+/home/jimmy/catkin_ws/src/rune/src/Settings.h
 
-/home/jimmy/catkin_ws_backup/src/rune/src/Settings.h
+/home/jimmy/catkin_ws/src/rune/src/Settings.h
 opencv2/core/core.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/opencv2/core/core.hpp
+/home/jimmy/catkin_ws/src/rune/src/opencv2/core/core.hpp
 string
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/src/angleSol.cpp
+/home/jimmy/catkin_ws/src/rune/src/angleSol.cpp
 opencv2/highgui/highgui.hpp
 -
 opencv2/core/core.hpp
@@ -374,11 +376,11 @@ iostream
 fstream
 -
 Settings.h
-/home/jimmy/catkin_ws_backup/src/rune/src/Settings.h
+/home/jimmy/catkin_ws/src/rune/src/Settings.h
 angleSol.h
-/home/jimmy/catkin_ws_backup/src/rune/src/angleSol.h
+/home/jimmy/catkin_ws/src/rune/src/angleSol.h
 
-/home/jimmy/catkin_ws_backup/src/rune/src/angleSol.h
+/home/jimmy/catkin_ws/src/rune/src/angleSol.h
 opencv2/highgui/highgui.hpp
 -
 opencv2/core/core.hpp
@@ -386,15 +388,15 @@ opencv2/core/core.hpp
 opencv2/opencv.hpp
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/src/define.hpp
+/home/jimmy/catkin_ws/src/rune/src/define.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/src/findRect.hpp
+/home/jimmy/catkin_ws/src/rune/src/findRect.hpp
 opencv2/core/core.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/opencv2/core/core.hpp
+/home/jimmy/catkin_ws/src/rune/src/opencv2/core/core.hpp
 opencv2/imgproc/imgproc.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/opencv2/imgproc/imgproc.hpp
+/home/jimmy/catkin_ws/src/rune/src/opencv2/imgproc/imgproc.hpp
 opencv2/highgui/highgui.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/opencv2/highgui/highgui.hpp
+/home/jimmy/catkin_ws/src/rune/src/opencv2/highgui/highgui.hpp
 iostream
 -
 math.h
@@ -402,7 +404,7 @@ math.h
 string.h
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/src/main.cpp
+/home/jimmy/catkin_ws/src/rune/src/main.cpp
 opencv2/core/core.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -414,161 +416,161 @@ iostream
 cmath
 -
 Settings.h
-/home/jimmy/catkin_ws_backup/src/rune/src/Settings.h
+/home/jimmy/catkin_ws/src/rune/src/Settings.h
 thread
 -
 ImgCP.hpp
-/home/jimmy/catkin_ws_backup/src/rune/src/ImgCP.hpp
+/home/jimmy/catkin_ws/src/rune/src/ImgCP.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/activation_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/activation_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/elu_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/elu_layer.h
 tiny_dnn/activations/activation_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/leaky_relu_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/leaky_relu_layer.h
 tiny_dnn/activations/activation_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/relu_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/relu_layer.h
 tiny_dnn/activations/activation_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/sigmoid_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/sigmoid_layer.h
 tiny_dnn/activations/activation_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/softmax_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/softmax_layer.h
 tiny_dnn/activations/activation_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/softplus_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/softplus_layer.h
 tiny_dnn/activations/activation_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/softsign_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/softsign_layer.h
 tiny_dnn/activations/activation_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tanh_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tanh_layer.h
 tiny_dnn/activations/activation_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tanh_p1m2_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tanh_p1m2_layer.h
 tiny_dnn/activations/activation_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/activations/activation_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/tiny_dnn/layers/layer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/config.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/config.h
 cstddef
 -
 cstdint
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/backend.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/backend.h
 tiny_dnn/core/params/conv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/params/conv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/params/conv_params.h
 tiny_dnn/core/params/deconv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/params/deconv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/params/deconv_params.h
 tiny_dnn/core/params/fully_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/params/fully_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/params/fully_params.h
 tiny_dnn/core/params/global_avepool_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/params/global_avepool_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/params/global_avepool_params.h
 tiny_dnn/core/params/maxpool_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/params/maxpool_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/params/maxpool_params.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/layers/layer.h
 tiny_dnn/node.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/node.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/node.h
 nnpack.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/nnpack.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/nnpack.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/backend_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/backend_avx.h
 tiny_dnn/core/backend.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/backend.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/backend.h
 tiny_dnn/core/kernels/avx_deconv2d_back_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/avx_deconv2d_back_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/avx_deconv2d_back_kernel.h
 tiny_dnn/core/kernels/avx_deconv2d_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/avx_deconv2d_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/avx_deconv2d_kernel.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/backend_tiny.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/backend_tiny.h
 tiny_dnn/config.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/config.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/config.h
 tiny_dnn/core/backend.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/backend.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/backend.h
 tiny_dnn/core/kernels/tiny_deconv2d_back_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/tiny_deconv2d_back_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/tiny_deconv2d_back_kernel.h
 tiny_dnn/core/kernels/tiny_deconv2d_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/tiny_deconv2d_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/tiny_deconv2d_kernel.h
 tiny_dnn/core/kernels/tiny_quantized_conv2d_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/tiny_quantized_conv2d_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/tiny_quantized_conv2d_kernel.h
 tiny_dnn/core/kernels/tiny_quantized_deconv2d_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/tiny_quantized_deconv2d_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/tiny_quantized_deconv2d_kernel.h
 tiny_dnn/core/kernels/tiny_quantized_fully_connected_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/tiny_quantized_fully_connected_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/tiny_dnn/core/kernels/tiny_quantized_fully_connected_kernel.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/device.fwd.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/device.fwd.h
 third_party/CLCudaAPI/clpp11.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/clpp11.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/clpp11.h
 third_party/CLCudaAPI/cupp11.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/cupp11.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/cupp11.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/device.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/device.h
 tiny_dnn/core/framework/device.fwd.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/device.fwd.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/device.fwd.h
 tiny_dnn/core/framework/program_manager.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/program_manager.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/program_manager.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/op_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/op_kernel.h
 tiny_dnn/core/framework/device.fwd.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/device.fwd.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/device.fwd.h
 tiny_dnn/core/params/conv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/tiny_dnn/core/params/conv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/tiny_dnn/core/params/conv_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/program.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/program.h
 tiny_dnn/core/framework/device.fwd.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/device.fwd.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/device.fwd.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/tiny_dnn/layers/layer.h
 third_party/CLCudaAPI/clpp11.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/clpp11.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/clpp11.h
 third_party/CLCudaAPI/cupp11.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/cupp11.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/cupp11.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/program_manager.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/program_manager.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/tiny_dnn/layers/layer.h
 tiny_dnn/core/framework/device.fwd.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/device.fwd.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/device.fwd.h
 tiny_dnn/core/framework/program.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/program.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/program.h
 third_party/CLCudaAPI/clpp11.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/clpp11.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/clpp11.h
 third_party/CLCudaAPI/cupp11.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/cupp11.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/cupp11.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/tensor.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/tensor.h
 memory
 -
 type_traits
@@ -576,213 +578,213 @@ type_traits
 vector
 -
 tiny_dnn/core/framework/device.fwd.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/device.fwd.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/tiny_dnn/core/framework/device.fwd.h
 third_party/CLCudaAPI/clpp11.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/clpp11.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/clpp11.h
 third_party/CLCudaAPI/cupp11.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/cupp11.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/framework/third_party/CLCudaAPI/cupp11.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/avx_deconv2d_back_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/avx_deconv2d_back_kernel.h
 tiny_dnn/core/params/deconv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/deconv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/deconv_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/avx_deconv2d_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/avx_deconv2d_kernel.h
 tiny_dnn/core/kernels/tiny_deconv2d_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_deconv2d_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_deconv2d_kernel.h
 tiny_dnn/core/params/deconv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/deconv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/deconv_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/avx_kernel_common.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/avx_kernel_common.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/conv2d_grad_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/conv2d_grad_op.h
 tiny_dnn/core/framework/op_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
 tiny_dnn/core/kernels/conv2d_grad_op_avx.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_grad_op_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_grad_op_avx.h
 tiny_dnn/core/kernels/conv2d_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_internal.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/conv2d_grad_op_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/conv2d_grad_op_avx.h
 vector
 -
 tiny_dnn/core/kernels/conv2d_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_internal.h
 tiny_dnn/core/params/conv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/conv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/conv_params.h
 tiny_dnn/core/kernels/avx_kernel_common.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/avx_kernel_common.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/avx_kernel_common.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/conv2d_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/conv2d_op.h
 tiny_dnn/core/framework/op_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
 tiny_dnn/core/kernels/conv2d_op_avx.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_avx.h
 tiny_dnn/core/kernels/conv2d_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_internal.h
 tiny_dnn/core/kernels/conv2d_op_nnpack.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_nnpack.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_nnpack.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/conv2d_op_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/conv2d_op_avx.h
 vector
 -
 tiny_dnn/core/kernels/conv2d_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/conv2d_op_internal.h
 tiny_dnn/core/params/conv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/conv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/conv_params.h
 tiny_dnn/core/kernels/avx_kernel_common.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/avx_kernel_common.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/avx_kernel_common.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/conv2d_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/conv2d_op_internal.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/conv2d_op_libdnn.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/conv2d_op_libdnn.h
 tiny_dnn/core/framework/op_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
 libdnn.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/libdnn.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/libdnn.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/conv2d_op_nnpack.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/conv2d_op_nnpack.h
 tiny_dnn/core/backend.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/backend.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/backend.h
 tiny_dnn/core/params/conv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/conv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/conv_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/conv2d_op_opencl.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/conv2d_op_opencl.h
 tiny_dnn/core/framework/op_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/fully_connected_grad_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/fully_connected_grad_op.h
 tiny_dnn/core/framework/op_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
 tiny_dnn/core/kernels/fully_connected_op_avx.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_avx.h
 tiny_dnn/core/kernels/fully_connected_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_internal.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/fully_connected_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/fully_connected_op.h
 tiny_dnn/core/framework/op_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
 tiny_dnn/core/kernels/fully_connected_op_avx.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_avx.h
 tiny_dnn/core/kernels/fully_connected_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_internal.h
 tiny_dnn/core/kernels/fully_connected_op_nnpack.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_nnpack.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_nnpack.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/fully_connected_op_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/fully_connected_op_avx.h
 tiny_dnn/core/kernels/fully_connected_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/fully_connected_op_internal.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/fully_connected_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/fully_connected_op_internal.h
 tiny_dnn/core/params/fully_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/fully_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/fully_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/fully_connected_op_nnpack.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/fully_connected_op_nnpack.h
 tiny_dnn/core/backend.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/backend.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/backend.h
 tiny_dnn/core/params/fully_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/fully_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/fully_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/global_avepool_grad_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/global_avepool_grad_op.h
 tiny_dnn/core/framework/op_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
 tiny_dnn/core/kernels/global_avepool_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/global_avepool_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/global_avepool_op_internal.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/global_avepool_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/global_avepool_op.h
 tiny_dnn/core/framework/op_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
 tiny_dnn/core/kernels/global_avepool_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/global_avepool_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/global_avepool_op_internal.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/global_avepool_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/global_avepool_op_internal.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/maxpool_grad_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/maxpool_grad_op.h
 tiny_dnn/core/framework/op_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
 tiny_dnn/core/kernels/maxpool_op_avx.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_avx.h
 tiny_dnn/core/kernels/maxpool_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_internal.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/maxpool_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/maxpool_op.h
 tiny_dnn/core/framework/op_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/framework/op_kernel.h
 tiny_dnn/core/kernels/maxpool_op_avx.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_avx.h
 tiny_dnn/core/kernels/maxpool_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_internal.h
 tiny_dnn/core/kernels/maxpool_op_nnpack.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_nnpack.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_nnpack.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/maxpool_op_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/maxpool_op_avx.h
 tiny_dnn/core/kernels/maxpool_op_internal.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/maxpool_op_internal.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/maxpool_op_internal.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/maxpool_op_internal.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/maxpool_op_nnpack.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/maxpool_op_nnpack.h
 tiny_dnn/core/backend.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/backend.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/backend.h
 tiny_dnn/core/params/maxpool_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/maxpool_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/maxpool_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_deconv2d_back_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_deconv2d_back_kernel.h
 tiny_dnn/core/params/deconv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/deconv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/deconv_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_deconv2d_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_deconv2d_kernel.h
 tiny_dnn/core/params/deconv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/deconv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/deconv_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_quantization_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_quantization_kernel.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_quantized_conv2d_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_quantized_conv2d_kernel.h
 tiny_dnn/core/kernels/tiny_quantization_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_quantization_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_quantization_kernel.h
 tiny_dnn/core/params/conv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/conv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/conv_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_quantized_deconv2d_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_quantized_deconv2d_kernel.h
 tiny_dnn/core/kernels/tiny_quantization_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_quantization_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_quantization_kernel.h
 tiny_dnn/core/params/deconv_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/deconv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/deconv_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_quantized_fully_connected_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_quantized_fully_connected_kernel.h
 tiny_dnn/core/kernels/tiny_quantization_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_quantization_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_quantization_kernel.h
 tiny_dnn/core/kernels/tiny_quantized_matmul_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_quantized_matmul_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_quantized_matmul_kernel.h
 tiny_dnn/core/params/fully_params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/fully_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/params/fully_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_quantized_matmul_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_quantized_matmul_kernel.h
 third_party/gemmlowp/public/gemmlowp.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/third_party/gemmlowp/public/gemmlowp.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/third_party/gemmlowp/public/gemmlowp.h
 tiny_dnn/core/kernels/tiny_quantization_kernel.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_quantization_kernel.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/kernels/tiny_dnn/core/kernels/tiny_quantization_kernel.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/params/conv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/params/conv_params.h
 params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/params/params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/params/params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/params/deconv_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/params/deconv_params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/params/fully_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/params/fully_params.h
 params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/params/params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/params/params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/params/global_avepool_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/params/global_avepool_params.h
 tiny_dnn/core/params/params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/params/tiny_dnn/core/params/params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/params/tiny_dnn/core/params/params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/params/maxpool_params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/params/maxpool_params.h
 tiny_dnn/core/params/params.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/params/tiny_dnn/core/params/params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/params/tiny_dnn/core/params/params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/core/params/params.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/core/params/params.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/caffe.pb.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/caffe.pb.h
 string
 -
 google/protobuf/stubs/common.h
@@ -806,7 +808,7 @@ google/protobuf/generated_enum_reflection.h
 google/protobuf/unknown_field_set.h
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/layer_factory.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/layer_factory.h
 google/protobuf/io/coded_stream.h
 -
 google/protobuf/io/zero_copy_stream_impl.h
@@ -814,19 +816,19 @@ google/protobuf/io/zero_copy_stream_impl.h
 google/protobuf/text_format.h
 -
 caffe.pb.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/caffe.pb.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/caffe.pb.h
 tiny_dnn/io/caffe/layer_factory_impl.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/io/caffe/layer_factory_impl.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/io/caffe/layer_factory_impl.h
 tiny_dnn/lossfunctions/loss_function.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/lossfunctions/loss_function.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/lossfunctions/loss_function.h
 tiny_dnn/network.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/network.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/network.h
 tiny_dnn/optimizers/optimizer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/optimizers/optimizer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/optimizers/optimizer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/layer_factory_impl.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/layer_factory_impl.h
 algorithm
 -
 limits
@@ -842,23 +844,23 @@ unordered_map
 vector
 -
 caffe.pb.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/caffe.pb.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/caffe.pb.h
 tiny_dnn/layers/average_pooling_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/average_pooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/average_pooling_layer.h
 tiny_dnn/layers/convolutional_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/convolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/convolutional_layer.h
 tiny_dnn/layers/deconvolutional_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/deconvolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/deconvolutional_layer.h
 tiny_dnn/layers/dropout_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/dropout_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/dropout_layer.h
 tiny_dnn/layers/fully_connected_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/fully_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/fully_connected_layer.h
 tiny_dnn/layers/linear_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/linear_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/linear_layer.h
 tiny_dnn/layers/lrn_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/lrn_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/lrn_layer.h
 tiny_dnn/layers/max_pooling_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/max_pooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/caffe/tiny_dnn/layers/max_pooling_layer.h
 fcntl.h
 -
 io.h
@@ -872,7 +874,7 @@ sys/types.h
 unistd.h
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/cifar10_parser.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/cifar10_parser.h
 algorithm
 -
 cstdint
@@ -880,9 +882,9 @@ cstdint
 fstream
 -
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/display.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/display.h
 chrono
 -
 iostream
@@ -890,27 +892,27 @@ iostream
 string
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/layer_factory.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/layer_factory.h
 tiny_dnn/layers/fully_connected_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/tiny_dnn/layers/fully_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/tiny_dnn/layers/fully_connected_layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/mnist_parser.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/mnist_parser.h
 cstdint
 -
 fstream
 -
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/io/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/io/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/arithmetic_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/arithmetic_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/average_pooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/average_pooling_layer.h
 algorithm
 -
 string
@@ -918,13 +920,13 @@ string
 vector
 -
 tiny_dnn/layers/partial_connected_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/partial_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/partial_connected_layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 tiny_dnn/util/image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/average_unpooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/average_unpooling_layer.h
 algorithm
 -
 string
@@ -932,29 +934,29 @@ string
 vector
 -
 tiny_dnn/layers/partial_connected_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/partial_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/partial_connected_layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 tiny_dnn/util/image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/batch_normalization_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/batch_normalization_layer.h
 algorithm
 -
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 tiny_dnn/util/math_functions.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/math_functions.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/math_functions.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/concat_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/concat_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/convolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/convolutional_layer.h
 algorithm
 -
 string
@@ -962,19 +964,19 @@ string
 vector
 -
 tiny_dnn/core/kernels/conv2d_grad_op.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/conv2d_grad_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/conv2d_grad_op.h
 tiny_dnn/core/kernels/conv2d_op.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/conv2d_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/conv2d_op.h
 tiny_dnn/core/kernels/conv2d_op_libdnn.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/conv2d_op_libdnn.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/conv2d_op_libdnn.h
 tiny_dnn/core/kernels/conv2d_op_opencl.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/conv2d_op_opencl.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/conv2d_op_opencl.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 tiny_dnn/util/image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/deconvolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/deconvolutional_layer.h
 algorithm
 -
 deque
@@ -982,31 +984,31 @@ deque
 string
 -
 tiny_dnn/core/backend_tiny.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_tiny.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_tiny.h
 tiny_dnn/core/backend_avx.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_avx.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 tiny_dnn/util/image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/dropout_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/dropout_layer.h
 algorithm
 -
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/fully_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/fully_connected_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 tiny_dnn/core/kernels/fully_connected_grad_op.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/fully_connected_grad_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/fully_connected_grad_op.h
 tiny_dnn/core/kernels/fully_connected_op.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/fully_connected_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/fully_connected_op.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/global_average_pooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/global_average_pooling_layer.h
 algorithm
 -
 string
@@ -1014,19 +1016,19 @@ string
 vector
 -
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 tiny_dnn/core/kernels/global_avepool_grad_op.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/global_avepool_grad_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/global_avepool_grad_op.h
 tiny_dnn/core/kernels/global_avepool_op.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/global_avepool_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/global_avepool_op.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/input_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/input_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/layer.h
 algorithm
 -
 iomanip
@@ -1046,81 +1048,81 @@ utility
 vector
 -
 tiny_dnn/core/backend.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/backend.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/backend.h
 tiny_dnn/core/framework/device.fwd.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/framework/device.fwd.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/framework/device.fwd.h
 tiny_dnn/node.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/node.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/node.h
 tiny_dnn/util/parallel_for.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/parallel_for.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/parallel_for.h
 tiny_dnn/util/product.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/product.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/product.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 tiny_dnn/util/weight_init.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/weight_init.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/weight_init.h
 tiny_dnn/optimizers/optimizer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/optimizers/optimizer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/optimizers/optimizer.h
 tiny_dnn/util/image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/layers.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/layers.h
 tiny_dnn/layers/arithmetic_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/arithmetic_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/arithmetic_layer.h
 tiny_dnn/layers/average_pooling_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/average_pooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/average_pooling_layer.h
 tiny_dnn/layers/average_unpooling_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/average_unpooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/average_unpooling_layer.h
 tiny_dnn/layers/batch_normalization_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/batch_normalization_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/batch_normalization_layer.h
 tiny_dnn/layers/concat_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/concat_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/concat_layer.h
 tiny_dnn/layers/convolutional_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/convolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/convolutional_layer.h
 tiny_dnn/layers/deconvolutional_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/deconvolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/deconvolutional_layer.h
 tiny_dnn/layers/dropout_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/dropout_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/dropout_layer.h
 tiny_dnn/layers/fully_connected_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/fully_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/fully_connected_layer.h
 tiny_dnn/layers/global_average_pooling_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/global_average_pooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/global_average_pooling_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 tiny_dnn/layers/linear_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/linear_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/linear_layer.h
 tiny_dnn/layers/lrn_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/lrn_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/lrn_layer.h
 tiny_dnn/layers/max_pooling_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/max_pooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/max_pooling_layer.h
 tiny_dnn/layers/max_unpooling_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/max_unpooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/max_unpooling_layer.h
 tiny_dnn/layers/partial_connected_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/partial_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/partial_connected_layer.h
 tiny_dnn/layers/power_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/power_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/power_layer.h
 tiny_dnn/layers/quantized_convolutional_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/quantized_convolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/quantized_convolutional_layer.h
 tiny_dnn/layers/quantized_deconvolutional_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/quantized_deconvolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/quantized_deconvolutional_layer.h
 tiny_dnn/layers/quantized_fully_connected_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/quantized_fully_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/quantized_fully_connected_layer.h
 tiny_dnn/layers/slice_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/slice_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/slice_layer.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/linear_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/linear_layer.h
 algorithm
 -
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/lrn_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/lrn_layer.h
 algorithm
 -
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/max_pooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/max_pooling_layer.h
 algorithm
 -
 string
@@ -1128,35 +1130,35 @@ string
 vector
 -
 tiny_dnn/core/kernels/maxpool_grad_op.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/maxpool_grad_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/maxpool_grad_op.h
 tiny_dnn/core/kernels/maxpool_op.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/maxpool_op.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/kernels/maxpool_op.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 tiny_dnn/util/image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/max_unpooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/max_unpooling_layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 tiny_dnn/util/image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/partial_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/partial_connected_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/power_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/power_layer.h
 cmath
 -
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/quantized_convolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/quantized_convolutional_layer.h
 algorithm
 -
 string
@@ -1164,15 +1166,15 @@ string
 vector
 -
 tiny_dnn/core/backend_tiny.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_tiny.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_tiny.h
 tiny_dnn/core/backend_avx.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_avx.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 tiny_dnn/util/image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/quantized_deconvolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/quantized_deconvolutional_layer.h
 algorithm
 -
 deque
@@ -1180,33 +1182,33 @@ deque
 string
 -
 tiny_dnn/core/backend_tiny.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_tiny.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_tiny.h
 tiny_dnn/core/backend_avx.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_avx.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/core/backend_avx.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 tiny_dnn/util/image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/image.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/quantized_fully_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/quantized_fully_connected_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 tiny_dnn/util/product.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/product.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/product.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/slice_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/slice_layer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/layers/layer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/layers/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/lossfunctions/loss_function.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/lossfunctions/loss_function.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/lossfunctions/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/lossfunctions/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/models/alexnet.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/models/alexnet.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/network.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/network.h
 fstream
 -
 algorithm
@@ -1230,13 +1232,13 @@ string
 vector
 -
 tiny_dnn/lossfunctions/loss_function.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/lossfunctions/loss_function.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/lossfunctions/loss_function.h
 tiny_dnn/nodes.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/nodes.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/nodes.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/node.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/node.h
 iomanip
 -
 memory
@@ -1254,17 +1256,17 @@ unordered_set
 vector
 -
 tiny_dnn/optimizers/optimizer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/optimizers/optimizer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/optimizers/optimizer.h
 tiny_dnn/util/product.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/product.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/product.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/util.h
 tiny_dnn/util/weight_init.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/weight_init.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/weight_init.h
 tiny_dnn/util/image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/image.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/nodes.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/nodes.h
 tuple
 -
 unordered_map
@@ -1276,119 +1278,119 @@ cereal/types/tuple.hpp
 cereal/types/utility.hpp
 -
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/layer.h
 tiny_dnn/optimizers/optimizer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/optimizers/optimizer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/optimizers/optimizer.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/optimizers/optimizer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/optimizers/optimizer.h
 unordered_map
 -
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/optimizers/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/optimizers/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn.h
 tiny_dnn/config.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/config.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/config.h
 tiny_dnn/network.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/network.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/network.h
 tiny_dnn/nodes.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/nodes.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/nodes.h
 tiny_dnn/core/framework/tensor.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/core/framework/tensor.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/core/framework/tensor.h
 tiny_dnn/core/framework/device.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/core/framework/device.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/core/framework/device.h
 tiny_dnn/core/framework/program_manager.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/core/framework/program_manager.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/core/framework/program_manager.h
 tiny_dnn/layers/arithmetic_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/arithmetic_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/arithmetic_layer.h
 tiny_dnn/layers/average_pooling_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/average_pooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/average_pooling_layer.h
 tiny_dnn/layers/average_unpooling_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/average_unpooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/average_unpooling_layer.h
 tiny_dnn/layers/batch_normalization_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/batch_normalization_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/batch_normalization_layer.h
 tiny_dnn/layers/concat_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/concat_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/concat_layer.h
 tiny_dnn/layers/convolutional_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/convolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/convolutional_layer.h
 tiny_dnn/layers/deconvolutional_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/deconvolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/deconvolutional_layer.h
 tiny_dnn/layers/dropout_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/dropout_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/dropout_layer.h
 tiny_dnn/layers/fully_connected_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/fully_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/fully_connected_layer.h
 tiny_dnn/layers/input_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/input_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/input_layer.h
 tiny_dnn/layers/linear_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/linear_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/linear_layer.h
 tiny_dnn/layers/lrn_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/lrn_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/lrn_layer.h
 tiny_dnn/layers/max_pooling_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/max_pooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/max_pooling_layer.h
 tiny_dnn/layers/max_unpooling_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/max_unpooling_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/max_unpooling_layer.h
 tiny_dnn/layers/power_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/power_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/power_layer.h
 tiny_dnn/layers/quantized_convolutional_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/quantized_convolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/quantized_convolutional_layer.h
 tiny_dnn/layers/quantized_deconvolutional_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/quantized_deconvolutional_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/quantized_deconvolutional_layer.h
 tiny_dnn/layers/slice_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/slice_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/slice_layer.h
 tiny_dnn/activations/elu_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/activations/elu_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/activations/elu_layer.h
 tiny_dnn/activations/leaky_relu_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/activations/leaky_relu_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/activations/leaky_relu_layer.h
 tiny_dnn/activations/relu_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/activations/relu_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/activations/relu_layer.h
 tiny_dnn/activations/sigmoid_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/activations/sigmoid_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/activations/sigmoid_layer.h
 tiny_dnn/activations/softmax_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/activations/softmax_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/activations/softmax_layer.h
 tiny_dnn/activations/softplus_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/activations/softplus_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/activations/softplus_layer.h
 tiny_dnn/activations/softsign_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/activations/softsign_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/activations/softsign_layer.h
 tiny_dnn/activations/tanh_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/activations/tanh_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/activations/tanh_layer.h
 tiny_dnn/activations/tanh_p1m2_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/activations/tanh_p1m2_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/activations/tanh_p1m2_layer.h
 tiny_dnn/layers/quantized_fully_connected_layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/layers/quantized_fully_connected_layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/layers/quantized_fully_connected_layer.h
 tiny_dnn/lossfunctions/loss_function.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/lossfunctions/loss_function.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/lossfunctions/loss_function.h
 tiny_dnn/optimizers/optimizer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/optimizers/optimizer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/optimizers/optimizer.h
 tiny_dnn/util/deform.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/deform.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/deform.h
 tiny_dnn/util/graph_visualizer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/graph_visualizer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/graph_visualizer.h
 tiny_dnn/util/product.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/product.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/product.h
 tiny_dnn/util/weight_init.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/weight_init.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/weight_init.h
 tiny_dnn/io/cifar10_parser.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/io/cifar10_parser.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/io/cifar10_parser.h
 tiny_dnn/io/display.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/io/display.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/io/display.h
 tiny_dnn/io/layer_factory.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/io/layer_factory.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/io/layer_factory.h
 tiny_dnn/io/mnist_parser.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/io/mnist_parser.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/io/mnist_parser.h
 tiny_dnn/util/image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/image.h
 tiny_dnn/util/deserialization_helper.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/deserialization_helper.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/deserialization_helper.h
 tiny_dnn/util/serialization_helper.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/util/serialization_helper.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/util/serialization_helper.h
 tiny_dnn/models/alexnet.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/models/alexnet.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/models/alexnet.h
 tiny_dnn/io/caffe/layer_factory.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/tiny_dnn/io/caffe/layer_factory.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/tiny_dnn/io/caffe/layer_factory.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/aligned_allocator.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/aligned_allocator.h
 stdlib.h
 -
 malloc.h
@@ -1396,19 +1398,19 @@ malloc.h
 mm_malloc.h
 -
 nn_error.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/nn_error.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/nn_error.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/colored_print.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/colored_print.h
 tiny_dnn/config.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/config.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/config.h
 Windows.h
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/deform.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/deform.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/deserialization_helper.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/deserialization_helper.h
 functional
 -
 map
@@ -1424,25 +1426,25 @@ cereal/archives/json.hpp
 cereal/types/memory.hpp
 -
 tiny_dnn/layers/layers.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/layers/layers.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/layers/layers.h
 tiny_dnn/util/macro.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/macro.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/macro.h
 tiny_dnn/util/nn_error.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/nn_error.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/nn_error.h
 tiny_dnn/util/serialization_functions.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/serialization_functions.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/serialization_functions.h
 tiny_dnn/util/serialization_layer_list.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/serialization_layer_list.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/serialization_layer_list.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/graph_visualizer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/graph_visualizer.h
 tiny_dnn/layers/layer.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/layers/layer.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/layers/layer.h
 tiny_dnn/network.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/network.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/network.h
 tiny_dnn/node.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/node.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/node.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/image.h
 algorithm
 -
 array
@@ -1454,33 +1456,33 @@ fstream
 vector
 -
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/util.h
 third_party/stb/stb_image.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/third_party/stb/stb_image.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/third_party/stb/stb_image.h
 third_party/stb/stb_image_resize.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/third_party/stb/stb_image_resize.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/third_party/stb/stb_image_resize.h
 third_party/stb/stb_image_write.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/third_party/stb/stb_image_write.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/third_party/stb/stb_image_write.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/macro.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/macro.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/math_functions.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/math_functions.h
 algorithm
 -
 numeric
 -
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/nn_error.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/nn_error.h
 exception
 -
 string
 -
 tiny_dnn/util/colored_print.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/colored_print.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/colored_print.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/parallel_for.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/parallel_for.h
 cassert
 -
 cstdio
@@ -1494,11 +1496,11 @@ type_traits
 vector
 -
 aligned_allocator.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/aligned_allocator.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/aligned_allocator.h
 nn_error.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/nn_error.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/nn_error.h
 tiny_dnn/config.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/config.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/config.h
 tbb/task_group.h
 -
 tbb/tbb.h
@@ -1510,7 +1512,7 @@ thread
 dispatch/dispatch.h
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/product.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/product.h
 immintrin.h
 -
 cassert
@@ -1520,9 +1522,9 @@ cstdint
 numeric
 -
 tiny_dnn/core/kernels/avx_kernel_common.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/core/kernels/avx_kernel_common.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/core/kernels/avx_kernel_common.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/random.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/random.h
 limits
 -
 random
@@ -1530,17 +1532,17 @@ random
 type_traits
 -
 nn_error.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/nn_error.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/nn_error.h
 tiny_dnn/config.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/config.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/config.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/serialization_functions.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/serialization_functions.h
 cereal/access.hpp
 -
 tiny_dnn/tiny_dnn.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/tiny_dnn.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/tiny_dnn.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/serialization_helper.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/serialization_helper.h
 cereal/archives/json.hpp
 -
 cereal/types/memory.hpp
@@ -1556,21 +1558,21 @@ string
 typeindex
 -
 tiny_dnn/layers/layers.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/layers/layers.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/layers/layers.h
 tiny_dnn/util/macro.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/macro.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/macro.h
 tiny_dnn/util/nn_error.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/nn_error.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/nn_error.h
 tiny_dnn/util/serialization_functions.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/serialization_functions.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/serialization_functions.h
 tiny_dnn/util/serialization_layer_list.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/serialization_layer_list.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/serialization_layer_list.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/serialization_layer_list.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/serialization_layer_list.h
 tiny_dnn/layers/layers.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/layers/layers.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/layers/layers.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/util.h
 cassert
 -
 cstdarg
@@ -1592,11 +1594,11 @@ type_traits
 vector
 -
 tiny_dnn/xtensor/xarray.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/xtensor/xarray.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/xtensor/xarray.hpp
 tiny_dnn/xtensor/xview.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/xtensor/xview.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/xtensor/xview.hpp
 tiny_dnn/config.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/config.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/config.h
 cereal/archives/binary.hpp
 -
 cereal/archives/json.hpp
@@ -1610,27 +1612,27 @@ cereal/types/string.hpp
 cereal/types/vector.hpp
 -
 tiny_dnn/util/aligned_allocator.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/aligned_allocator.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/aligned_allocator.h
 tiny_dnn/util/macro.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/macro.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/macro.h
 tiny_dnn/util/nn_error.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/nn_error.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/nn_error.h
 tiny_dnn/util/parallel_for.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/parallel_for.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/parallel_for.h
 tiny_dnn/util/product.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/product.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/product.h
 tiny_dnn/util/random.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/random.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/random.h
 third_party/CLCudaAPI/clpp11.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/third_party/CLCudaAPI/clpp11.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/third_party/CLCudaAPI/clpp11.h
 third_party/CLCudaAPI/cupp11.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/third_party/CLCudaAPI/cupp11.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/third_party/CLCudaAPI/cupp11.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/weight_init.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/weight_init.h
 tiny_dnn/util/util.h
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/util/tiny_dnn/util/util.h
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/util/tiny_dnn/util/util.h
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xarray.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xarray.hpp
 algorithm
 -
 initializer_list
@@ -1638,19 +1640,19 @@ initializer_list
 utility
 -
 xcontainer.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xcontainer.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xcontainer.hpp
 xsemantic.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xsemantic.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xsemantic.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xassign.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xassign.hpp
 xiterator.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterator.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterator.hpp
 xtensor_forward.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xtensor_forward.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xtensor_forward.hpp
 algorithm
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xbroadcast.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xbroadcast.hpp
 algorithm
 -
 array
@@ -1666,15 +1668,15 @@ type_traits
 utility
 -
 xexpression.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xexpression.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xexpression.hpp
 xiterable.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterable.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterable.hpp
 xstrides.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xstrides.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xstrides.hpp
 xutils.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xutils.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xutils.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xbuilder.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xbuilder.hpp
 cmath
 -
 functional
@@ -1682,11 +1684,11 @@ functional
 utility
 -
 xbroadcast.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xbroadcast.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xbroadcast.hpp
 xfunction.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xfunction.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xfunction.hpp
 xgenerator.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xgenerator.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xgenerator.hpp
 initializer_list
 -
 vector
@@ -1694,7 +1696,7 @@ vector
 array
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xcontainer.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xcontainer.hpp
 functional
 -
 numeric
@@ -1702,19 +1704,19 @@ numeric
 stdexcept
 -
 xiterable.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterable.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterable.hpp
 xiterator.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterator.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterator.hpp
 xmath.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xmath.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xmath.hpp
 xoperation.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xoperation.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xoperation.hpp
 xstrides.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xstrides.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xstrides.hpp
 xtensor_forward.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xtensor_forward.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xtensor_forward.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xexception.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xexception.hpp
 exception
 -
 iterator
@@ -1724,7 +1726,7 @@ sstream
 string
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xexpression.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xexpression.hpp
 cstddef
 -
 type_traits
@@ -1732,9 +1734,9 @@ type_traits
 vector
 -
 xutils.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xutils.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xutils.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xfunction.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xfunction.hpp
 algorithm
 -
 cstddef
@@ -1750,17 +1752,17 @@ type_traits
 utility
 -
 xexpression.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xexpression.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xexpression.hpp
 xiterable.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterable.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterable.hpp
 xlayout.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xlayout.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xlayout.hpp
 xscalar.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xscalar.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xscalar.hpp
 xutils.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xutils.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xutils.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xgenerator.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xgenerator.hpp
 algorithm
 -
 cstddef
@@ -1774,31 +1776,31 @@ type_traits
 utility
 -
 xexpression.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xexpression.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xexpression.hpp
 xiterable.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterable.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterable.hpp
 xstrides.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xstrides.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xstrides.hpp
 xutils.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xutils.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xutils.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterable.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterable.hpp
 xiterator.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterator.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterator.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterator.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterator.hpp
 iterator
 -
 xexception.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xexception.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xexception.hpp
 xlayout.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xlayout.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xlayout.hpp
 xutils.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xutils.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xutils.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xlayout.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xlayout.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xmath.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xmath.hpp
 cmath
 -
 complex
@@ -1806,11 +1808,11 @@ complex
 type_traits
 -
 xoperation.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xoperation.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xoperation.hpp
 xreducer.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xreducer.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xreducer.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xoperation.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xoperation.hpp
 algorithm
 -
 functional
@@ -1818,13 +1820,13 @@ functional
 type_traits
 -
 xfunction.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xfunction.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xfunction.hpp
 xscalar.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xscalar.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xscalar.hpp
 xstrides.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xstrides.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xstrides.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xreducer.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xreducer.hpp
 algorithm
 -
 cstddef
@@ -1842,19 +1844,19 @@ utility
 vector
 -
 xbuilder.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xbuilder.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xbuilder.hpp
 xexpression.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xexpression.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xexpression.hpp
 xgenerator.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xgenerator.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xgenerator.hpp
 xiterable.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterable.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterable.hpp
 xreducer.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xreducer.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xreducer.hpp
 xutils.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xutils.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xutils.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xscalar.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xscalar.hpp
 array
 -
 cstddef
@@ -1862,23 +1864,23 @@ cstddef
 utility
 -
 xexpression.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xexpression.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xexpression.hpp
 xiterable.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterable.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterable.hpp
 xlayout.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xlayout.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xlayout.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xsemantic.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xsemantic.hpp
 functional
 -
 utility
 -
 xassign.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xassign.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xassign.hpp
 xexpression.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xexpression.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xexpression.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xslice.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xslice.hpp
 cstddef
 -
 type_traits
@@ -1886,9 +1888,9 @@ type_traits
 utility
 -
 xutils.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xutils.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xutils.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xstorage.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xstorage.hpp
 algorithm
 -
 functional
@@ -1902,7 +1904,7 @@ memory
 type_traits
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xstrides.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xstrides.hpp
 cstddef
 -
 functional
@@ -1910,29 +1912,29 @@ functional
 numeric
 -
 xexception.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xexception.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xexception.hpp
 xtensor_forward.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xtensor_forward.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xtensor_forward.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xtensor_config.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xtensor_config.hpp
 initializer_list
 -
 vector
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xtensor_forward.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xtensor_forward.hpp
 xtensor_config.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xtensor_config.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xtensor_config.hpp
 xstorage.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xstorage.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xstorage.hpp
 xlayout.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xlayout.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xlayout.hpp
 memory
 -
 vector
 -
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xutils.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xutils.hpp
 algorithm
 -
 array
@@ -1952,9 +1954,9 @@ utility
 vector
 -
 xtensor_config.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xtensor_config.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xtensor_config.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xview.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xview.hpp
 algorithm
 -
 array
@@ -1968,23 +1970,23 @@ type_traits
 utility
 -
 xbroadcast.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xbroadcast.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xbroadcast.hpp
 xcontainer.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xcontainer.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xcontainer.hpp
 xiterable.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xiterable.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xiterable.hpp
 xsemantic.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xsemantic.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xsemantic.hpp
 xtensor_forward.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xtensor_forward.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xtensor_forward.hpp
 xview_utils.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xview_utils.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xview_utils.hpp
 
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xview_utils.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xview_utils.hpp
 array
 -
 xslice.hpp
-/home/jimmy/catkin_ws_backup/src/rune/tiny_dnn/xtensor/xslice.hpp
+/home/jimmy/catkin_ws/src/rune/tiny_dnn/xtensor/xslice.hpp
 
 /opt/ros/kinetic/include/geometry_msgs/Point.h
 string

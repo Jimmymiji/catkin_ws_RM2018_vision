@@ -7,7 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/jimmy/catkin_ws_backup/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/jimmy/catkin_ws_backup/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/jimmy/catkin_ws_backup/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/jimmy/catkin_ws/src:/home/jimmy/catkin_ws_backup/src:$ROS_PACKAGE_PATH"
+export LD_LIBRARY_PATH="/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu"
+export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
+export PWD="/home/jimmy/catkin_ws/build"
+export PYTHONPATH="/opt/ros/kinetic/lib/python2.7/dist-packages"
+export ROS_PACKAGE_PATH="/home/jimmy/catkin_ws/src:/home/jimmy/catkin_ws_backup/src:/opt/ros/kinetic/share"

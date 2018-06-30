@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jimmy/catkin_ws_backup/src
+CMAKE_SOURCE_DIR = /home/jimmy/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jimmy/catkin_ws_backup/build
+CMAKE_BINARY_DIR = /home/jimmy/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jimmy/catkin_ws_backup/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jimmy/catkin_ws_backup/build/CMakeFiles /home/jimmy/catkin_ws_backup/build/rune/CMakeFiles/progress.marks
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f CMakeFiles/Makefile2 rune/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jimmy/catkin_ws_backup/build/CMakeFiles 0
+	cd /home/jimmy/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jimmy/catkin_ws/build/CMakeFiles /home/jimmy/catkin_ws/build/rune/CMakeFiles/progress.marks
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rune/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jimmy/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f CMakeFiles/Makefile2 rune/clean
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rune/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f CMakeFiles/Makefile2 rune/preinstall
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rune/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f CMakeFiles/Makefile2 rune/preinstall
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rune/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jimmy/catkin_ws_backup/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jimmy/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 rune/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 .PHONY : rune/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ geometry_msgs_generate_messages_nodejs: rune/CMakeFiles/geometry_msgs_generate_m
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make rune/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make rune/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 rune/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : rune/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ geometry_msgs_generate_messages_lisp: rune/CMakeFiles/geometry_msgs_generate_mes
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make rune/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make rune/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 rune/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 .PHONY : rune/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -207,12 +207,12 @@ geometry_msgs_generate_messages_eus: rune/CMakeFiles/geometry_msgs_generate_mess
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make rune/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make rune/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 rune/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : rune/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -222,12 +222,12 @@ geometry_msgs_generate_messages_cpp: rune/CMakeFiles/geometry_msgs_generate_mess
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make rune/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make rune/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 rune/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : rune/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -237,12 +237,12 @@ geometry_msgs_generate_messages_py: rune/CMakeFiles/geometry_msgs_generate_messa
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make rune/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make rune/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 rune/CMakeFiles/rune.dir/rule:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/rune.dir/rule
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 rune/CMakeFiles/rune.dir/rule
 .PHONY : rune/CMakeFiles/rune.dir/rule
 
 # Convenience name for target.
@@ -252,7 +252,7 @@ rune: rune/CMakeFiles/rune.dir/rule
 
 # fast build rule for target.
 rune/fast:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/build
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/build
 .PHONY : rune/fast
 
 src/DigitRecognizer.o: src/DigitRecognizer.cpp.o
@@ -261,7 +261,7 @@ src/DigitRecognizer.o: src/DigitRecognizer.cpp.o
 
 # target to build an object file
 src/DigitRecognizer.cpp.o:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.o
 .PHONY : src/DigitRecognizer.cpp.o
 
 src/DigitRecognizer.i: src/DigitRecognizer.cpp.i
@@ -270,7 +270,7 @@ src/DigitRecognizer.i: src/DigitRecognizer.cpp.i
 
 # target to preprocess a source file
 src/DigitRecognizer.cpp.i:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.i
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.i
 .PHONY : src/DigitRecognizer.cpp.i
 
 src/DigitRecognizer.s: src/DigitRecognizer.cpp.s
@@ -279,7 +279,7 @@ src/DigitRecognizer.s: src/DigitRecognizer.cpp.s
 
 # target to generate assembly for a file
 src/DigitRecognizer.cpp.s:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.s
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/DigitRecognizer.cpp.s
 .PHONY : src/DigitRecognizer.cpp.s
 
 src/ImgCP.o: src/ImgCP.cpp.o
@@ -288,7 +288,7 @@ src/ImgCP.o: src/ImgCP.cpp.o
 
 # target to build an object file
 src/ImgCP.cpp.o:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o
 .PHONY : src/ImgCP.cpp.o
 
 src/ImgCP.i: src/ImgCP.cpp.i
@@ -297,7 +297,7 @@ src/ImgCP.i: src/ImgCP.cpp.i
 
 # target to preprocess a source file
 src/ImgCP.cpp.i:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/ImgCP.cpp.i
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/ImgCP.cpp.i
 .PHONY : src/ImgCP.cpp.i
 
 src/ImgCP.s: src/ImgCP.cpp.s
@@ -306,7 +306,7 @@ src/ImgCP.s: src/ImgCP.cpp.s
 
 # target to generate assembly for a file
 src/ImgCP.cpp.s:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/ImgCP.cpp.s
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/ImgCP.cpp.s
 .PHONY : src/ImgCP.cpp.s
 
 src/MnistRecognizer.o: src/MnistRecognizer.cpp.o
@@ -315,7 +315,7 @@ src/MnistRecognizer.o: src/MnistRecognizer.cpp.o
 
 # target to build an object file
 src/MnistRecognizer.cpp.o:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.o
 .PHONY : src/MnistRecognizer.cpp.o
 
 src/MnistRecognizer.i: src/MnistRecognizer.cpp.i
@@ -324,7 +324,7 @@ src/MnistRecognizer.i: src/MnistRecognizer.cpp.i
 
 # target to preprocess a source file
 src/MnistRecognizer.cpp.i:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.i
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.i
 .PHONY : src/MnistRecognizer.cpp.i
 
 src/MnistRecognizer.s: src/MnistRecognizer.cpp.s
@@ -333,7 +333,7 @@ src/MnistRecognizer.s: src/MnistRecognizer.cpp.s
 
 # target to generate assembly for a file
 src/MnistRecognizer.cpp.s:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.s
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/MnistRecognizer.cpp.s
 .PHONY : src/MnistRecognizer.cpp.s
 
 src/RMVideoCapture.o: src/RMVideoCapture.cpp.o
@@ -342,7 +342,7 @@ src/RMVideoCapture.o: src/RMVideoCapture.cpp.o
 
 # target to build an object file
 src/RMVideoCapture.cpp.o:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.o
 .PHONY : src/RMVideoCapture.cpp.o
 
 src/RMVideoCapture.i: src/RMVideoCapture.cpp.i
@@ -351,7 +351,7 @@ src/RMVideoCapture.i: src/RMVideoCapture.cpp.i
 
 # target to preprocess a source file
 src/RMVideoCapture.cpp.i:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.i
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.i
 .PHONY : src/RMVideoCapture.cpp.i
 
 src/RMVideoCapture.s: src/RMVideoCapture.cpp.s
@@ -360,7 +360,7 @@ src/RMVideoCapture.s: src/RMVideoCapture.cpp.s
 
 # target to generate assembly for a file
 src/RMVideoCapture.cpp.s:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.s
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/RMVideoCapture.cpp.s
 .PHONY : src/RMVideoCapture.cpp.s
 
 src/Settings.o: src/Settings.cpp.o
@@ -369,7 +369,7 @@ src/Settings.o: src/Settings.cpp.o
 
 # target to build an object file
 src/Settings.cpp.o:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/Settings.cpp.o
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/Settings.cpp.o
 .PHONY : src/Settings.cpp.o
 
 src/Settings.i: src/Settings.cpp.i
@@ -378,7 +378,7 @@ src/Settings.i: src/Settings.cpp.i
 
 # target to preprocess a source file
 src/Settings.cpp.i:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/Settings.cpp.i
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/Settings.cpp.i
 .PHONY : src/Settings.cpp.i
 
 src/Settings.s: src/Settings.cpp.s
@@ -387,7 +387,7 @@ src/Settings.s: src/Settings.cpp.s
 
 # target to generate assembly for a file
 src/Settings.cpp.s:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/Settings.cpp.s
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/Settings.cpp.s
 .PHONY : src/Settings.cpp.s
 
 src/angleSol.o: src/angleSol.cpp.o
@@ -396,7 +396,7 @@ src/angleSol.o: src/angleSol.cpp.o
 
 # target to build an object file
 src/angleSol.cpp.o:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/angleSol.cpp.o
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/angleSol.cpp.o
 .PHONY : src/angleSol.cpp.o
 
 src/angleSol.i: src/angleSol.cpp.i
@@ -405,7 +405,7 @@ src/angleSol.i: src/angleSol.cpp.i
 
 # target to preprocess a source file
 src/angleSol.cpp.i:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/angleSol.cpp.i
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/angleSol.cpp.i
 .PHONY : src/angleSol.cpp.i
 
 src/angleSol.s: src/angleSol.cpp.s
@@ -414,7 +414,7 @@ src/angleSol.s: src/angleSol.cpp.s
 
 # target to generate assembly for a file
 src/angleSol.cpp.s:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/angleSol.cpp.s
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/angleSol.cpp.s
 .PHONY : src/angleSol.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -423,7 +423,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/main.cpp.o
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -432,7 +432,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/main.cpp.i
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -441,7 +441,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/jimmy/catkin_ws_backup/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/main.cpp.s
+	cd /home/jimmy/catkin_ws/build && $(MAKE) -f rune/CMakeFiles/rune.dir/build.make rune/CMakeFiles/rune.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -495,6 +495,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jimmy/catkin_ws_backup/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jimmy/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

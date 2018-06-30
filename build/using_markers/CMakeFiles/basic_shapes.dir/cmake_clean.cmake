@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/basic_shapes.dir/src/basic_shapes.cpp.o"
-  "/home/jimmy/catkin_ws_backup/devel/lib/using_markers/basic_shapes.pdb"
-  "/home/jimmy/catkin_ws_backup/devel/lib/using_markers/basic_shapes"
+  "/home/jimmy/catkin_ws/devel/lib/using_markers/basic_shapes.pdb"
+  "/home/jimmy/catkin_ws/devel/lib/using_markers/basic_shapes"
 )
 
 # Per-language clean rules from dependency scanning.

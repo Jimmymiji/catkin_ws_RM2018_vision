@@ -29,12 +29,12 @@ void DigitThread(Mat img,int& ans,bool failure)
     //cout<<"thread 3 running"<<endl;
     DigitRecognizer dt;
     dt.preprocessRGB(img,img);
-    if(!dt.findDigits(img))
+    if(!dt.findDigits())
     {
         //cout<<"thread 3 end 1"<<endl;
         ans = -1;
         for(int i = 0; i<5;i++)
-       cout<< "  "<< dt.ans[i] ;
+        cout<< "  "<< dt.ans[i] ;
         return;
     }
     if(!dt.getAns())
@@ -43,8 +43,10 @@ void DigitThread(Mat img,int& ans,bool failure)
         ans = -1;
         for(int i = 0; i<5;i++)
         cout<< "  "<< dt.ans[i];
+        dt.recordResults(cIdx);
         return;
     }
+    dt.recordResults(cIdx);
     bool repeat = true;
     for(int i = 0; i<5;i++)
     {

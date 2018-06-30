@@ -12,33 +12,48 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     Mat Red = channels.at(2);
     Mat Blue = channels.at(0);
     Mat Green = channels.at(1);
-    imshow("R",Red);
+    Mat R_B = Red - Blue;
+    Mat R_G = Red - Green;
+    imshow("R-B",R_B);
     waitKey(1);
-    imshow("G",Green);
+    imshow("R-G",R_G);
     waitKey(1);
-    imshow("B",Blue);
-    waitKey(1);
-    double redMean = mean(Red)[0];
-    double blueMean = mean(Blue)[0];
-    double greenMean = mean(Green)[0];
-    for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
-    {
-        for(int j = 0; j < Red.cols;j++)
-        {
-            if(Red.at<uchar>(i,j)>redMean*1.1 && Red.at<uchar>(i,j)>Blue.at<uchar>(i,j)&&Red.at<uchar>(i,j)>Green.at<uchar>(i,j)&&Blue.at<uchar>(i,j)<blueMean*0.9&&Green.at<uchar>(i,j)<greenMean*0.9)
-            {
-                Red.at<uchar>(i,j) = 255;
-            }
-            else
-            {
-                Red.at<uchar>(i,j) = 0;
-            }
-        }
-    }
-    threshold(Red,Red,200,255,THRESH_BINARY);
-    morphologyEx(Red,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
+    result = R_B & R_G;
+    threshold(result,result,90,255,THRESH_BINARY);
     morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
+    morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(5,5)));
+    morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    result.copyTo(this->binary);
+    // imshow("R",Red);
+    // waitKey(1);
+    // imshow("G",Green);
+    // waitKey(1);
+    // imshow("B",Blue);
+    // waitKey(1);
+    // double redMean = mean(Red)[0];
+    // double blueMean = mean(Blue)[0];
+    // double greenMean = mean(Green)[0];
+    // for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
+    // {
+    //     for(int j = 0; j < Red.cols;j++)
+    //     {
+    //         if(Red.at<uchar>(i,j)>redMean*1.1 && Red.at<uchar>(i,j)>Blue.at<uchar>(i,j) && Red.at<uchar>(i,j)>Green.at<uchar>(i,j) && Blue.at<uchar>(i,j)<blueMean*1.2 && Green.at<uchar>(i,j)<greenMean*1.2 )
+    //         {
+    //             Red.at<uchar>(i,j) = 255;
+    //         }
+    //         else
+    //         {
+    //             Red.at<uchar>(i,j) = 0;
+    //         }
+    //     }
+    // }
+    // threshold(Red,Red,200,255,THRESH_BINARY);
+    //  morphologyEx(Red,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    // // morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
+    // // morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    
+
 #if show1
     imshow("result",result);
     waitKey(3);
@@ -63,7 +78,7 @@ void DigitRecognizer:: preprocessHSV(Mat& image, Mat& result)
     return;
 }
 
-bool DigitRecognizer::findDigits(Mat& binary)
+bool DigitRecognizer::findDigits()
 {
     vector<vector<Point2i>> contours;
     contours.clear();
@@ -75,10 +90,10 @@ bool DigitRecognizer::findDigits(Mat& binary)
     for(int i = 0 ; i < contours.size();i++) 
     {
         Mat a = Mat(contours[i]);
-        approxPolyDP(Mat(contours[i]),contours_poly[i],1,true);
-        boundRect[i] = boundingRect(Mat(contours_poly[i]));
+       // approxPolyDP(Mat(contours[i]),contours_poly[i],1,true);
+        boundRect[i] = boundingRect(Mat(contours[i]));
         
-        if(boundRect[i].area() > 500 &&  boundRect[i].area() < 25000)
+        if(boundRect[i].area() > 50 &&  boundRect[i].area() < 25000)
         {
            possibleTargetRects.push_back(boundRect[i]);
            rectangle(binary,boundRect[i],Scalar(255,255,255));
@@ -248,7 +263,7 @@ int DigitRecognizer::recognize(Mat img)
     {
         return -1;
     }
-    else if(ratio>2 && ratio < 10)
+    else if(ratio>3 && ratio < 10)
     {
         return 1;
     }
@@ -387,3 +402,21 @@ bool DigitRecognizer::getAns()
     }
     return true;
 }
+
+void DigitRecognizer:: recordResults(int idx)
+{
+	std::ofstream myfile;
+	string filename = "./DigitRecord/scores "+ to_string(idx)+".txt";
+  	myfile.open (filename);
+	myfile<< " -------------------"<<idx<<"------------"<<endl;
+  	for (int i = 0; i< 5; i++)
+	{
+		myfile << ans[i] << "  ";
+	}
+  	myfile.close();
+    string picName = "./DigitRecord/pic"+ to_string(idx) + ".png";
+    imwrite(picName,binary);
+	return;
+
+}
+

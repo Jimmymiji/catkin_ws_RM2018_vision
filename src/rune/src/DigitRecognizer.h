@@ -3,6 +3,7 @@
 #include <opencv2/imgproc/imgproc.hpp>  
 #include <iostream>  
 #include <cmath>
+#include <fstream>
 #include "define.hpp"
 using namespace std;
 using namespace cv;
@@ -17,8 +18,9 @@ class DigitRecognizer
     int ans[5]  = {-1,-1,-1,-1,-1};
     void preprocessHSV(Mat& image, Mat& result);
     void preprocessRGB(Mat image,Mat& result);
-    bool findDigits(Mat& binary);
+    bool findDigits();
     int  recognize(Mat img);
     bool getAns();
+    void recordResults(int idx);
 
 };
