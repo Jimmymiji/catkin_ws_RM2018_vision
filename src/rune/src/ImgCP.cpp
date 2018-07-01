@@ -163,11 +163,12 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         // cvtColor(img, image, CV_BGR2GRAY);
         // Mat binary;
         // double Mean = mean(image)[0];
-        // threshold(image,binary,Mean*2.3,255,CV_THRESH_BINARY);                            
+        // threshold(image,binary,Mean*2.6,255,CV_THRESH_BINARY);                            
+        // morphologyEx( binary,  binary, MORPH_ERODE, getStructuringElement(MORPH_RECT,Size(3,3)));
         // morphologyEx( binary,  binary, MORPH_ERODE, getStructuringElement(MORPH_RECT,Size(3,3)));
         // vector<vector<Point> > squares;
         // imshow("binary",binary);
-        // findSquaresBinary(binary,squares);
+        // findRects(binary,squares);
         // drawSquares(img1,squares);
         // vector<RotatedRect> rects;
         // //t3.join();
@@ -223,7 +224,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         //         input.push_back(Point2f(t.x,t.y+t.height));
         //         input.push_back(Point2f(t.x+t.width,t.y));
         //         input.push_back(Point2f(t.x+t.width,t.y+t.height));
-        //         string filename = "record/pic" + to_string(cIdx)+".png";
+        //         string filename = "MNISTRecord/pic" + to_string(cIdx)+".png";
         //         imwrite(filename,img);
         //         MR.recordResults(cIdx);
 	    //         if(!ag.setImageTargetS(input,img))

@@ -241,6 +241,42 @@ bool MnistRecognizer::classify()
 	return false;
 	
 }
+bool MnistRecognizer::classify()
+{
+	if(mnistImgs.size()!=9)
+		return false;
+	for(int i  = 0 ; i<9;i++)
+	{
+		Mat img,kimg;
+		kmeanPreprocess(mnistImgs[i]).copyTo(kimg);
+        fitMnist(kimg,img);
+		scores.push_back( recognize_primary(img));
+    }
+	int iterCount = 0;
+	bool conflict = false;
+	do{
+		for(int i = 0; i <9;i++)
+		{
+			pair<double,int> temp;
+			temp = make_pair(scores[i].at(iterCount).first,i);
+			int l = scores[i].at(iterCount).second;
+			if(MNISTLabels.count(l))
+			{
+				conflict = true;
+			}
+			else
+			{
+				MNISTLabels[l] = temp;
+			}
+		}
+		iterCount++;
+		if(iterCount >= 4)
+		{
+			break;
+		}
+	}while(conflict);
+
+}
 void MnistRecognizer:: recordResults(int idx)
 {
 	ofstream myfile;

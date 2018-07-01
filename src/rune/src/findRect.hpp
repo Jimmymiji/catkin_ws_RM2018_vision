@@ -62,7 +62,7 @@ void findSquares(const Mat& image, vector<vector<Point> >& squares)
                 //     tgray(x,y) = gray(x,y) < (l+1)*255/N ? 255 : 0
                 gray = gray0 >= (l + 1) * 255 / N;
             }
-
+            imshow("canny",gray);
             // find contours and store them all as a list
             findContours(gray, contours, RETR_LIST, CHAIN_APPROX_SIMPLE);
             imshow("gay",gray);
@@ -147,6 +147,32 @@ void findSquaresBinary(const Mat& image,  vector<vector<Point> >& squares)
             }
 }
 
+double maxRectArea = 25000;
+double minRectArea = 2000;
+double maxHWRatio = 0.9;
+double minHWRatio = 0.5;
+void findRects(Mat image,vector<vector<Point>>& squares)
+{
+    squares.clear();
+    vector<vector<Point>> contours;
+    findContours(image, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_TC89_L1);
+   // cout<<"contours size "<<contours.size()<<endl;
+    for(int i = 0;i<contours.size();i++)
+    {
+        Rect temp = boundingRect(contours[i]);
+        double HWRatio = (double)temp.height/(double)temp.width;
+        if(HWRatio>minHWRatio && HWRatio <maxHWRatio)
+        {
+            if(temp.area()>minRectArea && temp.area()<maxRectArea)
+            {
+                    squares.push_back(contours[i]);
+            }
+        }
+        //cout<< i <<": height: "<<temp.height <<" width: "<<temp.width<<" ration: "<<HWRatio<<" size: "<<temp.area()<<endl;
+    }
+    cout<<"possible rects : "<<squares.size()<<endl;
+}
+
 // the function draws all the squares in the image
 static void drawSquares(Mat image, const vector<vector<Point> >& squares)
 {
@@ -202,7 +228,7 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
 //#if debug
         cout<< "size of "<< i << "  "<<minRect.size.width << " , "<<minRect.size.height<<endl;
 //#endif
-        if(minRect.size.height<70||minRect.size.width<35)//||minRect.size.width>minRect.size.height*0.8)
+        if(minRect.size.height<30||minRect.size.width<30)//||minRect.size.width>minRect.size.height*0.8)
         {
             continue;
         }

@@ -18,41 +18,39 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     waitKey(1);
     imshow("R-G",R_G);
     waitKey(1);
-    result = R_B & R_G;
-    threshold(result,result,90,255,THRESH_BINARY);
-    morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
-    morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(5,5)));
-    morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    result.copyTo(this->binary);
-    // imshow("R",Red);
-    // waitKey(1);
-    // imshow("G",Green);
-    // waitKey(1);
-    // imshow("B",Blue);
-    // waitKey(1);
-    // double redMean = mean(Red)[0];
-    // double blueMean = mean(Blue)[0];
-    // double greenMean = mean(Green)[0];
-    // for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
-    // {
-    //     for(int j = 0; j < Red.cols;j++)
-    //     {
-    //         if(Red.at<uchar>(i,j)>redMean*1.1 && Red.at<uchar>(i,j)>Blue.at<uchar>(i,j) && Red.at<uchar>(i,j)>Green.at<uchar>(i,j) && Blue.at<uchar>(i,j)<blueMean*1.2 && Green.at<uchar>(i,j)<greenMean*1.2 )
-    //         {
-    //             Red.at<uchar>(i,j) = 255;
-    //         }
-    //         else
-    //         {
-    //             Red.at<uchar>(i,j) = 0;
-    //         }
-    //     }
-    // }
-    // threshold(Red,Red,200,255,THRESH_BINARY);
-    //  morphologyEx(Red,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    // // morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
-    // // morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    // result = R_B & R_G;
+    // threshold(result,result,90,255,THRESH_BINARY);
     
+    
+    imshow("R",Red);
+    waitKey(1);
+    imshow("G",Green);
+    waitKey(1);
+    imshow("B",Blue);
+    waitKey(1);
+    double redMean = mean(Red)[0];
+    double blueMean = mean(Blue)[0];
+    double greenMean = mean(Green)[0];
+    for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
+    {
+        for(int j = 0; j < Red.cols;j++)
+        {
+            if(Red.at<uchar>(i,j)>redMean*1.3 && Red.at<uchar>(i,j)>=Blue.at<uchar>(i,j) && Red.at<uchar>(i,j)>=Green.at<uchar>(i,j) && Blue.at<uchar>(i,j)<blueMean*1.2 && Green.at<uchar>(i,j)<greenMean*1.2 )
+            {
+                Red.at<uchar>(i,j) = 255;
+            }
+            else
+            {
+                Red.at<uchar>(i,j) = 0;
+            }
+        }
+    }
+    threshold(Red,Red,200,255,THRESH_BINARY);
+   // morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    // morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
+    // morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(5,5)));
+    // morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    Red.copyTo(this->binary);
 
 #if show1
     imshow("result",result);
