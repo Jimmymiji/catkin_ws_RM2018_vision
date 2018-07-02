@@ -118,8 +118,14 @@ void ImgCP::ImageConsumer(int argc, char** argv)
     start = clock();
     cout<<"start loop"<<endl;
     Master mst;
+    ofstream myfile;
+    myfile.open("record.txt");
     while(true)
     {
+        if(cIdx>1500)
+        {
+            break;
+        }
         end = clock();
         cout<<"hz "<<1/((double)(end-start)/CLOCKS_PER_SEC)<<endl;
         while (pIdx - cIdx == 0);
@@ -130,9 +136,10 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         //imshow("input",img);
 		unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
 		++cIdx;
+        myfile<<to_string(cIdx)<<endl;
         imshow("original",img);
         waitKey(3);
-       // thread t3(DigitThread,img1,mst.currentDigits);
+        //thread t3(DigitThread,img1,mst.currentDigits);
         //DigitThread(img1,mst.currentDigits);
         Mat image;
         cvtColor(img, image, CV_BGR2GRAY);
@@ -200,6 +207,12 @@ void ImgCP::ImageConsumer(int argc, char** argv)
             string filename = "MNISTRecord/pic" + to_string(cIdx)+".png";
             //imwrite(filename,img);
             //MR.recordResults(cIdx);
+            myfile<<"*********"<<to_string(cIdx)<<"  ";
+            for(int i = 1;i<10;i++)
+            {
+                myfile<<to_string(i)<<","<<to_string(MR.mnistLabels[i])<<" | ";
+            }
+            myfile<<endl;
 	        if(!ag.setImageTargetS(input,img))
 	        {
                 cout<< "setImageTarget gg " <<endl;
@@ -225,5 +238,6 @@ void ImgCP::ImageConsumer(int argc, char** argv)
             
                 //waitKey(20);
      }
+    myfile.close();
 }
 
