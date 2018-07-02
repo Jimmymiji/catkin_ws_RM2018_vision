@@ -241,7 +241,7 @@ bool MnistRecognizer::classify()
 	return false;
 	
 }
-bool MnistRecognizer::classify()
+bool MnistRecognizer::classify2()
 {
 	if(mnistImgs.size()!=9)
 		return false;
@@ -254,28 +254,82 @@ bool MnistRecognizer::classify()
     }
 	int iterCount = 0;
 	bool conflict = false;
-	do{
-		for(int i = 0; i <9;i++)
+	for(int i = 0; i<9;i++)
+	{
+		pair<double,int> temp;
+		temp = make_pair(scores[i].at(0).first,i);
+		int l = scores[i].at(0).second;
+		if(MNISTLabels.count(l))
 		{
-			pair<double,int> temp;
-			temp = make_pair(scores[i].at(iterCount).first,i);
-			int l = scores[i].at(iterCount).second;
-			if(MNISTLabels.count(l))
+			if(MNISTLabels[l].first>temp.first)
 			{
-				conflict = true;
+				continue;
 			}
 			else
 			{
 				MNISTLabels[l] = temp;
 			}
 		}
-		iterCount++;
-		if(iterCount >= 4)
+		else
 		{
-			break;
+			MNISTLabels[l] = temp;
 		}
-	}while(conflict);
-
+	}
+	bool checkBoxLabel[9] = {false,false,false,false,false,false,false,false,false};
+	bool checkBoxIndex[9] = {false,false,false,false,false,false,false,false,false};
+	int missingCountLabel = 0;
+	int missingCountIndex = 0;
+	int missingLabel = -1;
+	int missingIndex = -1;
+	for(int i = 1; i<10;i++)
+	{
+		if(MNISTLabels.count(i))
+		{
+			checkBoxLabel[i-1] = true;
+			checkBoxIndex[MNISTLabels[i].second] = true;
+		}
+	}
+	for(int i = 0;i<9;i++)
+	{
+		if(!checkBoxIndex[i])
+		{
+			missingCountIndex++;
+			missingIndex = i;
+		}
+		if(!checkBoxLabel[i])
+		{	
+			missingCountLabel++;
+			missingLabel = i + 1;
+		}
+	}
+	if(missingCountLabel > 1 || missingCountIndex > 1)
+	{
+		return false;
+	}
+	else if (missingCountLabel == 0 && missingCountIndex == 0)
+	{
+		M2m();
+		return true;
+	}
+	else if(missingCountLabel == 1 && missingCountIndex == 1)
+	{
+		pair<double,int> temp;
+		temp = make_pair(100,missingIndex);
+		MNISTLabels[missingLabel] = temp;
+		M2m();
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+void MnistRecognizer:: M2m()
+{
+	for(int i = 1; i<10;i++)
+	{
+		mnistLabels.insert(pair<int,int>(i,MNISTLabels[i].second));
+	}
 }
 void MnistRecognizer:: recordResults(int idx)
 {
@@ -284,16 +338,26 @@ void MnistRecognizer:: recordResults(int idx)
   	myfile.open (filename);
 	myfile<< " -------------------"<<idx<<"------------"<<endl;
   	for (int i = 0; i< 9; i++)
-	  {
+	{
 		  for (int j = 0;j<9;j++)
 		  {
 			  myfile<<"("<<scores[i][j].first<<" , "<<scores[i][j].second<<")  ";
 		  }
 		  myfile<<endl;
-	  }
+	}
+	myfile<<"*************"<<endl;
+	myfile<<"label, index"<<endl;
+	for(int i = 1; i< 10;i++)
+	{
+		myfile<<to_string(i)<<" , "<<to_string(mnistLabels[i])<<endl;
+	}
+	myfile<<"----------------"<<endl;
+	for(int i = 0;i<10;i++)
+	{
+		myfile<<to_string(i)<<" , "<<to_string(MNISTLabels[i].second)<<endl;
+	}
   	myfile.close();
 	return;
-
 }
 
 

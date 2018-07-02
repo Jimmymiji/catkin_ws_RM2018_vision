@@ -22,12 +22,14 @@ public:
 	Mat kmeanPreprocess( Mat& inputImg);
 	bool fitMnist( Mat& inputImg, Mat& resImg);
 	bool classify();
+	bool classify2();
 	void clear();
 	void recordResults(int idx);
+	void M2m();
 	network<sequential> nn;
  	vector<vector<pair<double,int>>> scores;// 9（class） x 9(scores of one img for each class ) x <score,label>
     map<int, int> mnistLabels; // <label,index> 
-    map<int,pair<double,int>> MINSTLabels; // <label,<score,index>>
+    map<int,pair<double,int>> MNISTLabels; // <label,<score,index>>
 	RNG rng; // random number generator
 	string Model_Path ;
 

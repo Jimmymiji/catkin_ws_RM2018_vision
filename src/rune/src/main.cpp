@@ -22,7 +22,7 @@ int RiLowV = 250;
 int RiHighV = 255;
 int main(int argc, char** argv)
 {
-    Settings s("setting.xml","1.yml");
+    Settings s("setting.xml","2.yml");
     if(!s.load())
     {
 	cout<<"where is my setting file?"<<endl;        

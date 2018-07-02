@@ -285,6 +285,8 @@ Settings.h
 /home/jimmy/catkin_ws/src/rune/src/Settings.h
 angleSol.h
 /home/jimmy/catkin_ws/src/rune/src/angleSol.h
+master.h
+/home/jimmy/catkin_ws/src/rune/src/master.h
 ros/ros.h
 /home/jimmy/catkin_ws/src/rune/src/ros/ros.h
 geometry_msgs/Point.h
@@ -421,6 +423,10 @@ thread
 -
 ImgCP.hpp
 /home/jimmy/catkin_ws/src/rune/src/ImgCP.hpp
+
+/home/jimmy/catkin_ws/src/rune/src/master.h
+iostream
+-
 
 /home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/activation_layer.h
 tiny_dnn/layers/layer.h

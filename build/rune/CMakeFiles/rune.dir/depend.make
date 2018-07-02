@@ -174,6 +174,7 @@ rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: /home/jimmy/catkin_ws/src/rune/src/Set
 rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: /home/jimmy/catkin_ws/src/rune/src/angleSol.h
 rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: /home/jimmy/catkin_ws/src/rune/src/define.hpp
 rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: /home/jimmy/catkin_ws/src/rune/src/findRect.hpp
+rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: /home/jimmy/catkin_ws/src/rune/src/master.h
 rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: /home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/activation_layer.h
 rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: /home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/elu_layer.h
 rune/CMakeFiles/rune.dir/src/ImgCP.cpp.o: /home/jimmy/catkin_ws/src/rune/tiny_dnn/activations/leaky_relu_layer.h
