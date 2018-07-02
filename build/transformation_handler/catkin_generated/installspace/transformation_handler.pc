@@ -1,8 +1,0 @@
-prefix=/home/jimmy/catkin_ws/install
-
-Name: transformation_handler
-Description: Description of transformation_handler
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/jimmy/catkin_ws/install/lib 
-Requires: roscpp geometry_msgs

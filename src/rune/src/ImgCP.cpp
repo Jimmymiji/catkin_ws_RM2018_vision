@@ -140,7 +140,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         imshow("original",img);
         waitKey(3);
         //thread t3(DigitThread,img1,mst.currentDigits);
-        //DigitThread(img1,mst.currentDigits);
+        DigitThread(img1,mst.currentDigits);
         Mat image;
         cvtColor(img, image, CV_BGR2GRAY);
         Mat binary;
@@ -162,14 +162,14 @@ void ImgCP::ImageConsumer(int argc, char** argv)
 	        rune_pub.publish(target);
 	        ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
             cout<<"not enough mnists"<<endl;
-           // mst.Fial();
+            mst.Fail();
             continue;
         }
         bool outOfImg = false;
         MnistRecognizer MR;
         for(int i = 0; i<9;i++)
         {
-            cout<<"!"<<endl;
+             cout<<"!"<<endl;
             Rect t = rects[i].boundingRect();
             if(!(0 <= t.x && 0 <= t.width && t.x + t.width <= img.cols && 0 <= t.y && 0 <= t.height && t.y + t.height <= img.rows))
             {
@@ -181,7 +181,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         if(outOfImg)
         {
             waitKey(10);
-            //mst.Fail();
+            mst.Fail();
             continue;
         }
         if(MR.classify2())
@@ -189,11 +189,16 @@ void ImgCP::ImageConsumer(int argc, char** argv)
             for(int i = 1;i<=9;i++)
             {
                 putText(img,to_string(i),rects[MR.mnistLabels[i]].center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
-                //mst.currentMNIST.push_back(MR.mnistLabels[i]);
+                mst.currentMNIST.push_back(MR.mnistLabels[i]);
             }
             imshow("a",img);
-           // int hitIndex = mst.whichToShoot();
-            int hitIndex = MR.mnistLabels[5];
+            int hitIndex = mst.whichToShoot();
+            if(hitIndex == -1)
+            {
+                mst.Fail();
+                continue;
+            }
+            //int hitIndex = MR.mnistLabels[5];
             Rect t = rects[hitIndex].boundingRect();
             AngleSolver ag;
             ag.setDistortionCoefficients(s);
@@ -232,7 +237,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         {
                 //MR.reflect(cIdx);             
                 //waitKey(20);
-            //mst.Fail();
+            mst.Fail();
             continue;
         }
             
