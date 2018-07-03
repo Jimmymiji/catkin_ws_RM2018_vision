@@ -1,16 +1,17 @@
 #include "RMVideoCapture.hpp"
 #include "ImgCP.hpp"
-#include <opencv2/core/core.hpp>  
-#include <opencv2/highgui/highgui.hpp>  
-#include <opencv2/imgproc/imgproc.hpp>  
-#include <iostream>  
-#include <cmath>
+    #include <opencv2/core/core.hpp>  
+    #include <opencv2/highgui/highgui.hpp>  
+    #include <opencv2/imgproc/imgproc.hpp>  
+    #include <iostream>  
+    #include <cmath>
 #include "findRect.hpp"
 #include "MnistRecognizer.h"
 #include "DigitRecognizer.h"
 #include "Settings.h"
 #include "angleSol.h"
 #include "master.h"
+#include "LRBlock.h"
 #include "ros/ros.h"
 #include "geometry_msgs/Point.h"
 using namespace std;
@@ -120,6 +121,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
     Master mst;
     ofstream myfile;
     myfile.open("record.txt");
+    LRBlock lrb;
     while(true)
     {
         if(cIdx>1500)
@@ -133,14 +135,14 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         Mat img,img1;
 		data[cIdx % BUFFER_SIZE].img.copyTo(img);
         data[cIdx % BUFFER_SIZE].img.copyTo(img1);
-        //imshow("input",img);
 		unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
 		++cIdx;
         myfile<<to_string(cIdx)<<endl;
         imshow("original",img);
         waitKey(3);
+        mst.blueCount = lrb.countBlueBlock(img);
         //thread t3(DigitThread,img1,mst.currentDigits);
-        DigitThread(img1,mst.currentDigits);
+       // DigitThread(img1,mst.currentDigits);
         Mat image;
         cvtColor(img, image, CV_BGR2GRAY);
         Mat binary;
@@ -159,7 +161,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
             target.x = -1;
 	        target.y = -1;
 	        target.z = -1;
-	        rune_pub.publish(target);
+	        //rune_pub.publish(target);
 	        ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
             cout<<"not enough mnists"<<endl;
             mst.Fail();
@@ -192,13 +194,12 @@ void ImgCP::ImageConsumer(int argc, char** argv)
                 mst.currentMNIST.push_back(MR.mnistLabels[i]);
             }
             imshow("a",img);
-            int hitIndex = mst.whichToShoot();
+            int hitIndex = mst.whichToShootSemiAuto(myfile,5);
             if(hitIndex == -1)
             {
                 mst.Fail();
                 continue;
             }
-            //int hitIndex = MR.mnistLabels[5];
             Rect t = rects[hitIndex].boundingRect();
             AngleSolver ag;
             ag.setDistortionCoefficients(s);
