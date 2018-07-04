@@ -220,13 +220,13 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
     rects.clear();
     // filtering rects by size & height/width ratio
 //#if debug
-    cout<< "_________________________"<<endl;
+    //cout<< "_________________________"<<endl;
 //#endif
     for(int i = 0; i < squares.size();i++) 
     {
         RotatedRect minRect = minAreaRect(squares[i]);
 //#if debug
-        cout<< "size of "<< i << "  "<<minRect.size.width << " , "<<minRect.size.height<<endl;
+        //cout<< "size of "<< i << "  "<<minRect.size.width << " , "<<minRect.size.height<<endl;
 //#endif
         if(minRect.size.height<30||minRect.size.width<30)//||minRect.size.width>minRect.size.height*0.8)
         {
@@ -238,11 +238,11 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
         }
     }
 //#if debug
-    cout<< "_________________________"<<endl;
+    //cout<< "_________________________"<<endl;
 
     if(rects.size()<9)
     {
-        cout<<"------rects.size()<9"<<endl;
+        //cout<<"------rects.size()<9"<<endl;
     }
 //#endif
     sort(rects.begin(),rects.end(),ascendingX);
@@ -265,7 +265,7 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
 //#if debug
     if(rects.size()<9)
     {
-        cout<<"rects.size()<9"<<endl;
+        //cout<<"rects.size()<9"<<endl;
     }
 //#endif
     if(rects.size()>0)
@@ -354,7 +354,7 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
         if(RWD.size()<9)
         {
 //#if debug            
-            cout<<"RWD.size()<9"<<endl;
+            //cout<<"RWD.size()<9"<<endl;
 //#endif
             return false;
         }
@@ -387,9 +387,9 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
         sort(rects.begin()+3,rects.begin()+6,ascendingX);
         sort(rects.begin()+6,rects.begin()+9,ascendingX);
 //#if debug
-        cout<<"1 , 2 , 3"<<endl;
-        cout<<"4 , 5 , 6"<<endl;
-        cout<<"7 , 8 , 9"<<endl;
+        // cout<<"1 , 2 , 3"<<endl;
+        // cout<<"4 , 5 , 6"<<endl;
+        // cout<<"7 , 8 , 9"<<endl;
 //#endif
         return true;
     }

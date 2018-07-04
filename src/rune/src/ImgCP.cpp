@@ -1,10 +1,10 @@
 #include "RMVideoCapture.hpp"
 #include "ImgCP.hpp"
-    #include <opencv2/core/core.hpp>  
-    #include <opencv2/highgui/highgui.hpp>  
-    #include <opencv2/imgproc/imgproc.hpp>  
-    #include <iostream>  
-    #include <cmath>
+#include <opencv2/core/core.hpp>  
+#include <opencv2/highgui/highgui.hpp>  
+#include <opencv2/imgproc/imgproc.hpp>  
+#include <iostream>  
+#include <cmath>
 #include "findRect.hpp"
 #include "MnistRecognizer.h"
 #include "DigitRecognizer.h"
@@ -162,7 +162,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
 	        target.y = -1;
 	        target.z = -1;
 	        //rune_pub.publish(target);
-	        ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
+	        //ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
             cout<<"not enough mnists"<<endl;
             mst.Fail();
             continue;
@@ -200,7 +200,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
                 mst.Fail();
                 continue;
             }
-            Rect t = rects[hitIndex].boundingRect();
+            Rect t = rects[MR.mnistLabels[hitIndex]].boundingRect();
             AngleSolver ag;
             ag.setDistortionCoefficients(s);
             ag.setCameraMAtrix(s);
@@ -227,6 +227,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
             {
                 ag.getRotation_Translation_Matrix();
 	            ag.getPositionInfo(target.x,target.y,target.z);
+                myfile<<"++++++++++++++++++++++++++++++++++++++++"<<to_string(target.x)<<" "<<to_string(target.y)<<" "<<to_string(target.z)<<endl;
                 rune_pub.publish(target);
                	ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
                 waitKey(shootingDelay);

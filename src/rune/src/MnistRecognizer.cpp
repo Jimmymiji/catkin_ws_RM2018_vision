@@ -60,10 +60,10 @@ vector<pair<double, int> > MnistRecognizer::recognize_primary( Mat& inputImg)
 	kmeanPreprocess(inputImg).copyTo(kmeanImg);
 	fitMnist(kmeanImg, img);
 	*/
-    cout<< -1;
+   // cout<< -1;
 	convert_image(inputImg, -1.0, 1.0, 28, 28, data);
 	// recognize
-	cout<<0;
+	//cout<<0;
 	auto res = nn.predict(data);
 	vector<pair<double, int>> scores;
 	// sort & print
@@ -72,7 +72,7 @@ vector<pair<double, int> > MnistRecognizer::recognize_primary( Mat& inputImg)
 		scores.emplace_back(rescale<tanh_layer>(res[i]), i);
 		cout<<i;
 	}
-    cout<<endl;
+    //cout<<endl;
 	// sort(scores.begin(), scores.end(), [](const pair<double, int>& a,const pair<double, int>& b){return a.first > b.first;});
 	sort(scores.begin(), scores.end(), greater<pair<double, int> >());
 	return scores;
@@ -148,11 +148,11 @@ bool MnistRecognizer::fitMnist( Mat& inputImg, Mat& resImg)
 
 int MnistRecognizer::recognize( Mat& img)
 {
-    cout<<"Mat kimg = kmeanPreprocess(img);"<<endl;
+    //cout<<"Mat kimg = kmeanPreprocess(img);"<<endl;
     Mat kimg = kmeanPreprocess(img);
-	cout<<" fitMnist(kimg,img);"<<endl;
+	//cout<<" fitMnist(kimg,img);"<<endl;
     fitMnist(kimg,img);
-	cout<<"recognize_primary(img).at(0).second;"<<endl;
+	//cout<<"recognize_primary(img).at(0).second;"<<endl;
 	return recognize_primary(img).at(0).second;
 }
 
@@ -220,7 +220,7 @@ bool MnistRecognizer::classify()
 		{
 			if(missingLabel != -1)// means we already have a missing label
 			{
-				cout<<"too many missing label"<<endl;
+				//cout<<"too many missing label"<<endl;
 				return false;
 			}
 			missingLabel = i;

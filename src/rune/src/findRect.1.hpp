@@ -186,12 +186,12 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
     // too few squares
     if(squares.size()<9) 
     {
-        cout<<"squares.size()<9"<<endl;
+        //cout<<"squares.size()<9"<<endl;
         return false;
     }
     rects.clear();
     // filtering rects by size & height/width ratio
-    cout<< "_________________________"<<endl;
+    //cout<< "_________________________"<<endl;
     for(int i = 0; i < squares.size();i++) 
     {
         RotatedRect minRect = minAreaRect(squares[i]);
@@ -205,11 +205,11 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
             rects.push_back(minRect);
         }
     }
-    cout<< "_________________________"<<endl;
+    //cout<< "_________________________"<<endl;
 
     if(rects.size()<9)
     {
-        cout<<"------rects.size()<9"<<endl;
+        //cout<<"------rects.size()<9"<<endl;
     }
     sort(rects.begin(),rects.end(),ascendingX);
     vector<RotatedRect>::iterator p = rects.begin();
@@ -230,7 +230,7 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
     // too few rects
     if(rects.size()<9)
     {
-        cout<<"rects.size()<9"<<endl;
+        //cout<<"rects.size()<9"<<endl;
     }
     sort(rects.begin(),rects.end(),[](RotatedRect& a, RotatedRect& b){return a.size.area() > b.size.area();});
     double Area= rects[3].size.area()*0.8;
@@ -311,7 +311,7 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
         rects.clear();
         if(RWD.size()<9)
         {
-            cout<<"RWD.size()<9"<<endl;
+            //cout<<"RWD.size()<9"<<endl;
             return false;
         }
         int count = 0;
@@ -342,9 +342,9 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
         sort(rects.begin(),rects.begin()+3,ascendingX);          
         sort(rects.begin()+3,rects.begin()+6,ascendingX);
         sort(rects.begin()+6,rects.begin()+9,ascendingX);
-        cout<<"1 , 2 , 3"<<endl;
-        cout<<"4 , 5 , 6"<<endl;
-        cout<<"7 , 8 , 9"<<endl;
+        // cout<<"1 , 2 , 3"<<endl;
+        // cout<<"4 , 5 , 6"<<endl;
+        // cout<<"7 , 8 , 9"<<endl;
 
         return true;
     }

@@ -69,10 +69,10 @@ void AngleSolver::setRealWorldTargetS(const Settings& setting)
 
 bool AngleSolver::setImageTargetS(vector<cv::Point2f> input,Mat& img)
 {
-	cout << "set Image target" << endl;
+	//cout << "set Image target" << endl;
 	if(input.size()!=4)
 	{	
-		cout<<"no valid input!"<<endl;
+		//cout<<"no valid input!"<<endl;
 		return false;
 	}	
 	Point2f vertices[4];
@@ -183,7 +183,8 @@ void AngleSolver:: sendAns(Mat& img)//show the distance in consloe
 	int d = sqrt(tx*tx+ty*ty+tz*tz); 
 	cout<<"distance: "<<d<<endl;
 	putText(img,to_string(d),Point(100,100),FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,0,255),3);
-	
+	imshow("fuck",img);
+	waitKey(1);
 }
  
 

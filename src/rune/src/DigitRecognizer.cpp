@@ -100,8 +100,8 @@ bool DigitRecognizer::findDigits()
     if(possibleTargetRects.size()<5)
     {
 #if debug
-        cout<<"original possibleTargetRects.size()<5"<<endl;
-        cout<< possibleTargetRects.size()<<endl;
+        //cout<<"original possibleTargetRects.size()<5"<<endl;
+        //cout<< possibleTargetRects.size()<<endl;
 #endif
         return false;
     }
@@ -176,7 +176,7 @@ bool DigitRecognizer::findDigits()
             rectangle(binary,*p,Scalar(255,255,255),1);
             p = possibleTargetRects.erase(p);
 #if debug
-            cout<<" erase(p) -1"<<endl;
+            //cout<<" erase(p) -1"<<endl;
 #endif
         }
         else
@@ -190,7 +190,7 @@ bool DigitRecognizer::findDigits()
     if(possibleTargetRects.size()<5)
     {
 #if debug
-        cout<<"possibleTargetRects.size()<5"<<endl;
+       //cout<<"possibleTargetRects.size()<5"<<endl;
 #endif
         return false;
     }
@@ -198,7 +198,7 @@ bool DigitRecognizer::findDigits()
     if(possibleTargetRects.size()==5)
     {   
 #if debug
-        cout<<" exactly 5"<<endl;
+        //cout<<" exactly 5"<<endl;
 #endif
         for(int i = 0; i<5;i++)
         {
@@ -219,7 +219,7 @@ bool DigitRecognizer::findDigits()
         if(center_idx < 2 || center_idx > (possibleTargetRects.size()-3))
         {
 #if debug
-                cout<<"enter_idx < 2 || center_idx > (possibleTargetRects.size()-3)"<<endl;
+                //cout<<"enter_idx < 2 || center_idx > (possibleTargetRects.size()-3)"<<endl;
 #endif            
             return false;
             /*
@@ -389,7 +389,7 @@ bool DigitRecognizer::getAns()
         morphologyEx(binary(targets[i]),a,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
         ans[i] = recognize(a);
         namedWindow(to_string(i), CV_WINDOW_NORMAL);  
-        cout<<"*" <<ans[i]<<endl;
+        //cout<<"*" <<ans[i]<<endl;
 	}
     for(int i = 0; i<5;i++)
     {
