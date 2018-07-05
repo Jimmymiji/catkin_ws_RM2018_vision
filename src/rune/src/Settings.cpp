@@ -22,7 +22,8 @@ void CameraSetting::read(const FileNode &node) //Read serialization for this cla
 
 	fs1["camera_matrix"] >> cameraMatrix;
 	fs1["distortion_coefficients"]>> distortionMatrix;
-
+	cout<<"camera matrix: "<<endl<<cameraMatrix;
+	cout<<"distortionMatrix: "<<endl<<distortionMatrix;
 	fs1.release();
 }
 void SmallRuneSetting::read(const FileNode &node) //Read serialization for this class

@@ -1,7 +1,7 @@
-#include <opencv2/core/core.hpp>  
-#include <opencv2/highgui/highgui.hpp>  
-#include <opencv2/imgproc/imgproc.hpp>  
-#include <iostream>  
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <iostream>
 #include <cmath>
 #include "Settings.h"
 #include <thread>
@@ -22,10 +22,10 @@ int RiLowV = 250;
 int RiHighV = 255;
 int main(int argc, char** argv)
 {
-    Settings s("setting.xml","2.yml");
+    Settings s("setting.xml","4.yml");
     if(!s.load())
     {
-	cout<<"where is my setting file?"<<endl;        
+	cout<<"where is my setting file?"<<endl;
 	return -1;
     }
     // #if PT
@@ -43,5 +43,5 @@ int main(int argc, char** argv)
     t1.join();
 	t2.join();
     // #endif
-	
+
 }

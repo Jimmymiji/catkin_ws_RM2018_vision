@@ -49,5 +49,3 @@ public:
 	std::string filename1, filename2;     // filename1 is the file for setting, filename2 is the file for seeting cameraMatrix & distortionMatrix
 	bool fileExist(const std::string &filename);
 };
-
-

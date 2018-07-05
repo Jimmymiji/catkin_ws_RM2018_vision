@@ -1,9 +1,9 @@
 #include "RMVideoCapture.hpp"
 #include "ImgCP.hpp"
-#include <opencv2/core/core.hpp>  
-#include <opencv2/highgui/highgui.hpp>  
-#include <opencv2/imgproc/imgproc.hpp>  
-#include <iostream>  
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <iostream>
 #include <cmath>
 #include "findRect.hpp"
 #include "MnistRecognizer.h"
@@ -40,13 +40,13 @@ void DigitThread(Mat img,vector<int>& ans)
        // cout<<"thread 3 end 2"<<endl;
         for(int i = 0; i<5;i++)
         {
-            cout<< "  "<< dt.ans[i];
+            //cout<< "  "<< dt.ans[i];
             ans.push_back(ans[i]);
         }
         //dt.recordResults(cIdx);
         return;
     }
-    
+
     //dt.recordResults(cIdx);
     return;
 }
@@ -71,7 +71,7 @@ void ImgCP::ImageProducer()
 		{
 			while (pIdx - cIdx >= BUFFER_SIZE);
 			Mat temp;
-			cap >> temp; 
+			cap >> temp;
 			resize(temp, temp, Size(640, 480), 0, 0, INTER_CUBIC);
 			temp.copyTo(data[pIdx % BUFFER_SIZE].img);
 			data[pIdx % BUFFER_SIZE].frame++;
@@ -82,7 +82,7 @@ void ImgCP::ImageProducer()
 	{
 		std::string cameraPath = "/dev/video";
         //const char* cp =  cameraPath + cameraNumber;
-        RMVideoCapture cap("/dev/video1", 3); 
+        RMVideoCapture cap("/dev/video0", 3);
 		cap.setVideoFormat(640, 480, 1);
 		//cap.setExposureTime(0, settings->cameraSetting.ExposureTime);//settings->exposure_time);
 		cap.startStream();
@@ -102,10 +102,10 @@ void ImgCP::ImageConsumer(int argc, char** argv)
 {
     cout<<"start"<<endl;
     while(pIdx == 0);
-    Settings s("setting.xml","1.yml");
+    Settings s("setting.xml","4.yml");
     if(!s.load())
     {
-	    cout<<"where is my setting file?"<<endl;        
+	    cout<<"where is my setting file?"<<endl;
 	    return ;
     }
     ros::init( argc, argv,"rune");
@@ -124,10 +124,10 @@ void ImgCP::ImageConsumer(int argc, char** argv)
     LRBlock lrb;
     while(true)
     {
-        if(cIdx>1500)
-        {
-            break;
-        }
+        // if(cIdx>1500)
+        // {
+        //     break;
+        // }
         end = clock();
         cout<<"hz "<<1/((double)(end-start)/CLOCKS_PER_SEC)<<endl;
         while (pIdx - cIdx == 0);
@@ -137,7 +137,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         data[cIdx % BUFFER_SIZE].img.copyTo(img1);
 		unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
 		++cIdx;
-        myfile<<to_string(cIdx)<<endl;
+        myfile<<"***********"<<to_string(cIdx)<<"********"<<endl;
         imshow("original",img);
         waitKey(3);
         mst.blueCount = lrb.countBlueBlock(img);
@@ -147,7 +147,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         cvtColor(img, image, CV_BGR2GRAY);
         Mat binary;
         double Mean = mean(image)[0];
-        threshold(image,binary,Mean*2.6,255,CV_THRESH_BINARY);                            
+        threshold(image,binary,Mean*2.6,255,CV_THRESH_BINARY);
         morphologyEx( binary,  binary, MORPH_ERODE, getStructuringElement(MORPH_RECT,Size(3,3)));
         morphologyEx( binary,  binary, MORPH_ERODE, getStructuringElement(MORPH_RECT,Size(3,3)));
         vector<vector<Point> > squares;
@@ -171,7 +171,6 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         MnistRecognizer MR;
         for(int i = 0; i<9;i++)
         {
-             cout<<"!"<<endl;
             Rect t = rects[i].boundingRect();
             if(!(0 <= t.x && 0 <= t.width && t.x + t.width <= img.cols && 0 <= t.y && 0 <= t.height && t.y + t.height <= img.rows))
             {
@@ -187,7 +186,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
             continue;
         }
         if(MR.classify2())
-        {   
+        {
             for(int i = 1;i<=9;i++)
             {
                 putText(img,to_string(i),rects[MR.mnistLabels[i]].center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
@@ -213,7 +212,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
             string filename = "MNISTRecord/pic" + to_string(cIdx)+".png";
             //imwrite(filename,img);
             //MR.recordResults(cIdx);
-            myfile<<"*********"<<to_string(cIdx)<<"  ";
+            myfile<<"fire : "<<to_string(cIdx)<<endl;
             for(int i = 1;i<10;i++)
             {
                 myfile<<to_string(i)<<","<<to_string(MR.mnistLabels[i])<<" | ";
@@ -225,26 +224,35 @@ void ImgCP::ImageConsumer(int argc, char** argv)
             }
             else
             {
-                ag.getRotation_Translation_Matrix();
+				myfile<<"cameraMatrix"<<ag.cameraMatrix<<endl;
+				myfile<<"distortionCoefficients"<<ag.distortionCoefficients<<endl;
+				ag.getRotation_Translation_Matrix();
+				myfile<<"target input: ("<<ag.targetInImage[0].x<<" , "<<ag.targetInImage[0].y<<") ("
+					  <<ag.targetInImage[1].x<<" , "<<ag.targetInImage[1].y<<") ("
+					  <<ag.targetInImage[2].x<<" , "<<ag.targetInImage[2].y<<") ("
+					  <<ag.targetInImage[3].x<<" , "<<ag.targetInImage[3].y<<") ("<<endl;
+
 	            ag.getPositionInfo(target.x,target.y,target.z);
-                myfile<<"++++++++++++++++++++++++++++++++++++++++"<<to_string(target.x)<<" "<<to_string(target.y)<<" "<<to_string(target.z)<<endl;
+                myfile<<"target result: "<<to_string(target.x)<<" "<<to_string(target.y)<<" "<<to_string(target.z)<<endl;
                 rune_pub.publish(target);
                	ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
                 waitKey(shootingDelay);
 	            ag.sendAns(img);
+				string filename = "pic" + to_string(cIdx)+".png";
+	            imwrite(filename,img);
+
                 failure = false;
             }
         }
         else
         {
-                //MR.reflect(cIdx);             
+                //MR.reflect(cIdx);
                 //waitKey(20);
             mst.Fail();
             continue;
         }
-            
+
                 //waitKey(20);
      }
     myfile.close();
 }
-

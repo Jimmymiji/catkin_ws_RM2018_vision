@@ -13,7 +13,7 @@ double rescale(double x)
 
 bool hasKey(map<int,int> m, int key)
 {
-	return m.find(key) != m.end(); 
+	return m.find(key) != m.end();
 }
 void convert_image(cv::Mat img,
                    double minv,
@@ -70,7 +70,7 @@ vector<pair<double, int> > MnistRecognizer::recognize_primary( Mat& inputImg)
 	for (int i = 1; i < 10; i++)
 	{
 		scores.emplace_back(rescale<tanh_layer>(res[i]), i);
-		cout<<i;
+		//cout<<i;
 	}
     //cout<<endl;
 	// sort(scores.begin(), scores.end(), [](const pair<double, int>& a,const pair<double, int>& b){return a.first > b.first;});
@@ -239,7 +239,7 @@ bool MnistRecognizer::classify()
 		}
 	}
 	return false;
-	
+
 }
 bool MnistRecognizer::classify2()
 {
@@ -297,7 +297,7 @@ bool MnistRecognizer::classify2()
 			missingIndex = i;
 		}
 		if(!checkBoxLabel[i])
-		{	
+		{
 			missingCountLabel++;
 			missingLabel = i + 1;
 		}
@@ -359,6 +359,3 @@ void MnistRecognizer:: recordResults(int idx)
   	myfile.close();
 	return;
 }
-
-
-

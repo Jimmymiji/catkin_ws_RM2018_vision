@@ -60,7 +60,7 @@ void AngleSolver::setRealWorldTargetS(const Settings& setting)
 {
     int width =  setting.smallRuneSetting.width;
 	int height = setting.smallRuneSetting.height;
-	
+
 	targetInWorld.push_back(Point3f(0,0,0));
 	targetInWorld.push_back(Point3f(width,0,0));
 	targetInWorld.push_back(Point3f(0,height, 0));
@@ -71,13 +71,13 @@ bool AngleSolver::setImageTargetS(vector<cv::Point2f> input,Mat& img)
 {
 	//cout << "set Image target" << endl;
 	if(input.size()!=4)
-	{	
+	{
 		//cout<<"no valid input!"<<endl;
 		return false;
-	}	
+	}
 	Point2f vertices[4];
 	int i = 0;
-	for(vector<cv::Point2f>::iterator p = input.begin();p<input.end();p++)		
+	for(vector<cv::Point2f>::iterator p = input.begin();p<input.end();p++)
 	{
         vertices[i] = *p;
         i++;
@@ -117,7 +117,7 @@ bool AngleSolver::setImageTargetS(vector<cv::Point2f> input,Mat& img)
 
 void AngleSolver::getRotation_Translation_Matrix()
 {
-	solvePnP(targetInWorld, targetInImage, cameraMatrix, distortionCoefficients, rotationMatrix, translationMatrix, false, CV_P3P);
+	solvePnP(targetInWorld, targetInImage, cameraMatrix, distortionCoefficients, rotationMatrix, translationMatrix);
 	//solvePnP(targetInWorld, targetInImage, cameraMatrix, distortionCoefficients, rotationMatrix, translationMatrix, false, CV_ITERATIVE);//
 	//solvePnP(targetInWorld, targetInImage, cameraMatrix, distortionCoefficients, rotationMatrix, translationMatrix, false, CV_EPNP);//
 }
@@ -180,11 +180,10 @@ void AngleSolver:: sendAns(Mat& img)//show the distance in consloe
 {
 	cout << "tx: " << this->tx << endl << "ty: " << this->ty << endl << "tz: " << this->tz << endl << "------" << endl;
     cout << "Rx: " << this->Rx << endl << "Ry: " << this->Ry << endl << "Rz: " << this->Rz << endl << "-----------------" << endl;
-	int d = sqrt(tx*tx+ty*ty+tz*tz); 
+	int d = sqrt(tx*tx+ty*ty+tz*tz);
+	cout << "x:"<<this->tx << "y:"<<this->ty<<"z:"<<this->tz<<endl;
 	cout<<"distance: "<<d<<endl;
 	putText(img,to_string(d),Point(100,100),FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,0,255),3);
 	imshow("fuck",img);
 	waitKey(1);
 }
- 
-
