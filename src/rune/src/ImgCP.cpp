@@ -137,7 +137,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         data[cIdx % BUFFER_SIZE].img.copyTo(img1);
 		unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
 		++cIdx;
-        myfile<<"***********"<<to_string(cIdx)<<"********"<<endl;
+        // myfile<<"***********"<<to_string(cIdx)<<"********"<<endl;
         imshow("original",img);
         waitKey(3);
         mst.blueCount = lrb.countBlueBlock(img);
@@ -212,34 +212,34 @@ void ImgCP::ImageConsumer(int argc, char** argv)
             string filename = "MNISTRecord/pic" + to_string(cIdx)+".png";
             //imwrite(filename,img);
             //MR.recordResults(cIdx);
-            myfile<<"fire : "<<to_string(cIdx)<<endl;
-            for(int i = 1;i<10;i++)
-            {
-                myfile<<to_string(i)<<","<<to_string(MR.mnistLabels[i])<<" | ";
-            }
-            myfile<<endl;
+            // myfile<<"fire : "<<to_string(cIdx)<<endl;
+            // for(int i = 1;i<10;i++)
+            // {
+            //     myfile<<to_string(i)<<","<<to_string(MR.mnistLabels[i])<<" | ";
+            // }
+            // myfile<<endl;
 	        if(!ag.setImageTargetS(input,img))
 	        {
                 cout<< "setImageTarget gg " <<endl;
             }
             else
             {
-				myfile<<"cameraMatrix"<<ag.cameraMatrix<<endl;
-				myfile<<"distortionCoefficients"<<ag.distortionCoefficients<<endl;
+				// myfile<<"cameraMatrix"<<ag.cameraMatrix<<endl;
+				// myfile<<"distortionCoefficients"<<ag.distortionCoefficients<<endl;
 				ag.getRotation_Translation_Matrix();
-				myfile<<"target input: ("<<ag.targetInImage[0].x<<" , "<<ag.targetInImage[0].y<<") ("
-					  <<ag.targetInImage[1].x<<" , "<<ag.targetInImage[1].y<<") ("
-					  <<ag.targetInImage[2].x<<" , "<<ag.targetInImage[2].y<<") ("
-					  <<ag.targetInImage[3].x<<" , "<<ag.targetInImage[3].y<<") ("<<endl;
+				// myfile<<"target input: ("<<ag.targetInImage[0].x<<" , "<<ag.targetInImage[0].y<<") ("
+				// 	  <<ag.targetInImage[1].x<<" , "<<ag.targetInImage[1].y<<") ("
+				// 	  <<ag.targetInImage[2].x<<" , "<<ag.targetInImage[2].y<<") ("
+				// 	  <<ag.targetInImage[3].x<<" , "<<ag.targetInImage[3].y<<") ("<<endl;
 
 	            ag.getPositionInfo(target.x,target.y,target.z);
-                myfile<<"target result: "<<to_string(target.x)<<" "<<to_string(target.y)<<" "<<to_string(target.z)<<endl;
+                // myfile<<"target result: "<<to_string(target.x)<<" "<<to_string(target.y)<<" "<<to_string(target.z)<<endl;
                 rune_pub.publish(target);
                	ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
                 waitKey(shootingDelay);
 	            ag.sendAns(img);
 				string filename = "pic" + to_string(cIdx)+".png";
-	            imwrite(filename,img);
+	            // imwrite(filename,img);
 
                 failure = false;
             }
