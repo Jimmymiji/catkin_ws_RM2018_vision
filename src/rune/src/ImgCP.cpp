@@ -130,7 +130,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         myfile<<to_string(cIdx)<<" : end0 - start "<<(double)(end0-start)/CLOCKS_PER_SEC<<endl;
         Mat img,img1;
 		data[cIdx % BUFFER_SIZE].img.copyTo(img);
-        //data[cIdx % BUFFER_SIZE].img.copyTo(img1);
+        data[cIdx % BUFFER_SIZE].img.copyTo(img1);
 		unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
 		++cIdx;
         // myfile<<"***********"<<to_string(cIdx)<<"********"<<endl;
@@ -153,7 +153,8 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         vector<vector<Point> > squares;
         //imshow("binary",binary);
         findRects(binary,squares);
-        //drawSquares(img1,squares);
+        drawSquares(img1,squares);
+        waitKey(1);
         vector<RotatedRect> rects;
         clock_t end1 = clock();
         myfile<<to_string(cIdx)<<" : end1 - start "<<(double)(end1-start)/CLOCKS_PER_SEC<<endl;
@@ -187,11 +188,11 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         }
         if(MR.classify2())
         {
-            // for(int i = 1;i<=9;i++)
-            // {
+            for(int i = 1;i<=9;i++)
+            {
             //     putText(img,to_string(i),rects[MR.mnistLabels[i]].center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
-            //     mst.currentMNIST.push_back(MR.mnistLabels[i]);
-            // }
+                    mst.currentMNIST.push_back(MR.mnistLabels[i]);
+            }
             // imshow("a",img);
             // waitKey(1);
             int hitIndex = mst.whichToShootSemiAuto(myfile,5);
@@ -239,7 +240,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
                 rune_pub.publish(target);
                	ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
                 //waitKey(shootingDelay);
-	            //ag.sendAns(img);
+	            ag.sendAns(img);
 				//string filename = "pic" + to_string(cIdx)+".png";
 	            // imwrite(filename,img);
 

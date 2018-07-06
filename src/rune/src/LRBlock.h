@@ -46,9 +46,9 @@ class LRBlock
         {
             Rect temp = boundingRect(contours[i]);
             double HWRatio = (double)temp.height/(double)temp.width;
-            if(HWRatio>minHWRatio && HWRatio <maxHWRatio)
+            if(HWRatio>0.2 && HWRatio <0.6)
             {
-                if(temp.area()>minRectArea && temp.area()<maxRectArea)
+                if(temp.area()>50 && temp.area()<10000)
                 {
                    blueBoxCount++;
                 }
