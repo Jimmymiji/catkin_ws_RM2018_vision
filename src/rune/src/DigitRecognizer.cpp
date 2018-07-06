@@ -14,20 +14,18 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     Mat Green = channels.at(1);
     Mat R_B = Red - Blue;
     Mat R_G = Red - Green;
+#if show1
     imshow("R-B",R_B);
     waitKey(1);
     imshow("R-G",R_G);
     waitKey(1);
-    // result = R_B & R_G;
-    // threshold(result,result,90,255,THRESH_BINARY);
-    
-    
     imshow("R",Red);
     waitKey(1);
     imshow("G",Green);
     waitKey(1);
     imshow("B",Blue);
     waitKey(1);
+#endif
     double redMean = mean(Red)[0];
     double blueMean = mean(Blue)[0];
     double greenMean = mean(Green)[0];
@@ -105,7 +103,6 @@ bool DigitRecognizer::findDigits()
 #endif
         return false;
     }
-    // find the 3rd digit place by their distance 
     float **dist_map = new float *[possibleTargetRects.size()];
     int rsize = possibleTargetRects.size();
 	for (int i = 0; i < rsize; i++)
@@ -157,7 +154,6 @@ bool DigitRecognizer::findDigits()
 		delete[] dist_map[i];
 	}
 	delete[] dist_map;
-    // check if center place is valid judged by where we find soduku
    
     int x = possibleTargetRects[center_idx].x + possibleTargetRects[center_idx].width/2;
     int y = possibleTargetRects[center_idx].y + possibleTargetRects[center_idx].height/2;
@@ -222,25 +218,6 @@ bool DigitRecognizer::findDigits()
                 //cout<<"enter_idx < 2 || center_idx > (possibleTargetRects.size()-3)"<<endl;
 #endif            
             return false;
-            /*
-            int templ = center_idx -1 ;
-            int tempr = center_idx + 1;
-            int step;
-            if(templ < 0)
-            {
-                step = abs((possibleTargetRects[center_idx].x+possibleTargetRects[center_idx].width/2)-(possibleTargetRects[tempr].x+possibleTargetRects[tempr].width/2));
-            }
-            else if(tempr >= possibleTargetRects.size())
-            {
-                step = abs((possibleTargetRects[center_idx].x+possibleTargetRects[center_idx].width/2)-(possibleTargetRects[templ].x+possibleTargetRects[templ].width/2));
-            }
-            else
-            {
-                int stepl = abs((possibleTargetRects[center_idx].x+possibleTargetRects[center_idx].width/2)-(possibleTargetRects[templ].x+possibleTargetRects[templ].width/2));
-                int stepr = abs((possibleTargetRects[center_idx].x+possibleTargetRects[center_idx].width/2)-(possibleTargetRects[tempr].x+possibleTargetRects[tempr].width/2));
-                step = (stepl + stepr)/2;
-            }
-            */
         } 
         else
         {
@@ -302,7 +279,6 @@ int DigitRecognizer::recognize(Mat img)
             count++;
         }
     }
-    //cout<< ": "<<row1Count << " " << row2Count << " "<< col1Count <<endl;
     if(count == 6)//possibly 7
     {
         if(row1Count == 2 && col1Count == 2 && row2Count == 2)
@@ -369,7 +345,6 @@ bool DigitRecognizer::getAns()
 {
 	float data[] = {1, 0.1, 0,  0, 1, 0};
 	Mat affine(2, 3, CV_32FC1, data);
-    //warpAffine(digitTemplateImgs.at(i), digitTemplateImgs.at(i), affine, digitTemplateImgs.at(i).size());
     
     for (int i = 0;i < 5; i++)
 	{
@@ -388,8 +363,6 @@ bool DigitRecognizer::getAns()
         }
         morphologyEx(binary(targets[i]),a,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
         ans[i] = recognize(a);
-        namedWindow(to_string(i), CV_WINDOW_NORMAL);  
-        //cout<<"*" <<ans[i]<<endl;
 	}
     for(int i = 0; i<5;i++)
     {

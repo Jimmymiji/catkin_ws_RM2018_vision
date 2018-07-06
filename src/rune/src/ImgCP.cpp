@@ -26,21 +26,17 @@ struct ImageData {
 ImageData data[BUFFER_SIZE];
 void DigitThread(Mat img,vector<int>& ans)
 {
-    //cout<<"thread 3 running"<<endl;
     DigitRecognizer dt;
     dt.preprocessRGB(img,img);
     if(!dt.findDigits())
     {
-        //cout<<"thread 3 end 1"<<endl
         cout<<" no digit found "<<endl;
         return;
     }
     if(dt.getAns())
     {
-       // cout<<"thread 3 end 2"<<endl;
         for(int i = 0; i<5;i++)
         {
-            //cout<< "  "<< dt.ans[i];
             ans.push_back(ans[i]);
         }
         //dt.recordResults(cIdx);
@@ -56,13 +52,13 @@ void ImgCP::ImageProducer()
 	{
 		if (videoPath == NULL)
 		{
-			cout << "excuse me?" << endl;
+			cout << "no video found" << endl;
 			return;
 		}
 		VideoCapture cap(videoPath);
 		if (!cap.isOpened())
 		{
-			cout << "not open" << endl;
+			cout << "video not open" << endl;
 			return;
 		}
 		cap.set(CV_CAP_PROP_FRAME_WIDTH,640);
@@ -84,7 +80,6 @@ void ImgCP::ImageProducer()
         //const char* cp =  cameraPath + cameraNumber;
         RMVideoCapture cap("/dev/video0", 3);
 		cap.setVideoFormat(640, 480, 1);
-		//cap.setExposureTime(0, settings->cameraSetting.ExposureTime);//settings->exposure_time);
 		cap.startStream();
 		cap.info();
 		while(1)
@@ -110,7 +105,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
     }
     ros::init( argc, argv,"rune");
     ros::NodeHandle n;
-    ros::Publisher rune_pub = n.advertise<geometry_msgs::Point>("rune_locations",5);
+    ros::Publisher rune_pub = n.advertise<geometry_msgs::Point>("rune_locations",2);
     clock_t start, end;
     geometry_msgs::Point target;
     cout<<"ros publisher initialized"<<endl;
@@ -139,7 +134,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
 		++cIdx;
         // myfile<<"***********"<<to_string(cIdx)<<"********"<<endl;
         imshow("original",img);
-        waitKey(3);
+        waitKey(1);
         mst.blueCount = lrb.countBlueBlock(img);
         //thread t3(DigitThread,img1,mst.currentDigits);
        // DigitThread(img1,mst.currentDigits);
@@ -161,8 +156,6 @@ void ImgCP::ImageConsumer(int argc, char** argv)
             target.x = -1;
 	        target.y = -1;
 	        target.z = -1;
-	        //rune_pub.publish(target);
-	        //ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
             cout<<"not enough mnists"<<endl;
             mst.Fail();
             continue;
@@ -181,7 +174,6 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         }
         if(outOfImg)
         {
-            waitKey(10);
             mst.Fail();
             continue;
         }
@@ -193,6 +185,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
                 mst.currentMNIST.push_back(MR.mnistLabels[i]);
             }
             imshow("a",img);
+            waitKey(1);
             int hitIndex = mst.whichToShootSemiAuto(myfile,5);
             if(hitIndex == -1)
             {
@@ -236,7 +229,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
                 // myfile<<"target result: "<<to_string(target.x)<<" "<<to_string(target.y)<<" "<<to_string(target.z)<<endl;
                 rune_pub.publish(target);
                	ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
-                waitKey(shootingDelay);
+                //waitKey(shootingDelay);
 	            ag.sendAns(img);
 				string filename = "pic" + to_string(cIdx)+".png";
 	            // imwrite(filename,img);
