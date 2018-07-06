@@ -107,7 +107,7 @@ class Master
         bool mnistChaged = false;
         if(currentMNIST.size()!=9)
         {
-            record(file,false,-1);
+            //record(file,false,-1);
             currentMNIST.clear();
             return -1;
         }
@@ -122,13 +122,13 @@ class Master
         if(mnistChaged)
         {
             failureCount = 0;
-            record(file,false,target);
+            //record(file,false,target);
             clearVecor();
             return target;
         }
         else
         {
-            record(file,false,-1);
+            //record(file,false,-1);
             clearVecor();
             return -1;
         }   

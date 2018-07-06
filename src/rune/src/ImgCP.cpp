@@ -111,7 +111,6 @@ void ImgCP::ImageConsumer(int argc, char** argv)
     cout<<"ros publisher initialized"<<endl;
     int prevoiusSudokus[9];
     waitKey(100);
-    start = clock();
     cout<<"start loop"<<endl;
     Master mst;
     ofstream myfile;
@@ -125,17 +124,20 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         // }
         end = clock();
         cout<<"hz "<<1/((double)(end-start)/CLOCKS_PER_SEC)<<endl;
-        while (pIdx - cIdx == 0);
         start = clock();
+        while (pIdx - cIdx == 0);
+        clock_t end0 = clock();
+        myfile<<to_string(cIdx)<<" : end0 - start "<<(double)(end0-start)/CLOCKS_PER_SEC<<endl;
         Mat img,img1;
 		data[cIdx % BUFFER_SIZE].img.copyTo(img);
-        data[cIdx % BUFFER_SIZE].img.copyTo(img1);
+        //data[cIdx % BUFFER_SIZE].img.copyTo(img1);
 		unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
 		++cIdx;
         // myfile<<"***********"<<to_string(cIdx)<<"********"<<endl;
-        imshow("original",img);
-        waitKey(1);
-        mst.blueCount = lrb.countBlueBlock(img);
+        //imshow("original",img);
+        //waitKey(1);
+        //mst.blueCount = lrb.countBlueBlock(img);
+        
         //thread t3(DigitThread,img1,mst.currentDigits);
        // DigitThread(img1,mst.currentDigits);
         Mat image;
@@ -143,13 +145,18 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         Mat binary;
         double Mean = mean(image)[0];
         threshold(image,binary,Mean*2.6,255,CV_THRESH_BINARY);
+        clock_t m1 = clock();
         morphologyEx( binary,  binary, MORPH_ERODE, getStructuringElement(MORPH_RECT,Size(3,3)));
         morphologyEx( binary,  binary, MORPH_ERODE, getStructuringElement(MORPH_RECT,Size(3,3)));
+        clock_t m2 = clock();
+        myfile<<to_string(cIdx)<<" : m2 -start "<<(double)(m2 - start)/CLOCKS_PER_SEC<<endl;
         vector<vector<Point> > squares;
-        imshow("binary",binary);
+        //imshow("binary",binary);
         findRects(binary,squares);
-        drawSquares(img1,squares);
+        //drawSquares(img1,squares);
         vector<RotatedRect> rects;
+        clock_t end1 = clock();
+        myfile<<to_string(cIdx)<<" : end1 - start "<<(double)(end1-start)/CLOCKS_PER_SEC<<endl;
         if(!checkRects(binary,squares,rects))
         {
             //t3.join();
@@ -162,6 +169,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         }
         bool outOfImg = false;
         MnistRecognizer MR;
+        
         for(int i = 0; i<9;i++)
         {
             Rect t = rects[i].boundingRect();
@@ -179,19 +187,20 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         }
         if(MR.classify2())
         {
-            for(int i = 1;i<=9;i++)
-            {
-                putText(img,to_string(i),rects[MR.mnistLabels[i]].center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
-                mst.currentMNIST.push_back(MR.mnistLabels[i]);
-            }
-            imshow("a",img);
-            waitKey(1);
+            // for(int i = 1;i<=9;i++)
+            // {
+            //     putText(img,to_string(i),rects[MR.mnistLabels[i]].center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
+            //     mst.currentMNIST.push_back(MR.mnistLabels[i]);
+            // }
+            // imshow("a",img);
+            // waitKey(1);
             int hitIndex = mst.whichToShootSemiAuto(myfile,5);
             if(hitIndex == -1)
             {
                 mst.Fail();
                 continue;
             }
+            clock_t end2 = clock();
             Rect t = rects[MR.mnistLabels[hitIndex]].boundingRect();
             AngleSolver ag;
             ag.setDistortionCoefficients(s);
@@ -230,12 +239,14 @@ void ImgCP::ImageConsumer(int argc, char** argv)
                 rune_pub.publish(target);
                	ROS_INFO("x: %f y: %f z: %f",target.x,target.y,target.z);
                 //waitKey(shootingDelay);
-	            ag.sendAns(img);
-				string filename = "pic" + to_string(cIdx)+".png";
+	            //ag.sendAns(img);
+				//string filename = "pic" + to_string(cIdx)+".png";
 	            // imwrite(filename,img);
 
                 failure = false;
             }
+            clock_t end3 = clock();
+            myfile<<to_string(cIdx)<<" : end3 - end2"<<(double)(end3 -end2)/CLOCKS_PER_SEC<<endl;
         }
         else
         {

@@ -243,6 +243,7 @@ bool MnistRecognizer::classify()
 }
 bool MnistRecognizer::classify2()
 {
+	clock_t start = clock();
 	if(mnistImgs.size()!=9)
 		return false;
 	for(int i  = 0 ; i<9;i++)
@@ -252,6 +253,8 @@ bool MnistRecognizer::classify2()
         fitMnist(kimg,img);
 		scores.push_back( recognize_primary(img));
     }
+	clock_t end0 = clock();
+	cout<<"end0 - start:"<<(double)(end0-start)/CLOCKS_PER_SEC<<endl;
 	int iterCount = 0;
 	bool conflict = false;
 	for(int i = 0; i<9;i++)
@@ -304,11 +307,15 @@ bool MnistRecognizer::classify2()
 	}
 	if(missingCountLabel > 1 || missingCountIndex > 1)
 	{
+		clock_t end1 = clock();
+		cout<<"end1 - start: false :"<<(double)(end1-start)/CLOCKS_PER_SEC<<endl;
 		return false;
 	}
 	else if (missingCountLabel == 0 && missingCountIndex == 0)
 	{
 		M2m();
+		clock_t end1 = clock();
+		cout<<"end1 - start: true :"<<(double)(end1-start)/CLOCKS_PER_SEC<<endl;
 		return true;
 	}
 	else if(missingCountLabel == 1 && missingCountIndex == 1)
@@ -317,10 +324,14 @@ bool MnistRecognizer::classify2()
 		temp = make_pair(100,missingIndex);
 		MNISTLabels[missingLabel] = temp;
 		M2m();
+		clock_t end1 = clock();
+		cout<<"end1 - start: true :"<<(double)(end1-start)/CLOCKS_PER_SEC<<endl;
 		return true;
 	}
 	else
 	{
+		clock_t end1 = clock();
+		cout<<"end1 - start: false :"<<(double)(end1-start)/CLOCKS_PER_SEC<<endl;
 		return false;
 	}
 }
