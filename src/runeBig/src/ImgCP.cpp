@@ -6,7 +6,7 @@
 #include <iostream>  
 #include <cmath>
 #include "findRect.hpp"
-#include "MnistRecognizer.h"
+#include "FNRecognizer.h"
 #include "DigitRecognizer.h"
 #include "Settings.h"
 #include "angleSol.h"
@@ -24,33 +24,26 @@ struct ImageData {
 	unsigned int frame;
 };
 ImageData data[BUFFER_SIZE];
-void preprocessRGB(Mat img)
-    {
-        vector<Mat> channels;
-        split(img,channels); 
-        Mat Red = channels.at(2);
-        Mat Blue = channels.at(0);
-        Mat Green = channels.at(1);
-        Mat B_R = Blue - Red;
-        Mat B_G = Blue - Green;
-        Mat result;
-        imshow("R-B",B_R);
-        waitKey(1);
-        imshow("R-G",B_R);
-        waitKey(1);
-        result = B_R & B_G;
-        imshow("result",result);
-        // result = R_B & R_G;
-        // threshold(result,result,90,255,THRESH_BINARY);
-        imshow("R",Red);
-        waitKey(1);
-        imshow("G",Green);
-        waitKey(1);
-        imshow("B",Blue);
-        waitKey(1);
-        result.copyTo(binary);
-        return ;
-    }
+void preprocessRGB(Mat img, Mat& result)
+{
+    vector<Mat> channels;
+    split(img,channels); 
+    Mat Red = channels.at(2);
+    Mat Blue = channels.at(0);
+    Mat Green = channels.at(1);
+    Mat R_B = Red - Blue;
+    Mat G_B = Green - Blue;
+    imshow("R-B",R_B);
+    waitKey(1);
+    imshow("G_B",G_B);
+    waitKey(1);
+    result = R_B & G_B;
+    imshow("result",result);
+    // result = R_B & R_G;
+    // threshold(result,result,90,255,THRESH_BINARY);
+    waitKey(1);
+    return ;
+}
 void DigitThread(Mat img,vector<int>& ans)
 {
     //cout<<"thread 3 running"<<endl;
@@ -108,15 +101,12 @@ void ImgCP::ImageProducer()
 	else
 	{
 		std::string cameraPath = "/dev/video";
-        //const char* cp =  cameraPath + cameraNumber;
         RMVideoCapture cap("/dev/video1", 3); 
 		cap.setVideoFormat(640, 480, 1);
-		//cap.setExposureTime(0, settings->cameraSetting.ExposureTime);//settings->exposure_time);
 		cap.startStream();
 		cap.info();
 		while(1)
 		{
-            //cout<<"image producer running"<<endl;
         	while (pIdx - cIdx >= BUFFER_SIZE);
 			cap >> data[pIdx % BUFFER_SIZE].img;
 			data[pIdx % BUFFER_SIZE].frame = cap.getFrameCount();
@@ -135,11 +125,54 @@ void ImgCP::ImageConsumer(int argc, char** argv)
 	    cout<<"where is my setting file?"<<endl;        
 	    return ;
     }
+    cv::Ptr<cv::ml::KNearest>  kNearest(cv::ml::KNearest::create());
+
+	if(!loadData(kNearest))
+	{
+		cout << "loadData NOT done" << endl;
+        return ;
+	}
+	cout << "loadData done" << endl;
+    clock_t start,end;
+    start = clock();
     while(true)
     {
-    
-            
-                //waitKey(20);
-     }
+        start = clock();
+        while (pIdx - cIdx == 0);
+        Mat img,result;
+		data[cIdx % BUFFER_SIZE].img.copyTo(img);
+		unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
+		++cIdx;
+        preprocessRGB(img,result);
+        Mat binary;
+        double Mean = mean(result)[0];
+        threshold(result,binary,Mean*15,255,CV_THRESH_BINARY);
+        imshow("binary1",binary);
+        waitKey(1);
+        morphologyEx( binary,binary, MORPH_DILATE, getStructuringElement(MORPH_RECT,Size(7,7)));
+        imshow("binary2",binary);
+        waitKey(1);
+        vector<vector<Point>> squares;
+        findRects(binary,squares);
+        //drawSquares(img,squares);
+        vector<RotatedRect> rects;
+        if(!checkRects(img,squares,rects))
+        {
+            continue;
+        }
+        FNRecognizer haha;
+        imshow("wtf",img);
+        waitKey(1);
+        for(int i = 0;i<9;i++)
+        {
+           int result = haha.predict(kNearest,img(rects[i].boundingRect()));
+           putText(img,to_string(result),rects[i].center,FONT_HERSHEY_SIMPLEX,1,Scalar(255,0,0),3);
+        }
+        imshow("haha",img);
+        waitKey(1);
+        end = clock();
+        cout<<"hz: "<<1/((double)(end-start)/CLOCKS_PER_SEC)<<endl;
+        
+    }
 }
 

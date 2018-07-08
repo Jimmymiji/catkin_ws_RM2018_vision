@@ -23,8 +23,6 @@ class LRBlock
         waitKey(1);
         result = B_R & B_G;
         imshow("result",result);
-        // result = R_B & R_G;
-        // threshold(result,result,90,255,THRESH_BINARY);
         imshow("R",Red);
         waitKey(1);
         imshow("G",Green);

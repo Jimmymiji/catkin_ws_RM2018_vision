@@ -40,6 +40,36 @@ void ShooterSetting::read(const FileNode &node)
 
 }
 
+void DigitRecognizerSetting::read(const FileNode &node)
+{
+	node["RedMean"]>>RedMean;
+	node["RedThreshold"]>>RedThreshold;
+	node["maxBoundingArea"]>>maxBoundingArea;
+	node["minBoundingArea"]>>minBoundingArea;
+	node["dyPenalty"]>>dyPenalty;
+	node["dxPenalty"]>>dxPenalty;
+	node["HighLowPenalty"]>>HighLowPenalty;
+	node["erodeSize"]>>erodeSize;
+}
+
+void FindRectSetting::read(const FileNode &node)
+{
+	node["maxRectArea"]>>maxRectArea;
+	node["minRectArea"]>>minRectArea;
+	node["maxHWRatio"]>>maxHWRatio;
+	node["minHWRatio"]>>minHWRatio;
+	node["checkRectHeight"]>>checkRectHeight;
+	node["checkRectWidth"]>>checkRectWidth;
+	node["yOffset"]>>yOffset;
+	node["areaRatio"]>>areaRatio;
+}
+
+void ImgCPSetting::read(const FileNode &node)
+{
+	node["mean"]>>mean;
+	node["erodeSize1"]>>erodeSize1;
+	node["erodeSize2"]>>erodeSize2;
+}
 bool Settings::load()
 {
 	if (fileExist(filename1)&&fileExist(filename2))
@@ -48,6 +78,9 @@ bool Settings::load()
 		cameraSetting.read(fin["cameraSetting"]);
 		smallRuneSetting.read(fin["smallRuneSetting"]);
 		shooterSetting.read(fin["shooterSetting"]);
+		digitRecognizerSetting.read(fin["DigitRecognizerSetting"]);
+		findRectSetting.read(fin["FindRectSetting"]);
+		imgCPSetting.read(fin["ImgCPSetting"]);
 		cout<<"successfully load"<<endl;
 		fin.release();
 		return true;

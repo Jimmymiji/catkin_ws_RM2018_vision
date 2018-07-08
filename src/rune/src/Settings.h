@@ -3,9 +3,8 @@
 using namespace std;
 using namespace cv;
 
-class CameraSetting
+struct CameraSetting
 {
-public:
 	CameraSetting(const string& fn) :filename1(fn) {}
 	string device = "/dev/video0";
 	int exposureTime = 30;
@@ -18,17 +17,15 @@ public:
 	void read(const FileNode &node);
 };
 
-class SmallRuneSetting
+struct SmallRuneSetting
 {
-	public:
 		int width;
 		int height;
 		void read(const FileNode &node);
 };
 
-class ShooterSetting
+struct ShooterSetting
 {
-	public:
 		double speed;
 		double Xoffset;
 		double Yoffset;
@@ -36,16 +33,53 @@ class ShooterSetting
 		void read(const FileNode &node);
 };
 
+struct DigitRecognizerSetting
+{
+	double RedMean;
+	int RedThreshold;
+	int maxBoundingArea;
+	int minBoundingArea;
+	int dyPenalty;
+	int dxPenalty;
+	int HighLowPenalty;
+	int erodeSize;
+	void read(const FileNode& node);
+};
+
+struct FindRectSetting
+{
+	int maxRectArea;
+	int minRectArea;
+	double maxHWRatio;
+	double minHWRatio;
+	int checkRectHeight;
+	int checkRectWidth;
+	int yOffset;
+	double areaRatio;
+	void read(const FileNode& node);
+};
+
+struct ImgCPSetting
+{
+	double mean;
+	int erodeSize1;
+	int erodeSize2;
+	void read(const FileNode& node);
+};
+
 class Settings
 {
-public:
+	public:
 	Settings(const string &filename1, const string& filename2) :filename1(filename1), filename2(filename2), cameraSetting(filename2) {}
 	~Settings() {}
 	bool load();
-
+	bool fileExist(const std::string &filename);	
 	CameraSetting cameraSetting;
 	SmallRuneSetting smallRuneSetting;
 	ShooterSetting shooterSetting;
+	DigitRecognizerSetting digitRecognizerSetting;
+	FindRectSetting findRectSetting;
+	ImgCPSetting imgCPSetting;
 	std::string filename1, filename2;     // filename1 is the file for setting, filename2 is the file for seeting cameraMatrix & distortionMatrix
-	bool fileExist(const std::string &filename);
+	
 };

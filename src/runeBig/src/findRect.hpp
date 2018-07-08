@@ -12,9 +12,6 @@ using namespace std;
 
 int thresh = 50, N = 5;
 
-// helper function:
-// finds a cosine of angle between vectors
-// from pt0->pt1 and from pt0->pt2
 double angle(Point pt1, Point pt2, Point pt0)
 {
     double dx1 = pt1.x - pt0.x;
@@ -24,42 +21,35 @@ double angle(Point pt1, Point pt2, Point pt0)
     return (dx1*dx2 + dy1*dy2) / sqrt((dx1*dx1 + dy1*dy1)*(dx2*dx2 + dy2*dy2) + 1e-10);
 }
 
-// returns sequence of squares detected on the image.
-// the sequence is stored in the specified memory storage
+
 void findSquares(const Mat& image, vector<vector<Point> >& squares)
 {
     squares.clear();
    
-    // blur will enhance edge detection
+    
     Mat timg(image);
     medianBlur(image, timg, 5);
     Mat gray0(timg.size(), CV_8U), gray;
     vector<vector<Point> > contours;
 
-    // find squares in every color plane of the image
+    
     for (int c = 0; c < 3; c++)
     {
         int ch[] = { c, 0 };
         mixChannels(&timg, 1, &gray0, 1, ch, 1);
 
-        // try several threshold levels
+        
         for (int l = 0; l < N; l++)
         {
-            // hack: use Canny instead of zero threshold level.
-            // Canny helps to catch squares with gradient shading
+            
             if (l == 0)
             {
-                // apply Canny. Take the upper threshold from slider
-                // and set the lower to 0 (which forces edges merging)
+            
                 Canny(gray0, gray, 5, thresh, 5);
-                // dilate canny output to remove potential
-                // holes between edge segments
                 dilate(gray, gray, Mat(), Point(-1, -1));
             }
             else
             {
-                // apply threshold if l!=0:
-                //     tgray(x,y) = gray(x,y) < (l+1)*255/N ? 255 : 0
                 gray = gray0 >= (l + 1) * 255 / N;
             }
             imshow("canny",gray);
@@ -71,16 +61,7 @@ void findSquares(const Mat& image, vector<vector<Point> >& squares)
             // test each contour
             for (size_t i = 0; i < contours.size(); i++)
             {
-                // approximate contour with accuracy proportional
-                // to the contour perimeter
                 approxPolyDP(Mat(contours[i]), approx, arcLength(Mat(contours[i]), true)*0.02, true);
-
-                // square contours should have 4 vertices after approximation
-                // relatively large area (to filter out noisy contours)
-                // and be convex.
-                // Note: absolute value of an area is used because
-                // area may be positive or negative - in accordance with the
-                // contour orientation
                 if (approx.size() == 4 &&
                     fabs(contourArea(Mat(approx))) > 1000 &&
                     isContourConvex(Mat(approx)))
@@ -93,10 +74,6 @@ void findSquares(const Mat& image, vector<vector<Point> >& squares)
                         double cosine = fabs(angle(approx[j % 4], approx[j - 2], approx[j - 1]));
                         maxCosine = MAX(maxCosine, cosine);
                     }
-
-                    // if cosines of all angles are small
-                    // (all angles are ~90 degree) then write quandrange
-                    // vertices to resultant sequence
                     if (maxCosine < 0.3)
                         squares.push_back(approx);
                 }
@@ -115,16 +92,7 @@ void findSquaresBinary(const Mat& image,  vector<vector<Point> >& squares)
             // test each contour
             for (size_t i = 0; i < contours.size(); i++)
             {
-                // approximate contour with accuracy proportional
-                // to the contour perimeter
                 approxPolyDP(Mat(contours[i]), approx, arcLength(Mat(contours[i]), true)*0.02, true);
-
-                // square contours should have 4 vertices after approximation
-                // relatively large area (to filter out noisy contours)
-                // and be convex.
-                // Note: absolute value of an area is used because
-                // area may be positive or negative - in accordance with the
-                // contour orientation
                 if ( (approx.size() == 4 || approx.size() == 3) &&
                     fabs(contourArea(Mat(approx))) > 1000 &&
                     isContourConvex(Mat(approx)))
@@ -137,26 +105,21 @@ void findSquaresBinary(const Mat& image,  vector<vector<Point> >& squares)
                         double cosine = fabs(angle(approx[j % 4], approx[j - 2], approx[j - 1]));
                         maxCosine = MAX(maxCosine, cosine);
                     }
-
-                    // if cosines of all angles are small
-                    // (all angles are ~90 degree) then write quandrange
-                    // vertices to resultant sequence
                     if (maxCosine < 0.3)
                         squares.push_back(approx);
                 }
             }
 }
 
-double maxRectArea = 25000;
-double minRectArea = 2000;
-double maxHWRatio = 0.9;
-double minHWRatio = 0.5;
+double maxRectArea = 5000;
+double minRectArea = 1000;
+double maxHWRatio = 2;
+double minHWRatio = 0.6;
 void findRects(Mat image,vector<vector<Point>>& squares)
 {
     squares.clear();
     vector<vector<Point>> contours;
     findContours(image, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_TC89_L1);
-   // cout<<"contours size "<<contours.size()<<endl;
     for(int i = 0;i<contours.size();i++)
     {
         Rect temp = boundingRect(contours[i]);
@@ -165,12 +128,16 @@ void findRects(Mat image,vector<vector<Point>>& squares)
         {
             if(temp.area()>minRectArea && temp.area()<maxRectArea)
             {
-                    squares.push_back(contours[i]);
+                    double Mean = mean(image(temp))[0];
+                    if(Mean > 80)
+                    {
+                        squares.push_back(contours[i]);
+                    }
             }
         }
-        //cout<< i <<": height: "<<temp.height <<" width: "<<temp.width<<" ration: "<<HWRatio<<" size: "<<temp.area()<<endl;
+        // cout<< i <<": height: "<<temp.height <<" width: "<<temp.width<<" ration: "<<HWRatio<<" size: "<<temp.area()<<endl;
     }
-    cout<<"possible rects : "<<squares.size()<<endl;
+    // cout<<"possible rects : "<<squares.size()<<endl;
 }
 
 // the function draws all the squares in the image
@@ -185,11 +152,11 @@ static void drawSquares(Mat image, const vector<vector<Point> >& squares)
         if (p->x > 3 && p->y > 3)
             polylines(image, &p, &n, 1, true, Scalar(0, 255, 0), 3, CV_AA);
         
-        //RotatedRect minRect = minAreaRect(squares[i]);
-        //int h = minRect.size.height;
-        //int w = minRect.size.width;
-        //string text = "size : " + to_string(w) + " , "+ to_string(h);
-       // putText(image,text,minRect.center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(255,255,255));
+        RotatedRect minRect = minAreaRect(squares[i]);
+        int h = minRect.size.height;
+        int w = minRect.size.width;
+        string text =  to_string(w) + " , "+ to_string(h);
+        putText(image,text,minRect.center, FONT_HERSHEY_SIMPLEX, 1 , Scalar(255,255,255));
         
 
     }
@@ -212,23 +179,18 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
     // too few squares
     if(squares.size()<9) 
     {
-////#if debug
-        cout<<"squares.size()<9"<<endl;
-//#endif
+        // cout<<"squares.size()<9"<<endl;
         return false;
     }
     rects.clear();
-    // filtering rects by size & height/width ratio
-//#if debug
-    cout<< "_________________________"<<endl;
-//#endif
+    //cout<< "_________________________"<<endl;
     for(int i = 0; i < squares.size();i++) 
     {
         RotatedRect minRect = minAreaRect(squares[i]);
 //#if debug
-        cout<< "size of "<< i << "  "<<minRect.size.width << " , "<<minRect.size.height<<endl;
+        //cout<< "size of "<< i << "  "<<minRect.size.width << " , "<<minRect.size.height<<endl;
 //#endif
-        if(minRect.size.height<30||minRect.size.width<30)//||minRect.size.width>minRect.size.height*0.8)
+        if(minRect.size.height<20||minRect.size.width<20)//||minRect.size.width>minRect.size.height*0.8)
         {
             continue;
         }
@@ -238,11 +200,11 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
         }
     }
 //#if debug
-    cout<< "_________________________"<<endl;
+    //cout<< "_________________________"<<endl;
 
     if(rects.size()<9)
     {
-        cout<<"------rects.size()<9"<<endl;
+        //cout<<"------rects.size()<9"<<endl;
     }
 //#endif
     sort(rects.begin(),rects.end(),ascendingX);
@@ -262,29 +224,27 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
     }
 
     // too few rects
-//#if debug
     if(rects.size()<9)
     {
-        cout<<"rects.size()<9"<<endl;
+      //  cout<<"rects.size()<9"<<endl;
     }
-//#endif
-    if(rects.size()>0)
-    {
-        sort(rects.begin(),rects.end(),[](RotatedRect& a, RotatedRect& b){return a.size.area() > b.size.area();});
-        double Area= rects[3].size.area()*0.8;
-        // eliminate too small rects
-        for(vector<RotatedRect>::iterator p = rects.begin(); p < rects.end();)
-        {
-            if(p->size.area() < Area)
-            {
-                p = rects.erase(p);
-            }
-            else
-            {
-                p++;
-            }
-        }
-    }
+    // if(rects.size()>0)
+    // {
+    //     sort(rects.begin(),rects.end(),[](RotatedRect& a, RotatedRect& b){return a.size.area() > b.size.area();});
+    //     double Area= rects[3].size.area()*0.8;
+    //     // eliminate too small rects
+    //     for(vector<RotatedRect>::iterator p = rects.begin(); p < rects.end();)
+    //     {
+    //         if(p->size.area() < Area)
+    //         {
+    //             p = rects.erase(p);
+    //         }
+    //         else
+    //         {
+    //             p++;
+    //         }
+    //     }
+    // }
     // pick 9 sudoku from them
     if (rects.size() > 9) 
 	{
@@ -332,11 +292,9 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
 		}
 		delete[] dist_map;
         // find the distance between other rect and center rect
-        rectangle(img,rects[center_idx].boundingRect(),Scalar(0,255,255),5);
-//#if show
-        imshow("center",img);
-        waitKey(1);
-//#endif
+        // rectangle(img,rects[center_idx].boundingRect(),Scalar(0,255,255),5);
+        // imshow("center",img);
+        // waitKey(1);
         vector<RectWithDist> RWD;
         for(int i=0; i<rsize; i++)
         {
@@ -354,7 +312,7 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
         if(RWD.size()<9)
         {
 //#if debug            
-            cout<<"RWD.size()<9"<<endl;
+            //cout<<"RWD.size()<9"<<endl;
 //#endif
             return false;
         }
@@ -386,11 +344,10 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
         sort(rects.begin(),rects.begin()+3,ascendingX);          
         sort(rects.begin()+3,rects.begin()+6,ascendingX);
         sort(rects.begin()+6,rects.begin()+9,ascendingX);
-//#if debug
-        cout<<"1 , 2 , 3"<<endl;
-        cout<<"4 , 5 , 6"<<endl;
-        cout<<"7 , 8 , 9"<<endl;
-//#endif
+        // cout<<"1 , 2 , 3"<<endl;
+        // cout<<"4 , 5 , 6"<<endl;
+        // cout<<"7 , 8 , 9"<<endl;
+        cout<<"-----------------"<<endl;
         return true;
     }
     return false;
