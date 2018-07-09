@@ -119,7 +119,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
 {
     cout<<"start"<<endl;
     while(pIdx == 0);
-    Settings s("setting.xml","1.yml");
+    Settings s("setting.xml","4.yml");
     if(!s.load())
     {
 	    cout<<"where is my setting file?"<<endl;        
@@ -133,8 +133,17 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         return ;
 	}
 	cout << "loadData done" << endl;
+    ros::init(argc, argv, "runeBig");
+    ros::NodeHandle n;
+    ros::Publisher rune_pub =
+    n.advertise<geometry_msgs::Point>("big_rune_locations", 1);
+    geometry_msgs::Point target;
+    cout << "ros publisher initialized" << endl;
+    Master mst;
     clock_t start,end;
     start = clock();
+    ofstream myfile;
+    myfile.open("record.txt");
     while(true)
     {
         start = clock();
@@ -154,22 +163,76 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         waitKey(1);
         vector<vector<Point>> squares;
         findRects(binary,squares);
-        //drawSquares(img,squares);
         vector<RotatedRect> rects;
         if(!checkRects(img,squares,rects))
         {
+            target.x = -1;
+            target.y = -1;
+            target.z = -1;
+            cout << "not enough mnists" << endl;
+            mst.Fail();
             continue;
         }
         FNRecognizer haha;
         imshow("wtf",img);
         waitKey(1);
+        bool outOfImg = false;
+        for (int i = 0; i < 9; i++) 
+        {
+            Rect t = rects[i].boundingRect();
+            if (!(0 <= t.x && 0 <= t.width && t.x + t.width <= img.cols && 0 <= t.y &&
+            0 <= t.height && t.y + t.height <= img.rows)) 
+            {
+                outOfImg = true;
+                break;
+            }
+        }
+        if(outOfImg)
+        {
+            mst.Fail();
+            continue;
+        }
         for(int i = 0;i<9;i++)
         {
            int result = haha.predict(kNearest,img(rects[i].boundingRect()));
+           haha.relations[result] = i;
            putText(img,to_string(result),rects[i].center,FONT_HERSHEY_SIMPLEX,1,Scalar(255,0,0),3);
         }
         imshow("haha",img);
         waitKey(1);
+        if(haha.relations.size()!=9)
+        {
+            mst.Fail();
+            continue;
+        }
+        for (int i = 1; i <= 9; i++) 
+        {
+            //     putText(img,to_string(i),rects[MR.mnistLabels[i]].center,
+            //     FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
+            mst.currentMNIST.push_back(haha.relations[i]);
+        }
+        int hitNumber = mst.whichToShootSemiAuto(myfile, 5);
+        if(hitNumber == -1)
+        {
+            mst.Fail();
+            continue;
+        }
+        int hitIndex = haha.relations[hitNumber];
+        AngleSolver ag(s);
+        sort(rects.begin(),rects.end(),ascendingY);                
+        sort(rects.begin(),rects.begin()+3,ascendingX);          
+        sort(rects.begin()+3,rects.begin()+6,ascendingX);
+        sort(rects.begin()+6,rects.begin()+9,ascendingX);
+        for(int i = 0; i<9;i++)
+        {
+            ag.centers.push_back(rects[i].center);
+        }
+        ag.setRealWorldTargetB(s,hitIndex);
+        ag.setImageTargetB(img,hitIndex);
+        ag.getPositionInfo(target.x,target.y,target.z);
+        rune_pub.publish(target);
+        ROS_INFO("x: %f y: %f z: %f", target.x, target.y, target.z);
+        ag.sendAns(img);
         end = clock();
         cout<<"hz: "<<1/((double)(end-start)/CLOCKS_PER_SEC)<<endl;
         

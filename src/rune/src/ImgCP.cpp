@@ -129,16 +129,15 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
   ros::init(argc, argv, "rune");
   ros::NodeHandle n;
   ros::Publisher rune_pub =
-      n.advertise<geometry_msgs::Point>("rune_locations", 2);
+      n.advertise<geometry_msgs::Point>("rune_locations", 1);
   clock_t start, end;
   geometry_msgs::Point target;
   cout << "ros publisher initialized" << endl;
-  int prevoiusSudokus[9];
   waitKey(100);
   cout << "start loop" << endl;
   Master mst;
-  ofstream myfile;
-  myfile.open("record.txt");
+   ofstream myfile;
+   myfile.open("record.txt");
   LRBlock lrb;
   while (true) {
     // if(cIdx>1500)
@@ -174,9 +173,6 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
                  getStructuringElement(MORPH_RECT, Size(erodeSize1, erodeSize1)));
     morphologyEx(binary, binary, MORPH_ERODE,
                  getStructuringElement(MORPH_RECT, Size(erodeSize2, erodeSize2)));
-    clock_t m2 = clock();
-    myfile << to_string(cIdx) << " : m2 -start "
-           << (double)(m2 - start) / CLOCKS_PER_SEC << endl;
     vector<vector<Point>> squares;
     // imshow("binary",binary);
     findRects(binary, squares,s);
@@ -184,8 +180,6 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
     waitKey(1);
     vector<RotatedRect> rects;
     clock_t end1 = clock();
-    myfile << to_string(cIdx) << " : end1 - start "
-           << (double)(end1 - start) / CLOCKS_PER_SEC << endl;
     if (!checkRects(binary, squares, rects,s)) {
       // t3.join();
       target.x = -1;

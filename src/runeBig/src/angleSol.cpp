@@ -7,7 +7,6 @@
 #include "Settings.h"
 #include "angleSol.h"
 using namespace std;
-
 void AngleSolver::rotateByZ(double x, double y, double thetaz, double& outx, double& outy)
 {
 	double x1 = x;//
@@ -46,29 +45,72 @@ Point3f AngleSolver::RotateByVector(double old_x, double old_y, double old_z, do
 	return cv::Point3f(new_x, new_y, new_z);
 }
 
-void AngleSolver::setDistortionCoefficients(Settings& s)
-{
-	distortionCoefficients = s.cameraSetting.distortionMatrix;
-}
 
-void AngleSolver::setCameraMAtrix(Settings& s)
-{
-	cameraMatrix = s.cameraSetting.cameraMatrix;
-}
-
-void AngleSolver::setRealWorldTargetS(const Settings& setting)
+void AngleSolver::setRealWorldTargetB(const Settings& setting,int hitIndex)
 {
     int width =  setting.smallRuneSetting.width;
 	int height = setting.smallRuneSetting.height;
-	
-	targetInWorld.push_back(Point3f(0,0,0));
-	targetInWorld.push_back(Point3f(width,0,0));
-	targetInWorld.push_back(Point3f(0,height, 0));
-	targetInWorld.push_back(Point3f(width, height, 0));
+	if(hitIndex == 0 || hitIndex == 1 ||hitIndex ==3 || hitIndex ==4 )
+	{
+		targetInWorld.push_back(Point3f(0,0,0));
+		targetInWorld.push_back(Point3f(width,0,0));
+		targetInWorld.push_back(Point3f(0,height, 0));
+		targetInWorld.push_back(Point3f(width, height, 0));
+	}
+	else if(hitIndex == 5 || hitIndex == 7 || hitIndex == 8)
+	{
+		targetInWorld.push_back(Point3f(-width,-height,0));
+		targetInWorld.push_back(Point3f(0,-height,0));
+		targetInWorld.push_back(Point3f(-width, 0, 0));
+		targetInWorld.push_back(Point3f(0, 0, 0));
+	}
+	else if(hitIndex == 6)
+	{
+		targetInWorld.push_back(Point3f(0,-height,0));
+		targetInWorld.push_back(Point3f(width,-height,0));
+		targetInWorld.push_back(Point3f(0, 0, 0));
+		targetInWorld.push_back(Point3f(width, 0, 0));
+	}
+	else if(hitIndex == 2)
+	{
+		targetInWorld.push_back(Point3f(-width,0,0));
+		targetInWorld.push_back(Point3f(0,0,0));
+		targetInWorld.push_back(Point3f(-width, height, 0));
+		targetInWorld.push_back(Point3f(0, height, 0));
+	}
 }
 
-bool AngleSolver::setImageTargetS(vector<cv::Point2f> input,Mat& img)
+bool AngleSolver::setImageTargetB(Mat& img,int hitIndex)
 {
+	vector<cv::Point2f> input;
+	if(hitIndex == 0 || hitIndex == 1 ||hitIndex ==3 || hitIndex ==4 )
+	{
+		input.push_back(centers[hitIndex]);
+		input.push_back(centers[hitIndex+1]);
+		input.push_back(centers[hitIndex+3]);
+		input.push_back(centers[hitIndex+4]);
+	}
+	else if(hitIndex == 5 || hitIndex == 7 || hitIndex == 8)
+	{
+		input.push_back(centers[hitIndex-4]);
+		input.push_back(centers[hitIndex-3]);
+		input.push_back(centers[hitIndex-1]);
+		input.push_back(centers[hitIndex]);
+	}
+	else if(hitIndex == 6)
+	{
+		input.push_back(centers[hitIndex-3]);
+		input.push_back(centers[hitIndex-2]);
+		input.push_back(centers[hitIndex]);
+		input.push_back(centers[hitIndex+1]);
+	}
+	else if(hitIndex == 2)
+	{
+		input.push_back(centers[hitIndex-1]);
+		input.push_back(centers[hitIndex]);
+		input.push_back(centers[hitIndex+2]);
+		input.push_back(centers[hitIndex+3]);
+	}
 	cout << "set Image target" << endl;
 	if(input.size()!=4)
 	{	
@@ -124,6 +166,7 @@ void AngleSolver::getRotation_Translation_Matrix()
 
 void AngleSolver::getPositionInfo(double& X,double& Y,double& Z)
 {
+	getRotation_Translation_Matrix();
 	double rm[9];
 	cv::Mat rotM(3, 3, CV_64FC1, rm);
 	Rodrigues(rotationMatrix, rotM);

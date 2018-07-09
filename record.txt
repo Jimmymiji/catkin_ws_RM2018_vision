@@ -1,1475 +1,3900 @@
-1 : m2 -start 0.264203
-1 : end1 - start 0.297556
-2 : m2 -start 0.00682
-2 : end1 - start 0.012842
-3 : m2 -start 0.029723
-3 : end1 - start 0.053092
-4 : m2 -start 0.01149
-4 : end1 - start 0.018997
-5 : m2 -start 0.006715
-5 : end1 - start 0.02128
-6 : m2 -start 0.008427
-6 : end1 - start 0.018456
-7 : m2 -start 0.006745
-7 : end1 - start 0.013293
-8 : m2 -start 0.006611
-8 : end1 - start 0.013134
-9 : m2 -start 0.006627
-9 : end1 - start 0.017793
-10 : m2 -start 0.007046
-10 : end1 - start 0.014663
-11 : m2 -start 0.006787
-11 : end1 - start 0.013364
-12 : m2 -start 0.006589
-12 : end1 - start 0.017166
-13 : m2 -start 0.006571
-13 : end1 - start 0.013145
-14 : m2 -start 0.006808
-14 : end1 - start 0.013371
-15 : m2 -start 0.006537
-15 : end1 - start 0.012448
-16 : m2 -start 0.00673
-16 : end1 - start 0.012708
-17 : m2 -start 0.006543
-17 : end1 - start 0.013197
-17 : end3 - end20.050438
-18 : m2 -start 0.021753
-18 : end1 - start 0.028598
-19 : m2 -start 0.006505
-19 : end1 - start 0.013145
-19 : end3 - end20.005633
-20 : m2 -start 0.00651
-20 : end1 - start 0.016742
-21 : m2 -start 0.006475
-21 : end1 - start 0.012741
-22 : m2 -start 0.006782
-22 : end1 - start 0.013086
-22 : end3 - end20.006087
-23 : m2 -start 0.006869
-23 : end1 - start 0.013082
-24 : m2 -start 0.006643
-24 : end1 - start 0.012931
-24 : end3 - end20.005666
-25 : m2 -start 0.006575
-25 : end1 - start 0.012862
-25 : end3 - end20.005698
-26 : m2 -start 0.006522
-26 : end1 - start 0.012818
-26 : end3 - end20.005643
-27 : m2 -start 0.006499
-27 : end1 - start 0.012779
-27 : end3 - end20.006141
-28 : m2 -start 0.006551
-28 : end1 - start 0.012952
-29 : m2 -start 0.006883
-29 : end1 - start 0.014114
-30 : m2 -start 0.006501
-30 : end1 - start 0.012772
-31 : m2 -start 0.006623
-31 : end1 - start 0.01291
-32 : m2 -start 0.006627
-32 : end1 - start 0.012286
-33 : m2 -start 0.006531
-33 : end1 - start 0.01224
-34 : m2 -start 0.006635
-34 : end1 - start 0.013147
-35 : m2 -start 0.006495
-35 : end1 - start 0.012752
-35 : end3 - end20.001632
-36 : m2 -start 0.006537
-36 : end1 - start 0.01282
-37 : m2 -start 0.006613
-37 : end1 - start 0.012892
-38 : m2 -start 0.006657
-38 : end1 - start 0.012974
-39 : m2 -start 0.006608
-39 : end1 - start 0.012875
-40 : m2 -start 0.006638
-40 : end1 - start 0.012927
-41 : m2 -start 0.00665
-41 : end1 - start 0.012959
-42 : m2 -start 0.006683
-42 : end1 - start 0.013012
-43 : m2 -start 0.006479
-43 : end1 - start 0.01273
-44 : m2 -start 0.006655
-44 : end1 - start 0.012942
-45 : m2 -start 0.00663
-45 : end1 - start 0.012938
-46 : m2 -start 0.00648
-46 : end1 - start 0.012779
-47 : m2 -start 0.007026
-47 : end1 - start 0.01331
-48 : m2 -start 0.006656
-48 : end1 - start 0.012958
-49 : m2 -start 0.00654
-49 : end1 - start 0.017811
-50 : m2 -start 0.006627
-50 : end1 - start 0.012916
-51 : m2 -start 0.007035
-51 : end1 - start 0.014345
-52 : m2 -start 0.006594
-52 : end1 - start 0.012237
-53 : m2 -start 0.006495
-53 : end1 - start 0.012148
-54 : m2 -start 0.007042
-54 : end1 - start 0.013359
-55 : m2 -start 0.006722
-55 : end1 - start 0.013069
-55 : end3 - end20.00568
-56 : m2 -start 0.006374
-56 : end1 - start 0.012748
-57 : m2 -start 0.006492
-57 : end1 - start 0.012859
-58 : m2 -start 0.006643
-58 : end1 - start 0.013061
-59 : m2 -start 0.006627
-59 : end1 - start 0.012981
-60 : m2 -start 0.006622
-60 : end1 - start 0.012971
-61 : m2 -start 0.006626
-61 : end1 - start 0.012981
-62 : m2 -start 0.006323
-62 : end1 - start 0.016656
-63 : m2 -start 0.00701
-63 : end1 - start 0.013373
-64 : m2 -start 0.00646
-64 : end1 - start 0.012812
-65 : m2 -start 0.006635
-65 : end1 - start 0.01298
-66 : m2 -start 0.006601
-66 : end1 - start 0.012968
-67 : m2 -start 0.006698
-67 : end1 - start 0.017056
-68 : m2 -start 0.006631
-68 : end1 - start 0.013024
-69 : m2 -start 0.006497
-69 : end1 - start 0.012852
-70 : m2 -start 0.006622
-70 : end1 - start 0.012976
-71 : m2 -start 0.006676
-71 : end1 - start 0.013029
-72 : m2 -start 0.006599
-72 : end1 - start 0.01293
-73 : m2 -start 0.006321
-73 : end1 - start 0.012197
-74 : m2 -start 0.006625
-74 : end1 - start 0.013012
-75 : m2 -start 0.006668
-75 : end1 - start 0.012361
-76 : m2 -start 0.006486
-76 : end1 - start 0.012126
-77 : m2 -start 0.006679
-77 : end1 - start 0.012359
-78 : m2 -start 0.006943
-78 : end1 - start 0.013292
-79 : m2 -start 0.006439
-79 : end1 - start 0.012806
-80 : m2 -start 0.006324
-80 : end1 - start 0.012602
-81 : m2 -start 0.006554
-81 : end1 - start 0.016844
-82 : m2 -start 0.002483
-82 : end1 - start 0.012773
-83 : m2 -start 0.006493
-83 : end1 - start 0.012841
-84 : m2 -start 0.006538
-84 : end1 - start 0.012833
-85 : m2 -start 0.00673
-85 : end1 - start 0.013032
-86 : m2 -start 0.006435
-86 : end1 - start 0.01272
-87 : m2 -start 0.006443
-87 : end1 - start 0.012697
-88 : m2 -start 0.006403
-88 : end1 - start 0.012679
-89 : m2 -start 0.006599
-89 : end1 - start 0.012889
-90 : m2 -start 0.006448
-90 : end1 - start 0.012712
-91 : m2 -start 0.006451
-91 : end1 - start 0.012734
-92 : m2 -start 0.006463
-92 : end1 - start 0.012781
-93 : m2 -start 0.006463
-93 : end1 - start 0.012727
-94 : m2 -start 0.006427
-94 : end1 - start 0.012694
-95 : m2 -start 0.006494
-95 : end1 - start 0.012784
-96 : m2 -start 0.006453
-96 : end1 - start 0.012743
-97 : m2 -start 0.006455
-97 : end1 - start 0.012733
-98 : m2 -start 0.006501
-98 : end1 - start 0.012814
-99 : m2 -start 0.006499
-99 : end1 - start 0.012789
-100 : m2 -start 0.006345
-100 : end1 - start 0.012014
-101 : m2 -start 0.006607
-101 : end1 - start 0.012261
-102 : m2 -start 0.006914
-102 : end1 - start 0.013207
-103 : m2 -start 0.006704
-103 : end1 - start 0.013034
-103 : end3 - end20.00629
-104 : m2 -start 0.006365
-104 : end1 - start 0.012877
-105 : m2 -start 0.006543
-105 : end1 - start 0.012823
-106 : m2 -start 0.00663
-106 : end1 - start 0.012935
-107 : m2 -start 0.00643
-107 : end1 - start 0.012704
-108 : m2 -start 0.006485
-108 : end1 - start 0.016785
-109 : m2 -start 0.006445
-109 : end1 - start 0.012726
-110 : m2 -start 0.006502
-110 : end1 - start 0.012913
-111 : m2 -start 0.006588
-111 : end1 - start 0.012888
-112 : m2 -start 0.006339
-112 : end1 - start 0.012597
-113 : m2 -start 0.007008
-113 : end1 - start 0.014379
-114 : m2 -start 0.006991
-114 : end1 - start 0.013445
-115 : m2 -start 0.006434
-115 : end1 - start 0.012823
-116 : m2 -start 0.007046
-116 : end1 - start 0.013878
-117 : m2 -start 0.007541
-117 : end1 - start 0.014669
-118 : m2 -start 0.00712
-118 : end1 - start 0.013959
-119 : m2 -start 0.006939
-119 : end1 - start 0.013484
-120 : m2 -start 0.007035
-120 : end1 - start 0.013129
-121 : m2 -start 0.00658
-121 : end1 - start 0.017193
-122 : m2 -start 0.006953
-122 : end1 - start 0.013753
-122 : end3 - end20.005949
-123 : m2 -start 0.006837
-123 : end1 - start 0.017521
-124 : m2 -start 0.011263
-124 : end1 - start 0.017949
-125 : m2 -start 0.007466
-125 : end1 - start 0.014356
-126 : m2 -start 0.011272
-126 : end1 - start 0.018093
-127 : m2 -start 0.011208
-127 : end1 - start 0.01798
-128 : m2 -start 0.006868
-128 : end1 - start 0.013646
-129 : m2 -start 0.006891
-129 : end1 - start 0.017679
-130 : m2 -start 0.006865
-130 : end1 - start 0.01365
-131 : m2 -start 0.006973
-131 : end1 - start 0.013091
-132 : m2 -start 0.007044
-132 : end1 - start 0.013794
-133 : m2 -start 0.006897
-133 : end1 - start 0.0138
-134 : m2 -start 0.006956
-134 : end1 - start 0.01777
-135 : m2 -start 0.006762
-135 : end1 - start 0.013532
-136 : m2 -start 0.00702
-136 : end1 - start 0.013888
-137 : m2 -start 0.007204
-137 : end1 - start 0.014531
-138 : m2 -start 0.006889
-138 : end1 - start 0.017732
-139 : m2 -start 0.006846
-139 : end1 - start 0.01319
-140 : m2 -start 0.006873
-140 : end1 - start 0.012911
-141 : m2 -start 0.007379
-141 : end1 - start 0.017731
-142 : m2 -start 0.011174
-142 : end1 - start 0.017509
-143 : m2 -start 0.006552
-143 : end1 - start 0.013265
-144 : m2 -start 0.006791
-144 : end1 - start 0.013636
-145 : m2 -start 0.006841
-145 : end1 - start 0.018523
-145 : end3 - end20.006072
-146 : m2 -start 0.006581
-146 : end1 - start 0.017374
-147 : m2 -start 0.006578
-147 : end1 - start 0.013284
-148 : m2 -start 0.006989
-148 : end1 - start 0.014567
-149 : m2 -start 0.006735
-149 : end1 - start 0.013404
-150 : m2 -start 0.006825
-150 : end1 - start 0.017487
-151 : m2 -start 0.006609
-151 : end1 - start 0.01332
-152 : m2 -start 0.011127
-152 : end1 - start 0.018894
-153 : m2 -start 0.006578
-153 : end1 - start 0.013415
-154 : m2 -start 0.006468
-154 : end1 - start 0.012765
-155 : m2 -start 0.006483
-155 : end1 - start 0.012829
-156 : m2 -start 0.006351
-156 : end1 - start 0.012676
-157 : m2 -start 0.006303
-157 : end1 - start 0.012651
-158 : m2 -start 0.006513
-158 : end1 - start 0.012886
-159 : m2 -start 0.006681
-159 : end1 - start 0.013045
-160 : m2 -start 0.006693
-160 : end1 - start 0.013037
-161 : m2 -start 0.006543
-161 : end1 - start 0.012918
-162 : m2 -start 0.006417
-162 : end1 - start 0.012628
-163 : m2 -start 0.006228
-163 : end1 - start 0.012597
-164 : m2 -start 0.006483
-164 : end1 - start 0.012172
-165 : m2 -start 0.006484
-165 : end1 - start 0.012193
-166 : m2 -start 0.006877
-166 : end1 - start 0.013757
-167 : m2 -start 0.00685
-167 : end1 - start 0.013281
-167 : end3 - end20.00572
-168 : m2 -start 0.00639
-168 : end1 - start 0.012789
-169 : m2 -start 0.00247
-169 : end1 - start 0.01291
-170 : m2 -start 0.006492
-170 : end1 - start 0.01287
-171 : m2 -start 0.002506
-171 : end1 - start 0.012891
-172 : m2 -start 0.006487
-172 : end1 - start 0.012868
-173 : m2 -start 0.006531
-173 : end1 - start 0.01299
-174 : m2 -start 0.00644
-174 : end1 - start 0.012816
-175 : m2 -start 0.006657
-175 : end1 - start 0.013033
-176 : m2 -start 0.011048
-176 : end1 - start 0.017435
-177 : m2 -start 0.00651
-177 : end1 - start 0.012859
-178 : m2 -start 0.006645
-178 : end1 - start 0.013063
-179 : m2 -start 0.006667
-179 : end1 - start 0.013083
-180 : m2 -start 0.006737
-180 : end1 - start 0.013138
-181 : m2 -start 0.006526
-181 : end1 - start 0.012892
-182 : m2 -start 0.006508
-182 : end1 - start 0.012891
-183 : m2 -start 0.00691
-183 : end1 - start 0.013284
-184 : m2 -start 0.006888
-184 : end1 - start 0.013232
-185 : m2 -start 0.006352
-185 : end1 - start 0.012721
-186 : m2 -start 0.006648
-186 : end1 - start 0.012318
-187 : m2 -start 0.00646
-187 : end1 - start 0.01214
-188 : m2 -start 0.006999
-188 : end1 - start 0.01274
-189 : m2 -start 0.006465
-189 : end1 - start 0.012848
-189 : end3 - end20.005702
-190 : m2 -start 0.006526
-190 : end1 - start 0.012887
-191 : m2 -start 0.006674
-191 : end1 - start 0.013015
-192 : m2 -start 0.006651
-192 : end1 - start 0.01298
-193 : m2 -start 0.006482
-193 : end1 - start 0.012842
-194 : m2 -start 0.006507
-194 : end1 - start 0.012874
-195 : m2 -start 0.006666
-195 : end1 - start 0.013025
-196 : m2 -start 0.006387
-196 : end1 - start 0.012729
-197 : m2 -start 0.006642
-197 : end1 - start 0.012962
-198 : m2 -start 0.006452
-198 : end1 - start 0.012784
-199 : m2 -start 0.00704
-199 : end1 - start 0.018424
-200 : m2 -start 0.006609
-200 : end1 - start 0.012994
-201 : m2 -start 0.006495
-201 : end1 - start 0.012849
-202 : m2 -start 0.006635
-202 : end1 - start 0.01308
-203 : m2 -start 0.00243
-203 : end1 - start 0.012787
-204 : m2 -start 0.006448
-204 : end1 - start 0.01282
-205 : m2 -start 0.006648
-205 : end1 - start 0.008316
-206 : m2 -start 0.006621
-206 : end1 - start 0.01708
-206 : end3 - end20.001691
-207 : m2 -start 0.006402
-207 : end1 - start 0.01278
-208 : m2 -start 0.006638
-208 : end1 - start 0.013023
-209 : m2 -start 0.00663
-209 : end1 - start 0.013104
-209 : end3 - end20.005664
-210 : m2 -start 0.006534
-210 : end1 - start 0.012963
-211 : m2 -start 0.007
-211 : end1 - start 0.017078
-211 : end3 - end20.001692
-212 : m2 -start 0.006568
-212 : end1 - start 0.012957
-212 : end3 - end20.005691
-213 : m2 -start 0.006536
-213 : end1 - start 0.012926
-213 : end3 - end20.00567
-214 : m2 -start 0.006529
-214 : end1 - start 0.013012
-214 : end3 - end20.005649
-215 : m2 -start 0.006533
-215 : end1 - start 0.013013
-216 : m2 -start 0.006653
-216 : end1 - start 0.013353
-217 : m2 -start 0.002486
-217 : end1 - start 0.01296
-218 : m2 -start 0.006639
-218 : end1 - start 0.012307
-219 : m2 -start 0.007007
-219 : end1 - start 0.012669
-220 : m2 -start 0.00663
-220 : end1 - start 0.012803
-220 : end3 - end20.00593
-221 : m2 -start 0.006647
-221 : end1 - start 0.012874
-222 : m2 -start 0.006676
-222 : end1 - start 0.01287
-223 : m2 -start 0.006494
-223 : end1 - start 0.012698
-224 : m2 -start 0.00692
-224 : end1 - start 0.013127
-225 : m2 -start 0.006513
-225 : end1 - start 0.012696
-226 : m2 -start 0.006632
-226 : end1 - start 0.012873
-227 : m2 -start 0.006642
-227 : end1 - start 0.012961
-228 : m2 -start 0.006635
-228 : end1 - start 0.012834
-229 : m2 -start 0.006358
-229 : end1 - start 0.01254
-230 : m2 -start 0.006639
-230 : end1 - start 0.012834
-231 : m2 -start 0.006643
-231 : end1 - start 0.012842
-232 : m2 -start 0.007176
-232 : end1 - start 0.013002
-233 : m2 -start 0.007101
-233 : end1 - start 0.0129
-234 : m2 -start 0.006494
-234 : end1 - start 0.012391
-235 : m2 -start 0.006531
-235 : end1 - start 0.012799
-235 : end3 - end20.005736
-236 : m2 -start 0.006527
-236 : end1 - start 0.01268
-237 : m2 -start 0.006639
-237 : end1 - start 0.012895
-238 : m2 -start 0.00667
-238 : end1 - start 0.013668
-239 : m2 -start 0.006613
-239 : end1 - start 0.012956
-240 : m2 -start 0.006487
-240 : end1 - start 0.012556
-241 : m2 -start 0.006524
-241 : end1 - start 0.012701
-242 : m2 -start 0.006628
-242 : end1 - start 0.012698
-243 : m2 -start 0.006828
-243 : end1 - start 0.017085
-244 : m2 -start 0.00647
-244 : end1 - start 0.012675
-245 : m2 -start 0.006632
-245 : end1 - start 0.012751
-246 : m2 -start 0.006645
-246 : end1 - start 0.016931
-247 : m2 -start 0.006652
-247 : end1 - start 0.012326
-248 : m2 -start 0.007108
-248 : end1 - start 0.013494
-249 : m2 -start 0.006938
-249 : end1 - start 0.013445
-249 : end3 - end20.005731
-250 : m2 -start 0.006632
-250 : end1 - start 0.013191
-251 : m2 -start 0.006503
-251 : end1 - start 0.016991
-252 : m2 -start 0.00665
-252 : end1 - start 0.014273
-253 : m2 -start 0.006522
-253 : end1 - start 0.013008
-254 : m2 -start 0.006645
-254 : end1 - start 0.017159
-255 : m2 -start 0.006484
-255 : end1 - start 0.012997
-256 : m2 -start 0.006327
-256 : end1 - start 0.01285
-257 : m2 -start 0.006428
-257 : end1 - start 0.012109
-258 : m2 -start 0.006448
-258 : end1 - start 0.012845
-258 : end3 - end20.005694
-259 : m2 -start 0.006382
-259 : end1 - start 0.012805
-260 : m2 -start 0.006549
-260 : end1 - start 0.012973
-261 : m2 -start 0.006355
-261 : end1 - start 0.012783
-262 : m2 -start 0.006378
-262 : end1 - start 0.016761
-263 : m2 -start 0.006589
-263 : end1 - start 0.013003
-264 : m2 -start 0.006341
-264 : end1 - start 0.01272
-265 : m2 -start 0.007067
-265 : end1 - start 0.018527
-266 : m2 -start 0.006492
-266 : end1 - start 0.013002
-267 : m2 -start 0.006623
-267 : end1 - start 0.013047
-268 : m2 -start 0.006618
-268 : end1 - start 0.013027
-269 : m2 -start 0.006618
-269 : end1 - start 0.012295
-270 : m2 -start 0.00652
-270 : end1 - start 0.012984
-270 : end3 - end20.005664
-271 : m2 -start 0.006516
-271 : end1 - start 0.012965
-272 : m2 -start 0.006616
-272 : end1 - start 0.013098
-273 : m2 -start 0.006621
-273 : end1 - start 0.013131
-274 : m2 -start 0.006646
-274 : end1 - start 0.01314
-275 : m2 -start 0.006778
-275 : end1 - start 0.013273
-276 : m2 -start 0.006491
-276 : end1 - start 0.01301
-277 : m2 -start 0.006617
-277 : end1 - start 0.013141
-278 : m2 -start 0.006617
-278 : end1 - start 0.013101
-279 : m2 -start 0.006618
-279 : end1 - start 0.013103
-280 : m2 -start 0.006658
-280 : end1 - start 0.013136
-281 : m2 -start 0.006495
-281 : end1 - start 0.012959
-282 : m2 -start 0.006499
-282 : end1 - start 0.013005
-283 : m2 -start 0.006485
-283 : end1 - start 0.016958
-284 : m2 -start 0.006582
-284 : end1 - start 0.012282
-285 : m2 -start 0.006678
-285 : end1 - start 0.012376
-286 : m2 -start 0.006599
-286 : end1 - start 0.012932
-286 : end3 - end20.00562
-287 : m2 -start 0.006533
-287 : end1 - start 0.012882
-288 : m2 -start 0.006637
-288 : end1 - start 0.012967
-289 : m2 -start 0.00649
-289 : end1 - start 0.012832
-290 : m2 -start 0.006479
-290 : end1 - start 0.012818
-291 : m2 -start 0.006619
-291 : end1 - start 0.012947
-292 : m2 -start 0.006618
-292 : end1 - start 0.012944
-293 : m2 -start 0.006609
-293 : end1 - start 0.012947
-294 : m2 -start 0.006618
-294 : end1 - start 0.012954
-295 : m2 -start 0.006611
-295 : end1 - start 0.012938
-296 : m2 -start 0.006505
-296 : end1 - start 0.012899
-297 : m2 -start 0.007061
-297 : end1 - start 0.014355
-298 : m2 -start 0.00668
-298 : end1 - start 0.017065
-299 : m2 -start 0.006683
-299 : end1 - start 0.012371
-300 : m2 -start 0.006651
-300 : end1 - start 0.013005
-300 : end3 - end20.005755
-301 : m2 -start 0.00252
-301 : end1 - start 0.012885
-302 : m2 -start 0.007257
-302 : end1 - start 0.013793
-303 : m2 -start 0.00664
-303 : end1 - start 0.013046
-304 : m2 -start 0.006471
-304 : end1 - start 0.012713
-305 : m2 -start 0.006647
-305 : end1 - start 0.017007
-306 : m2 -start 0.006483
-306 : end1 - start 0.012824
-307 : m2 -start 0.006657
-307 : end1 - start 0.013052
-308 : m2 -start 0.00262
-308 : end1 - start 0.01296
-309 : m2 -start 0.006639
-309 : end1 - start 0.013019
-310 : m2 -start 0.006623
-310 : end1 - start 0.012992
-311 : m2 -start 0.006629
-311 : end1 - start 0.013011
-312 : m2 -start 0.006474
-312 : end1 - start 0.012187
-313 : m2 -start 0.0069
-313 : end1 - start 0.01422
-313 : end3 - end20.005705
-314 : m2 -start 0.006675
-314 : end1 - start 0.01321
-315 : m2 -start 0.006653
-315 : end1 - start 0.013101
-316 : m2 -start 0.006647
-316 : end1 - start 0.01313
-317 : m2 -start 0.006594
-317 : end1 - start 0.01307
-318 : m2 -start 0.006845
-318 : end1 - start 0.014416
-319 : m2 -start 0.006744
-319 : end1 - start 0.013596
-320 : m2 -start 0.008536
-320 : end1 - start 0.017418
-321 : m2 -start 0.006543
-321 : end1 - start 0.013013
-322 : m2 -start 0.006863
-322 : end1 - start 0.014388
-323 : m2 -start 0.006931
-323 : end1 - start 0.013338
-324 : m2 -start 0.006543
-324 : end1 - start 0.012264
-325 : m2 -start 0.006289
-325 : end1 - start 0.012773
-325 : end3 - end20.005738
-326 : m2 -start 0.006436
-326 : end1 - start 0.013248
-327 : m2 -start 0.00649
-327 : end1 - start 0.012969
-328 : m2 -start 0.008958
-328 : end1 - start 0.01307
-329 : m2 -start 0.006563
-329 : end1 - start 0.013065
-330 : m2 -start 0.006561
-330 : end1 - start 0.013065
-331 : m2 -start 0.007543
-331 : end1 - start 0.012861
-332 : m2 -start 0.006304
-332 : end1 - start 0.01278
-333 : m2 -start 0.006363
-333 : end1 - start 0.013058
-334 : m2 -start 0.006714
-334 : end1 - start 0.01729
-335 : m2 -start 0.006424
-335 : end1 - start 0.012919
-336 : m2 -start 0.006548
-336 : end1 - start 0.012984
-337 : m2 -start 0.006686
-337 : end1 - start 0.012376
-338 : m2 -start 0.006277
-338 : end1 - start 0.012736
-338 : end3 - end20.005672
-339 : m2 -start 0.007997
-339 : end1 - start 0.012856
-340 : m2 -start 0.006495
-340 : end1 - start 0.016983
-341 : m2 -start 0.006505
-341 : end1 - start 0.012958
-342 : m2 -start 0.006421
-342 : end1 - start 0.012888
-343 : m2 -start 0.006875
-343 : end1 - start 0.013707
-344 : m2 -start 0.008071
-344 : end1 - start 0.013274
-345 : m2 -start 0.006618
-345 : end1 - start 0.013165
-346 : m2 -start 0.006529
-346 : end1 - start 0.01297
-347 : m2 -start 0.006394
-347 : end1 - start 0.012973
-348 : m2 -start 0.006648
-348 : end1 - start 0.014191
-349 : m2 -start 0.006996
-349 : end1 - start 0.013623
-350 : m2 -start 0.006787
-350 : end1 - start 0.013925
-351 : m2 -start 0.010913
-351 : end1 - start 0.018173
-351 : end3 - end20.005725
-352 : m2 -start 0.003598
-352 : end1 - start 0.010985
-353 : m2 -start 0.006054
-353 : end1 - start 0.013268
-354 : m2 -start 0.00805
-354 : end1 - start 0.015143
-355 : m2 -start 0.006641
-355 : end1 - start 0.012826
-356 : m2 -start 0.007478
-356 : end1 - start 0.012596
-357 : m2 -start 0.007065
-357 : end1 - start 0.013334
-358 : m2 -start 0.009534
-358 : end1 - start 0.012635
-359 : m2 -start 0.002631
-359 : end1 - start 0.01281
-360 : m2 -start 0.006548
-360 : end1 - start 0.012751
-361 : m2 -start 0.006682
-361 : end1 - start 0.012845
-362 : m2 -start 0.003439
-362 : end1 - start 0.013667
-363 : m2 -start 0.007822
-363 : end1 - start 0.013014
-364 : m2 -start 0.007696
-364 : end1 - start 0.012776
-365 : m2 -start 0.007552
-365 : end1 - start 0.012125
-366 : m2 -start 0.009746
-366 : end1 - start 0.012641
-367 : m2 -start 0.003577
-367 : end1 - start 0.013005
-367 : end3 - end20.002811
-368 : m2 -start 0.00638
-368 : end1 - start 0.012765
-369 : m2 -start 0.006452
-369 : end1 - start 0.016822
-370 : m2 -start 0.006542
-370 : end1 - start 0.012911
-371 : m2 -start 0.006448
-371 : end1 - start 0.012785
-372 : m2 -start 0.006441
-372 : end1 - start 0.012781
-373 : m2 -start 0.006798
-373 : end1 - start 0.018178
-374 : m2 -start 0.006529
-374 : end1 - start 0.012956
-375 : m2 -start 0.006677
-375 : end1 - start 0.013041
-376 : m2 -start 0.006533
-376 : end1 - start 0.014014
-377 : m2 -start 0.006471
-377 : end1 - start 0.012167
-378 : m2 -start 0.006751
-378 : end1 - start 0.013051
-378 : end3 - end20.00984
-379 : m2 -start 0.007926
-379 : end1 - start 0.018323
-380 : m2 -start 0.006997
-380 : end1 - start 0.014101
-381 : m2 -start 0.006506
-381 : end1 - start 0.012833
-382 : m2 -start 0.00669
-382 : end1 - start 0.01306
-383 : m2 -start 0.006653
-383 : end1 - start 0.012943
-384 : m2 -start 0.006469
-384 : end1 - start 0.012766
-385 : m2 -start 0.002486
-385 : end1 - start 0.012756
-386 : m2 -start 0.006532
-386 : end1 - start 0.012824
-387 : m2 -start 0.00649
-387 : end1 - start 0.012783
-388 : m2 -start 0.010877
-388 : end1 - start 0.017156
-389 : m2 -start 0.006464
-389 : end1 - start 0.012745
-390 : m2 -start 0.00649
-390 : end1 - start 0.012799
-391 : m2 -start 0.006468
-391 : end1 - start 0.01215
-392 : m2 -start 0.006526
-392 : end1 - start 0.012234
-393 : m2 -start 0.006451
-393 : end1 - start 0.012739
-393 : end3 - end20.005658
-394 : m2 -start 0.006608
-394 : end1 - start 0.012945
-395 : m2 -start 0.006649
-395 : end1 - start 0.012965
-396 : m2 -start 0.006464
-396 : end1 - start 0.012785
-397 : m2 -start 0.006507
-397 : end1 - start 0.0128
-398 : m2 -start 0.002326
-398 : end1 - start 0.012615
-399 : m2 -start 0.006272
-399 : end1 - start 0.012574
-400 : m2 -start 0.00654
-400 : end1 - start 0.012878
-401 : m2 -start 0.006473
-401 : end1 - start 0.012846
-402 : m2 -start 0.006469
-402 : end1 - start 0.012773
-403 : m2 -start 0.006461
-403 : end1 - start 0.012861
-404 : m2 -start 0.006325
-404 : end1 - start 0.012751
-405 : m2 -start 0.006319
-405 : end1 - start 0.012584
-406 : m2 -start 0.006459
-406 : end1 - start 0.012133
-407 : m2 -start 0.006483
-407 : end1 - start 0.012821
-407 : end3 - end20.005677
-408 : m2 -start 0.006352
-408 : end1 - start 0.012708
-409 : m2 -start 0.006444
-409 : end1 - start 0.012795
-410 : m2 -start 0.006484
-410 : end1 - start 0.012844
-411 : m2 -start 0.006848
-411 : end1 - start 0.013207
-412 : m2 -start 0.00244
-412 : end1 - start 0.012798
-413 : m2 -start 0.006676
-413 : end1 - start 0.013013
-414 : m2 -start 0.006669
-414 : end1 - start 0.013039
-415 : m2 -start 0.006451
-415 : end1 - start 0.016873
-416 : m2 -start 0.00656
-416 : end1 - start 0.016903
-417 : m2 -start 0.006719
-417 : end1 - start 0.012401
-418 : m2 -start 0.006458
-418 : end1 - start 0.01289
-418 : end3 - end20.005771
-419 : m2 -start 0.006355
-419 : end1 - start 0.012726
-420 : m2 -start 0.006427
-420 : end1 - start 0.012825
-421 : m2 -start 0.006499
-421 : end1 - start 0.012764
-422 : m2 -start 0.006884
-422 : end1 - start 0.013492
-423 : m2 -start 0.006839
-423 : end1 - start 0.018345
-424 : m2 -start 0.006441
-424 : end1 - start 0.016871
-425 : m2 -start 0.006471
-425 : end1 - start 0.012907
-426 : m2 -start 0.00684
-426 : end1 - start 0.018165
-427 : m2 -start 0.006489
-427 : end1 - start 0.01299
-428 : m2 -start 0.006972
-428 : end1 - start 0.012773
-429 : m2 -start 0.006667
-429 : end1 - start 0.012451
-430 : m2 -start 0.006447
-430 : end1 - start 0.012891
-430 : end3 - end20.005701
-431 : m2 -start 0.006491
-431 : end1 - start 0.016922
-432 : m2 -start 0.006685
-432 : end1 - start 0.013287
-433 : m2 -start 0.006846
-433 : end1 - start 0.014394
-434 : m2 -start 0.011021
-434 : end1 - start 0.017472
-435 : m2 -start 0.006949
-435 : end1 - start 0.018493
-436 : m2 -start 0.006473
-436 : end1 - start 0.012874
-437 : m2 -start 0.006469
-437 : end1 - start 0.01288
-438 : m2 -start 0.006602
-438 : end1 - start 0.012994
-439 : m2 -start 0.006474
-439 : end1 - start 0.013724
-440 : m2 -start 0.006317
-440 : end1 - start 0.012729
-441 : m2 -start 0.006477
-441 : end1 - start 0.012878
-442 : m2 -start 0.006642
-442 : end1 - start 0.012312
-443 : m2 -start 0.006509
-443 : end1 - start 0.012227
-444 : m2 -start 0.006652
-444 : end1 - start 0.013085
-444 : end3 - end20.006548
-445 : m2 -start 0.006919
-445 : end1 - start 0.013483
-446 : m2 -start 0.006547
-446 : end1 - start 0.013079
-447 : m2 -start 0.006662
-447 : end1 - start 0.017165
-448 : m2 -start 0.006648
-448 : end1 - start 0.013157
-449 : m2 -start 0.006532
-449 : end1 - start 0.012906
-450 : m2 -start 0.006309
-450 : end1 - start 0.012591
-451 : m2 -start 0.006482
-451 : end1 - start 0.012921
-452 : m2 -start 0.006304
-452 : end1 - start 0.012793
-453 : m2 -start 0.006351
-453 : end1 - start 0.012789
-454 : m2 -start 0.006515
-454 : end1 - start 0.017037
-455 : m2 -start 0.006472
-455 : end1 - start 0.012967
-456 : m2 -start 0.006322
-456 : end1 - start 0.012027
-457 : m2 -start 0.006583
-457 : end1 - start 0.012306
-458 : m2 -start 0.006481
-458 : end1 - start 0.012903
-458 : end3 - end20.005671
-459 : m2 -start 0.006567
-459 : end1 - start 0.012934
-460 : m2 -start 0.006405
-460 : end1 - start 0.012737
-461 : m2 -start 0.006684
-461 : end1 - start 0.013022
-462 : m2 -start 0.0064
-462 : end1 - start 0.012725
-463 : m2 -start 0.006449
-463 : end1 - start 0.012816
-464 : m2 -start 0.006339
-464 : end1 - start 0.012763
-465 : m2 -start 0.006662
-465 : end1 - start 0.013141
-466 : m2 -start 0.006428
-466 : end1 - start 0.012881
-467 : m2 -start 0.006515
-467 : end1 - start 0.012945
-468 : m2 -start 0.006307
-468 : end1 - start 0.012802
-469 : m2 -start 0.006398
-469 : end1 - start 0.012834
-470 : m2 -start 0.006987
-470 : end1 - start 0.017375
-471 : m2 -start 0.006498
-471 : end1 - start 0.008194
-472 : m2 -start 0.0066
-472 : end1 - start 0.012941
-472 : end3 - end20.005776
-473 : m2 -start 0.006382
-473 : end1 - start 0.012843
-474 : m2 -start 0.006405
-474 : end1 - start 0.012882
-475 : m2 -start 0.006451
-475 : end1 - start 0.012824
-476 : m2 -start 0.006437
-476 : end1 - start 0.012806
-477 : m2 -start 0.006567
-477 : end1 - start 0.016917
-478 : m2 -start 0.006407
-478 : end1 - start 0.012754
-479 : m2 -start 0.006539
-479 : end1 - start 0.013005
-480 : m2 -start 0.006643
-480 : end1 - start 0.013159
-481 : m2 -start 0.006452
-481 : end1 - start 0.016812
-482 : m2 -start 0.006492
-482 : end1 - start 0.012632
-483 : m2 -start 0.006457
-483 : end1 - start 0.008141
-484 : m2 -start 0.006996
-484 : end1 - start 0.013463
-485 : m2 -start 0.006629
-485 : end1 - start 0.017017
-486 : m2 -start 0.006387
-486 : end1 - start 0.012781
-487 : m2 -start 0.006641
-487 : end1 - start 0.012984
-488 : m2 -start 0.006644
-488 : end1 - start 0.012923
-489 : m2 -start 0.00644
-489 : end1 - start 0.012757
-490 : m2 -start 0.006614
-490 : end1 - start 0.012911
-491 : m2 -start 0.006461
-491 : end1 - start 0.012761
-492 : m2 -start 0.006461
-492 : end1 - start 0.012794
-493 : m2 -start 0.006473
-493 : end1 - start 0.012773
-494 : m2 -start 0.00645
-494 : end1 - start 0.012782
-495 : m2 -start 0.006508
-495 : end1 - start 0.012822
-496 : m2 -start 0.006636
-496 : end1 - start 0.012924
-497 : m2 -start 0.006321
-497 : end1 - start 0.01205
-498 : m2 -start 0.006478
-498 : end1 - start 0.012206
-499 : m2 -start 0.006433
-499 : end1 - start 0.012733
-499 : end3 - end20.00547
-500 : m2 -start 0.006613
-500 : end1 - start 0.012891
-501 : m2 -start 0.006449
-501 : end1 - start 0.012801
-502 : m2 -start 0.006505
-502 : end1 - start 0.012844
-503 : m2 -start 0.006574
-503 : end1 - start 0.013156
-504 : m2 -start 0.00653
-504 : end1 - start 0.012818
-505 : m2 -start 0.006508
-505 : end1 - start 0.012789
-506 : m2 -start 0.006485
-506 : end1 - start 0.012763
-507 : m2 -start 0.006842
-507 : end1 - start 0.013135
-508 : m2 -start 0.006365
-508 : end1 - start 0.012651
-509 : m2 -start 0.006532
-509 : end1 - start 0.01283
-510 : m2 -start 0.006472
-510 : end1 - start 0.012179
-511 : m2 -start 0.006668
-511 : end1 - start 0.012358
-512 : m2 -start 0.006386
-512 : end1 - start 0.012705
-513 : m2 -start 0.006429
-513 : end1 - start 0.01673
-514 : m2 -start 0.006816
-514 : end1 - start 0.014226
-515 : m2 -start 0.006734
-515 : end1 - start 0.013254
-516 : m2 -start 0.006606
-516 : end1 - start 0.012972
-517 : m2 -start 0.006511
-517 : end1 - start 0.012854
-518 : m2 -start 0.006322
-518 : end1 - start 0.012714
-519 : m2 -start 0.006626
-519 : end1 - start 0.012941
-520 : m2 -start 0.006734
-520 : end1 - start 0.013139
-521 : m2 -start 0.006442
-521 : end1 - start 0.012142
-522 : m2 -start 0.006654
-522 : end1 - start 0.012366
-523 : m2 -start 0.006553
-523 : end1 - start 0.012904
-523 : end3 - end20.005691
-524 : m2 -start 0.00637
-524 : end1 - start 0.012684
-525 : m2 -start 0.006471
-525 : end1 - start 0.012749
-526 : m2 -start 0.006622
-526 : end1 - start 0.012931
-527 : m2 -start 0.006647
-527 : end1 - start 0.012942
-528 : m2 -start 0.0064
-528 : end1 - start 0.012701
-529 : m2 -start 0.006728
-529 : end1 - start 0.013035
-530 : m2 -start 0.006511
-530 : end1 - start 0.012845
-531 : m2 -start 0.007029
-531 : end1 - start 0.013354
-532 : m2 -start 0.006412
-532 : end1 - start 0.01311
-533 : m2 -start 0.006546
-533 : end1 - start 0.012986
-534 : m2 -start 0.006493
-534 : end1 - start 0.012257
-535 : m2 -start 0.006529
-535 : end1 - start 0.017426
-535 : end3 - end20.006586
-536 : m2 -start 0.006558
-536 : end1 - start 0.012994
-537 : m2 -start 0.006937
-537 : end1 - start 0.017475
-538 : m2 -start 0.006773
-538 : end1 - start 0.014362
-539 : m2 -start 0.006546
-539 : end1 - start 0.013076
-540 : m2 -start 0.006491
-540 : end1 - start 0.013031
-541 : m2 -start 0.006396
-541 : end1 - start 0.012969
-542 : m2 -start 0.006564
-542 : end1 - start 0.013112
-543 : m2 -start 0.00667
-543 : end1 - start 0.012717
-544 : m2 -start 0.0067
-544 : end1 - start 0.012477
-545 : m2 -start 0.007066
-545 : end1 - start 0.018749
-545 : end3 - end20.006053
-546 : m2 -start 0.006513
-546 : end1 - start 0.017538
-547 : m2 -start 0.006467
-547 : end1 - start 0.013069
-548 : m2 -start 0.006617
-548 : end1 - start 0.013078
-549 : m2 -start 0.006607
-549 : end1 - start 0.01305
-550 : m2 -start 0.006614
-550 : end1 - start 0.013013
-551 : m2 -start 0.006615
-551 : end1 - start 0.013052
-552 : m2 -start 0.006584
-552 : end1 - start 0.012996
-553 : m2 -start 0.006601
-553 : end1 - start 0.013027
-554 : m2 -start 0.006663
-554 : end1 - start 0.013025
-555 : m2 -start 0.006602
-555 : end1 - start 0.012972
-556 : m2 -start 0.006634
-556 : end1 - start 0.013046
-557 : m2 -start 0.006919
-557 : end1 - start 0.013315
-558 : m2 -start 0.006912
-558 : end1 - start 0.012578
-559 : m2 -start 0.006634
-559 : end1 - start 0.012808
-560 : m2 -start 0.006596
-560 : end1 - start 0.013446
-560 : end3 - end20.005956
-561 : m2 -start 0.007179
-561 : end1 - start 0.01791
-562 : m2 -start 0.007257
-562 : end1 - start 0.014742
-563 : m2 -start 0.007216
-563 : end1 - start 0.014388
-564 : m2 -start 0.006598
-564 : end1 - start 0.012807
-565 : m2 -start 0.006632
-565 : end1 - start 0.012853
-566 : m2 -start 0.006632
-566 : end1 - start 0.012882
-567 : m2 -start 0.006999
-567 : end1 - start 0.013334
-568 : m2 -start 0.00674
-568 : end1 - start 0.013153
-569 : m2 -start 0.006463
-569 : end1 - start 0.016774
-570 : m2 -start 0.006468
-570 : end1 - start 0.01245
-571 : m2 -start 0.006664
-571 : end1 - start 0.012937
-571 : end3 - end20.005655
-572 : m2 -start 0.006462
-572 : end1 - start 0.016749
-573 : m2 -start 0.006817
-573 : end1 - start 0.014103
-574 : m2 -start 0.006463
-574 : end1 - start 0.012689
-575 : m2 -start 0.006437
-575 : end1 - start 0.012546
-576 : m2 -start 0.006314
-576 : end1 - start 0.012594
-577 : m2 -start 0.00661
-577 : end1 - start 0.012795
-578 : m2 -start 0.006629
-578 : end1 - start 0.012846
-579 : m2 -start 0.006591
-579 : end1 - start 0.012748
-580 : m2 -start 0.011157
-580 : end1 - start 0.018177
-581 : m2 -start 0.007033
-581 : end1 - start 0.014188
-582 : m2 -start 0.006553
-582 : end1 - start 0.017167
-583 : m2 -start 0.006892
-583 : end1 - start 0.013455
-584 : m2 -start 0.010974
-584 : end1 - start 0.01702
-585 : m2 -start 0.00692
-585 : end1 - start 0.013187
-586 : m2 -start 0.006676
-586 : end1 - start 0.013596
-586 : end3 - end20.005943
-587 : m2 -start 0.006779
-587 : end1 - start 0.013649
-588 : m2 -start 0.006891
-588 : end1 - start 0.017844
-589 : m2 -start 0.006724
-589 : end1 - start 0.013653
-590 : m2 -start 0.011366
-590 : end1 - start 0.019033
-591 : m2 -start 0.006878
-591 : end1 - start 0.01353
-592 : m2 -start 0.011349
-592 : end1 - start 0.019167
-593 : m2 -start 0.006376
-593 : end1 - start 0.012854
-594 : m2 -start 0.006864
-594 : end1 - start 0.018579
-595 : m2 -start 0.006484
-595 : end1 - start 0.013376
-596 : m2 -start 0.006774
-596 : end1 - start 0.014246
-597 : m2 -start 0.006304
-597 : end1 - start 0.012874
-598 : m2 -start 0.006712
-598 : end1 - start 0.012406
-599 : m2 -start 0.006292
-599 : end1 - start 0.011981
-600 : m2 -start 0.006643
-600 : end1 - start 0.017114
-600 : end3 - end20.005722
-601 : m2 -start 0.006408
-601 : end1 - start 0.01284
-602 : m2 -start 0.006315
-602 : end1 - start 0.013096
-603 : m2 -start 0.00654
-603 : end1 - start 0.012979
-604 : m2 -start 0.006709
-604 : end1 - start 0.013076
-605 : m2 -start 0.006289
-605 : end1 - start 0.01263
-606 : m2 -start 0.006265
-606 : end1 - start 0.01268
-607 : m2 -start 0.006298
-607 : end1 - start 0.016725
-608 : m2 -start 0.006487
-608 : end1 - start 0.012914
-609 : m2 -start 0.006511
-609 : end1 - start 0.016884
-610 : m2 -start 0.006495
-610 : end1 - start 0.012874
-611 : m2 -start 0.006678
-611 : end1 - start 0.017062
-612 : m2 -start 0.006568
-612 : end1 - start 0.012946
-613 : m2 -start 0.006699
-613 : end1 - start 0.012357
-614 : m2 -start 0.006571
-614 : end1 - start 0.012245
-615 : m2 -start 0.010921
-615 : end1 - start 0.017097
-615 : end3 - end20.005676
-616 : m2 -start 0.006615
-616 : end1 - start 0.012834
-617 : m2 -start 0.00634
-617 : end1 - start 0.012517
-618 : m2 -start 0.006463
-618 : end1 - start 0.012671
-619 : m2 -start 0.006454
-619 : end1 - start 0.012636
-620 : m2 -start 0.006494
-620 : end1 - start 0.012671
-621 : m2 -start 0.006464
-621 : end1 - start 0.012664
-622 : m2 -start 0.0025
-622 : end1 - start 0.01269
-623 : m2 -start 0.002463
-623 : end1 - start 0.012715
-624 : m2 -start 0.007061
-624 : end1 - start 0.013277
-625 : m2 -start 0.006579
-625 : end1 - start 0.012781
-626 : m2 -start 0.006477
-626 : end1 - start 0.012684
-627 : m2 -start 0.006298
-627 : end1 - start 0.0125
-628 : m2 -start 0.006364
-628 : end1 - start 0.012038
-629 : m2 -start 0.006491
-629 : end1 - start 0.012153
-630 : m2 -start 0.006367
-630 : end1 - start 0.012633
-630 : end3 - end20.005691
-631 : m2 -start 0.006351
-631 : end1 - start 0.012633
-632 : m2 -start 0.00648
-632 : end1 - start 0.012748
-633 : m2 -start 0.007189
-633 : end1 - start 0.018858
-634 : m2 -start 0.00688
-634 : end1 - start 0.013301
-635 : m2 -start 0.006453
-635 : end1 - start 0.012725
-636 : m2 -start 0.006849
-636 : end1 - start 0.014154
-637 : m2 -start 0.006541
-637 : end1 - start 0.012947
-638 : m2 -start 0.006545
-638 : end1 - start 0.012908
-639 : m2 -start 0.006502
-639 : end1 - start 0.012815
-640 : m2 -start 0.0066
-640 : end1 - start 0.012985
-641 : m2 -start 0.006467
-641 : end1 - start 0.012791
-642 : m2 -start 0.006514
-642 : end1 - start 0.012289
-643 : m2 -start 0.006451
-643 : end1 - start 0.012865
-644 : m2 -start 0.006971
-644 : end1 - start 0.014405
-644 : end3 - end20.0058
-645 : m2 -start 0.006794
-645 : end1 - start 0.013273
-646 : m2 -start 0.006437
-646 : end1 - start 0.01291
-647 : m2 -start 0.007154
-647 : end1 - start 0.018093
-648 : m2 -start 0.00646
-648 : end1 - start 0.013071
-649 : m2 -start 0.006936
-649 : end1 - start 0.013567
-650 : m2 -start 0.006124
-650 : end1 - start 0.01211
-651 : m2 -start 0.006504
-651 : end1 - start 0.016908
-652 : m2 -start 0.006307
-652 : end1 - start 0.016735
-653 : m2 -start 0.006291
-653 : end1 - start 0.012667
-654 : m2 -start 0.006558
-654 : end1 - start 0.012295
-655 : m2 -start 0.006325
-655 : end1 - start 0.012741
-655 : end3 - end20.005632
-656 : m2 -start 0.006279
-656 : end1 - start 0.012696
-657 : m2 -start 0.008345
-657 : end1 - start 0.01724
-658 : m2 -start 0.006733
-658 : end1 - start 0.013611
-659 : m2 -start 0.006437
-659 : end1 - start 0.017253
-660 : m2 -start 0.006459
-660 : end1 - start 0.013244
-661 : m2 -start 0.006717
-661 : end1 - start 0.013538
-662 : m2 -start 0.006644
-662 : end1 - start 0.013464
-663 : m2 -start 0.007121
-663 : end1 - start 0.018739
-664 : m2 -start 0.006657
-664 : end1 - start 0.013091
-665 : m2 -start 0.006601
-665 : end1 - start 0.01306
-666 : m2 -start 0.010813
-666 : end1 - start 0.017256
-667 : m2 -start 0.006509
-667 : end1 - start 0.012169
-668 : m2 -start 0.006306
-668 : end1 - start 0.011917
-669 : m2 -start 0.006252
-669 : end1 - start 0.011851
-670 : m2 -start 0.006368
-670 : end1 - start 0.012035
-671 : m2 -start 0.002476
-671 : end1 - start 0.008522
-672 : m2 -start 0.006375
-672 : end1 - start 0.016679
-673 : m2 -start 0.002323
-673 : end1 - start 0.012752
-673 : end3 - end20.005722
-674 : m2 -start 0.006383
-674 : end1 - start 0.012897
-675 : m2 -start 0.006884
-675 : end1 - start 0.013522
-676 : m2 -start 0.00669
-676 : end1 - start 0.01724
-677 : m2 -start 0.006471
-677 : end1 - start 0.013066
-678 : m2 -start 0.006551
-678 : end1 - start 0.013058
-679 : m2 -start 0.006564
-679 : end1 - start 0.013114
-680 : m2 -start 0.006675
-680 : end1 - start 0.013153
-681 : m2 -start 0.006717
-681 : end1 - start 0.013262
-682 : m2 -start 0.006449
-682 : end1 - start 0.01288
-683 : m2 -start 0.006557
-683 : end1 - start 0.008218
-684 : m2 -start 0.006335
-684 : end1 - start 0.012695
-684 : end3 - end20.005824
-685 : m2 -start 0.002439
-685 : end1 - start 0.012822
-686 : m2 -start 0.00638
-686 : end1 - start 0.012365
-687 : m2 -start 0.006181
-687 : end1 - start 0.012017
-688 : m2 -start 0.006332
-688 : end1 - start 0.01206
-689 : m2 -start 0.006407
-689 : end1 - start 0.011909
-690 : m2 -start 0.00626
-690 : end1 - start 0.012102
-691 : m2 -start 0.00617
-691 : end1 - start 0.012021
-692 : m2 -start 0.006882
-692 : end1 - start 0.013606
-693 : m2 -start 0.006546
-693 : end1 - start 0.012724
-694 : m2 -start 0.006162
-694 : end1 - start 0.01268
-695 : m2 -start 0.011303
-695 : end1 - start 0.022289
-696 : m2 -start 0.006542
-696 : end1 - start 0.012928
-697 : m2 -start 0.006476
-697 : end1 - start 0.01271
-698 : m2 -start 0.00667
-698 : end1 - start 0.012596
-699 : m2 -start 0.006659
-699 : end1 - start 0.012617
-700 : m2 -start 0.006466
-700 : end1 - start 0.01279
-700 : end3 - end20.005682
-701 : m2 -start 0.006579
-701 : end1 - start 0.012913
-702 : m2 -start 0.00662
-702 : end1 - start 0.012956
-703 : m2 -start 0.006608
-703 : end1 - start 0.012954
-704 : m2 -start 0.006463
-704 : end1 - start 0.012766
-705 : m2 -start 0.006449
-705 : end1 - start 0.012771
-706 : m2 -start 0.006613
-706 : end1 - start 0.017153
-707 : m2 -start 0.00662
-707 : end1 - start 0.013013
-708 : m2 -start 0.00667
-708 : end1 - start 0.013107
-709 : m2 -start 0.006638
-709 : end1 - start 0.013008
-710 : m2 -start 0.006639
-710 : end1 - start 0.017641
+*****************************
+previous MNISTS: -3 -3 -3 -3 -3 -3 -3 -3 -3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value 5
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 0 6 7 5 8 4 1 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 6 7 5 8 4 1 2 3 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value 5
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 8 3 1 6 0 7 5 2 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 1 6 0 7 5 2 4 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value 5
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 5 0 8 6 2 3 7 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 0 8 6 2 3 7 4 1 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value 5
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 0 2 3 5 4 1 8 6 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 2 3 5 4 1 8 6 7 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value 5
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 5 8 0 7 2 1 6 3 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 8 0 7 2 1 6 3 4 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value 5
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 3 2 0 7 4 6 8 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 2 0 7 4 6 8 5 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value 5
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 0 4 7 5 2 3 8 6 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 4 7 5 2 3 8 6 1 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value 5
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 3 1 4 2 7 0 6 8 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 4 2 7 0 6 8 5 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value 5
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 8 5 7 3 4 1 0 2 6 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 5 7 3 4 1 0 2 6 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value 5
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 3 1 0 6 5 2 8 4 7 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 1 0 6 5 2 8 4 7 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value 5
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 6 1 7 3 8 4 5 0 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 1 7 3 8 4 5 0 2 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value 5
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 2 7 1 4 5 6 0 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 7 1 4 5 6 0 3 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value 5
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 8 6 5 2 1 4 7 3 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 6 5 2 1 4 7 3 0 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value 5
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 7 3 1 8 5 0 2 6 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 3 1 8 5 0 2 6 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value 5
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 3 0 7 5 2 1 6 8 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 0 7 5 2 1 6 8 4 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value 5
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 5 6 1 7 0 4 3 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 5 6 1 7 0 4 3 8 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value 5
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 2 3 6 4 5 0 8 7 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 3 6 4 5 0 8 7 1 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value 5
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 6 8 0 1 7 5 4 2 3 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 8 0 1 7 5 4 2 3 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value 5
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 4 8 1 5 7 3 6 2 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 4 8 1 5 7 3 6 2 0 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value 5
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 2 0 7 3 6 8 4 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 2 0 7 3 6 8 4 5 1 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value 5
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 3 2 5 1 0 6 7 4 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 3 2 5 1 0 6 7 4 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value 5
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 8 2 0 4 3 7 6 5 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 2 0 4 3 7 6 5 1 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value 5
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 3 8 5 6 4 2 1 7 0 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 8 5 6 4 2 1 7 0 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value 5
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 6 7 0 3 5 8 1 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 6 7 0 3 5 8 1 4 2 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value 5
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 0 5 2 4 6 3 1 7 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 5 2 4 6 3 1 7 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value 5
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 3 4 6 7 0 1 2 5 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 3 4 6 7 0 1 2 5 8 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value 5
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 7 4 3 8 0 6 1 2 5 return value -1
+*****************************
+*****************************
+previous MNISTS: 7 4 3 8 0 6 1 2 5 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value 5
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 8 7 2 5 0 6 3 4 1 return value -1
+*****************************
+*****************************
+previous MNISTS: 8 7 2 5 0 6 3 4 1 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value 5
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 5 6 3 7 1 8 0 4 2 return value -1
+*****************************
+*****************************
+previous MNISTS: 5 6 3 7 1 8 0 4 2 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value 5
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
+*****************************
+previous MNISTS: 0 1 5 3 4 7 2 6 8 
+current MNISTS: 0 1 5 3 4 7 2 6 8 return value -1
+*****************************
