@@ -58,13 +58,13 @@ void AngleSolver::setCameraMAtrix(Settings& s)
 
 void AngleSolver::setRealWorldTargetS(const Settings& setting)
 {
-    int width =  setting.smallRuneSetting.width;
-	int height = setting.smallRuneSetting.height;
+    int Hwidth =  setting.smallRuneSetting.width/2;
+	int Hheight = setting.smallRuneSetting.height/2;
 
-	targetInWorld.push_back(Point3f(0,0,0));
-	targetInWorld.push_back(Point3f(width,0,0));
-	targetInWorld.push_back(Point3f(0,height, 0));
-	targetInWorld.push_back(Point3f(width, height, 0));
+	targetInWorld.push_back(Point3f(-Hwidth,Hheight,0));
+	targetInWorld.push_back(Point3f(Hwidth,Hheight,0));
+	targetInWorld.push_back(Point3f(-Hwidth,-Hheight, 0));
+	targetInWorld.push_back(Point3f(Hwidth, -Hheight, 0));
 }
 
 bool AngleSolver::setImageTargetS(vector<cv::Point2f> input,Mat& img)

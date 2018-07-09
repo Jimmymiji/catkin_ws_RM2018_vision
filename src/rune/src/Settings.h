@@ -1,3 +1,5 @@
+#ifndef SET
+#define SET
 #include "opencv2/core/core.hpp"
 #include <string>
 using namespace std;
@@ -48,8 +50,8 @@ struct DigitRecognizerSetting
 
 struct FindRectSetting
 {
-	int maxRectArea;
-	int minRectArea;
+	double maxRectArea;
+	double minRectArea;
 	double maxHWRatio;
 	double minHWRatio;
 	int checkRectHeight;
@@ -83,3 +85,5 @@ class Settings
 	std::string filename1, filename2;     // filename1 is the file for setting, filename2 is the file for seeting cameraMatrix & distortionMatrix
 	
 };
+
+#endif

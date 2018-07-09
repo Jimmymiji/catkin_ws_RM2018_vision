@@ -14,46 +14,42 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     Mat Green = channels.at(1);
     Mat R_B = Red - Blue;
     Mat R_G = Red - Green;
-#if show1
-    imshow("R-B",R_B);
-    waitKey(1);
-    imshow("R-G",R_G);
-    waitKey(1);
-    imshow("R",Red);
-    waitKey(1);
-    imshow("G",Green);
-    waitKey(1);
-    imshow("B",Blue);
-    waitKey(1);
-#endif
+    // imshow("R-B",R_B);
+    // waitKey(1);
+    // imshow("R-G",R_G);
+    // waitKey(1);
+    // imshow("R",Red);
+    // waitKey(1);
+    // imshow("G",Green);
+    // waitKey(1);
+    // imshow("B",Blue);
+    // waitKey(1);
     double redMean = mean(Red)[0];
     double blueMean = mean(Blue)[0];
     double greenMean = mean(Green)[0];
-    for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
+    double R_BMean = mean(R_B)[0];
+    for(int i = 0 ; i < R_B.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
     {
-        for(int j = 0; j < Red.cols;j++)
+        for(int j = 0; j < R_B.cols;j++)
         {
-            if(Red.at<uchar>(i,j)>redMean*1.3 && Red.at<uchar>(i,j)>=Blue.at<uchar>(i,j) && Red.at<uchar>(i,j)>=Green.at<uchar>(i,j) && Blue.at<uchar>(i,j)<blueMean*1.2 && Green.at<uchar>(i,j)<greenMean*1.2 )
+            if(R_B.at<uchar>(i,j)>R_BMean*s.digitRecognizerSetting.RedMean)
             {
-                Red.at<uchar>(i,j) = 255;
+                R_B.at<uchar>(i,j) = 255;
             }
             else
             {
-                Red.at<uchar>(i,j) = 0;
+                R_B.at<uchar>(i,j) = 0;
             }
         }
     }
-    threshold(Red,Red,200,255,THRESH_BINARY);
-   // morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    // morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
-    // morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(5,5)));
-    // morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    Red.copyTo(this->binary);
-
-#if show1
-    imshow("result",result);
+    threshold(R_B,R_B,s.digitRecognizerSetting.RedThreshold,255,THRESH_BINARY);
+    morphologyEx(R_B,R_B,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    morphologyEx(R_B,R_B,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    morphologyEx(R_B,R_B,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(5,5)));
+    morphologyEx(R_B,R_B,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    R_B.copyTo(this->binary);
+    imshow("result",R_B);
     waitKey(3);
-#endif
     return ;
 }
 
@@ -88,147 +84,46 @@ bool DigitRecognizer::findDigits()
         Mat a = Mat(contours[i]);
        // approxPolyDP(Mat(contours[i]),contours_poly[i],1,true);
         boundRect[i] = boundingRect(Mat(contours[i]));
-        
-        if(boundRect[i].area() > 50 &&  boundRect[i].area() < 25000)
+        if(boundRect[i].area() > s.digitRecognizerSetting.minBoundingArea &&  boundRect[i].area() < s.digitRecognizerSetting.minBoundingArea)
         {
            possibleTargetRects.push_back(boundRect[i]);
            rectangle(binary,boundRect[i],Scalar(255,255,255));
         }
     }
+    imshow("hehe",binary);
     if(possibleTargetRects.size()<5)
     {
-#if debug
-        //cout<<"original possibleTargetRects.size()<5"<<endl;
+        cout<<"original possibleTargetRects.size()<5"<<endl;
         //cout<< possibleTargetRects.size()<<endl;
-#endif
         return false;
     }
-    float **dist_map = new float *[possibleTargetRects.size()];
-    int rsize = possibleTargetRects.size();
-	for (int i = 0; i < rsize; i++)
-	{
-		dist_map[i] = new float[rsize];
-        for (int j = 0; j < rsize; j++)
-		{
-			dist_map[i][j] = 0;
-		}
-	}
-    
-    for(int i = 0; i<rsize;i++)
+    if(possibleTargetRects.size()>12)
     {
-        for(int j = i+1;j <rsize;j++)
-        {
-            double dx  = (possibleTargetRects[i].x + possibleTargetRects[i].width/2) - (possibleTargetRects[j].x + possibleTargetRects[j].width/2); 
-            double dy  = (possibleTargetRects[i].y + possibleTargetRects[i].height/2) - (possibleTargetRects[j].y + possibleTargetRects[j].height/2); 
-            // more punishment on far points
-            if(dy>30)
-            {
-                dy = dy*2;
-            }
-             if(dx>80) 
-            {
-                dx = dx*2;
-            }
-            double td = sqrt( 3*dy*dy); // y distance weigh more as digit have almost same height
-            dist_map[i][j] = td;
-            dist_map[j][i] = td;
-        }
+       cout<<"maybe mnist included"<<endl;
+       sort(possibleTargetRects.begin(),possibleTargetRects.end(),[](Rect& a, Rect& b){return (a.y + a.height/2) < (b.y + b.height/2);});
+       sort(possibleTargetRects.begin(),possibleTargetRects.begin()+5,[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.y + b.width/2);});
+       for(int i = 0; i<5;i++)
+       {
+           targets.push_back(possibleTargetRects[i]);
+       }
+       return true;
     }
-    int center_idx = 0;
-	float min_dist = 100000000;
-	for (int i = 0; i < rsize; ++i)
-	{
-		float cur_d = 0;
-		for (int j = 0; j < rsize; ++j)
-		{
-			cur_d += dist_map[i][j];
-		}
-		if (cur_d < min_dist)
-		{
-			min_dist = cur_d;
-			center_idx = i;
-		}
-	}
-    for (int i = 0; i < rsize; i++)
-	{
-		delete[] dist_map[i];
-	}
-	delete[] dist_map;
-   
-    int x = possibleTargetRects[center_idx].x + possibleTargetRects[center_idx].width/2;
-    int y = possibleTargetRects[center_idx].y + possibleTargetRects[center_idx].height/2;
-    // rectangle(binary,possibleTargetRects[center_idx],Scalar(255,0,255),4);
-    /*
-    if(x > right || x < left || y < low)
+    else if(possibleTargetRects.size()>5)
     {
-        return false;
-    }
-    */
-    // kick out rectangles too high or too low
-    for(vector<Rect>::iterator p = possibleTargetRects .begin();p < possibleTargetRects.end();)
-    {
-        if(abs((p->y + p->height/2) - y)>50)
-        {
-            rectangle(binary,*p,Scalar(255,255,255),1);
-            p = possibleTargetRects.erase(p);
-#if debug
-            //cout<<" erase(p) -1"<<endl;
-#endif
-        }
-        else
-        {
-            p++;
-        }
-    }
-#if show1
-        imshow("p",binary);
-#endif
-    if(possibleTargetRects.size()<5)
-    {
-#if debug
-       //cout<<"possibleTargetRects.size()<5"<<endl;
-#endif
-        return false;
+        sort(possibleTargetRects.begin(),possibleTargetRects.begin()+5,[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.y + b.width/2);});
     }
     sort(possibleTargetRects.begin(),possibleTargetRects.end(),[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.x + b.width/2);});
     if(possibleTargetRects.size()==5)
     {   
-#if debug
-        //cout<<" exactly 5"<<endl;
-#endif
+
+        cout<<" exactly 5"<<endl;
         for(int i = 0; i<5;i++)
         {
             targets.push_back(possibleTargetRects[i]);
         }
         return true;
     }
-    else
-    {
-       for(int i = 1 ; i<5;i++)
-        {
-            if(possibleTargetRects[i] == possibleTargetRects[center_idx])
-            {
-                center_idx = i;
-                break;
-            }
-        }
-        if(center_idx < 2 || center_idx > (possibleTargetRects.size()-3))
-        {
-#if debug
-                //cout<<"enter_idx < 2 || center_idx > (possibleTargetRects.size()-3)"<<endl;
-#endif            
-            return false;
-        } 
-        else
-        {
-        targets.push_back(possibleTargetRects[center_idx-2]);
-        targets.push_back(possibleTargetRects[center_idx-1]);
-        targets.push_back(possibleTargetRects[center_idx]);
-        targets.push_back(possibleTargetRects[center_idx+1]);
-        targets.push_back(possibleTargetRects[center_idx+2]);
-        return true;
-        }
-    }
+
 }
 
 int DigitRecognizer::recognize(Mat img)
@@ -361,7 +256,8 @@ bool DigitRecognizer::getAns()
             ans[i] = -2;
             continue;
         }
-        morphologyEx(binary(targets[i]),a,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+        int erodeSize = s.digitRecognizerSetting.erodeSize;
+        morphologyEx(binary(targets[i]),a,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(erodeSize,erodeSize)));
         ans[i] = recognize(a);
 	}
     for(int i = 0; i<5;i++)

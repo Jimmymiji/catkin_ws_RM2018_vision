@@ -101,12 +101,13 @@ void findSquaresBinary(const Mat& image,  vector<vector<Point> >& squares)
             }
 }
 
-double maxRectArea = 25000;
-double minRectArea = 2000;
-double maxHWRatio = 0.9;
-double minHWRatio = 0.45;
-void findRects(Mat image,vector<vector<Point>>& squares)
+
+void findRects(Mat image,vector<vector<Point>>& squares,const Settings& s)
 {
+    double maxRectArea = s.findRectSetting.maxRectArea;
+    double minRectArea = s.findRectSetting.minRectArea;
+    double maxHWRatio = s.findRectSetting.maxHWRatio;
+    double minHWRatio = s.findRectSetting.minHWRatio;
     squares.clear();
     vector<vector<Point>> contours;
     findContours(image, contours, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_TC89_L1);
@@ -160,27 +161,23 @@ struct RectWithDist
     float d;
 };
 
-bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& rects)
+bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& rects,const Settings& s)
 {
     // too few squares
     if(squares.size()<9)
     {
-#if debug
         //cout<<"squares.size()<9"<<endl;
-#endif
         return false;
     }
     rects.clear();
-#if debug
     //cout<< "_________________________"<<endl;
-#endif
+    int checkRectHeight = s.findRectSetting.checkRectHeight;
+    int checkRectWidth = s.findRectSetting.checkRectWidth;
     for(int i = 0; i < squares.size();i++)
     {
         RotatedRect minRect = minAreaRect(squares[i]);
-#if debug
         //cout<< "size of "<< i << "  "<<minRect.size.width << " , "<<minRect.size.height<<endl;
-#endif
-        if(minRect.size.height<30||minRect.size.width<30)//||minRect.size.width>minRect.size.height*0.8)
+        if(minRect.size.height<checkRectHeight||minRect.size.width<checkRectWidth)//||minRect.size.width>minRect.size.height*0.8)
         {
             continue;
         }
@@ -189,21 +186,20 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
             rects.push_back(minRect);
         }
     }
-#if debug
     //cout<< "_________________________"<<endl;
 
     // if(rects.size()<9)
     // {
     //     cout<<"------rects.size()<9"<<endl;
     // }
-#endif
     sort(rects.begin(),rects.end(),ascendingX);
     vector<RotatedRect>::iterator p = rects.begin();
 
     // eliminate the duplicated rects recognized
+    int yOffset = s.findRectSetting.yOffset;
     for(;p<rects.end();)
     {
-        if(abs(p->center.x - (p+1)->center.x)<5 && abs(p->center.y - (p+1)->center.y)<5)
+        if(abs(p->center.x - (p+1)->center.x)<yOffset && abs(p->center.y - (p+1)->center.y)<yOffset)
         {
             p = rects.erase(p);
         }
@@ -220,10 +216,12 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
     //     cout<<"rects.size()<9"<<endl;
     // }
 //#endif
+/*
     if(rects.size()>0)
     {
+        double areaRatio = s.findRectSetting.areaRatio;
         sort(rects.begin(),rects.end(),[](RotatedRect& a, RotatedRect& b){return a.size.area() > b.size.area();});
-        double Area= rects[3].size.area()*0.8;
+        double Area= rects[3].size.area()*areaRatio;
         for(vector<RotatedRect>::iterator p = rects.begin(); p < rects.end();)
         {
             if(p->size.area() < Area)
@@ -236,6 +234,7 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
             }
         }
     }
+*/
     if (rects.size() > 9)
 	{
         float **dist_map = new float *[rects.size()];
@@ -280,10 +279,8 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
 		}
 		delete[] dist_map;
         rectangle(img,rects[center_idx].boundingRect(),Scalar(0,255,255),5);
-#if show
         imshow("center",img);
         waitKey(1);
-#endif
         vector<RectWithDist> RWD;
         for(int i=0; i<rsize; i++)
         {
@@ -298,9 +295,6 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
         rects.clear();
         if(RWD.size()<9)
         {
-#if debug
-            //cout<<"RWD.size()<9"<<endl;
-#endif
             return false;
         }
         int count = 0;

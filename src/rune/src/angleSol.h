@@ -1,3 +1,5 @@
+#ifndef AS
+#define AS
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/core/core.hpp>
 #include <opencv2/opencv.hpp>
@@ -36,3 +38,5 @@ public:
 	void getShooterAngle();
 	void sendAns(Mat& img);
 };
+
+#endif

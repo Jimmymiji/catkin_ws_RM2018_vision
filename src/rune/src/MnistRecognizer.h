@@ -1,5 +1,5 @@
-#pragma once
-
+#ifndef MN
+#define MN
 #include "tiny_dnn/tiny_dnn.h"
 #include <opencv2/opencv.hpp>
 #include "define.hpp"
@@ -34,3 +34,4 @@ public:
 	string Model_Path ;
 
 };
+#endif

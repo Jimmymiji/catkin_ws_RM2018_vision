@@ -48,9 +48,10 @@ std::string exec(const char *cmd) {
   return result;
 }
 
-void DigitThread(Mat img, vector<int> &ans) {
-  DigitRecognizer dt;
+void DigitThread(Mat img, vector<int> &ans,Settings& s) {
+  DigitRecognizer dt(s);
   dt.preprocessRGB(img, img);
+  ans.clear();
   if (!dt.findDigits()) {
     cout << " no digit found " << endl;
     return;
@@ -147,46 +148,45 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
     end = clock();
     cout << "hz " << 1 / ((double)(end - start) / CLOCKS_PER_SEC) << endl;
     start = clock();
-    while (pIdx - cIdx == 0)
-      ;
+    while (pIdx - cIdx == 0);
     clock_t end0 = clock();
-    myfile << to_string(cIdx) << " : end0 - start "
-           << (double)(end0 - start) / CLOCKS_PER_SEC << endl;
     Mat img, img1;
     data[cIdx % BUFFER_SIZE].img.copyTo(img);
     data[cIdx % BUFFER_SIZE].img.copyTo(img1);
     unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
     ++cIdx;
     // myfile<<"***********"<<to_string(cIdx)<<"********"<<endl;
-    // imshow("original",img);
-    // waitKey(1);
-    // mst.blueCount = lrb.countBlueBlock(img);
+    imshow("original",img);
+    waitKey(1);
+    //mst.blueCount = lrb.countBlueBlock(img);
 
-    // thread t3(DigitThread,img1,mst.currentDigits);
-    // DigitThread(img1,mst.currentDigits);
+    // thread t3(DigitThread,img1,mst.currentDigits,s);
+    //DigitThread(img1,mst.currentDigits,s);
     Mat image;
     cvtColor(img, image, CV_BGR2GRAY);
     Mat binary;
     double Mean = mean(image)[0];
-    threshold(image, binary, Mean * 2.6, 255, CV_THRESH_BINARY);
+    threshold(image, binary, Mean * s.imgCPSetting.mean, 255, CV_THRESH_BINARY);
     clock_t m1 = clock();
+    int erodeSize1 = s.imgCPSetting.erodeSize1;
+    int erodeSize2 = s.imgCPSetting.erodeSize2;
     morphologyEx(binary, binary, MORPH_ERODE,
-                 getStructuringElement(MORPH_RECT, Size(3, 3)));
+                 getStructuringElement(MORPH_RECT, Size(erodeSize1, erodeSize1)));
     morphologyEx(binary, binary, MORPH_ERODE,
-                 getStructuringElement(MORPH_RECT, Size(3, 3)));
+                 getStructuringElement(MORPH_RECT, Size(erodeSize2, erodeSize2)));
     clock_t m2 = clock();
     myfile << to_string(cIdx) << " : m2 -start "
            << (double)(m2 - start) / CLOCKS_PER_SEC << endl;
     vector<vector<Point>> squares;
     // imshow("binary",binary);
-    findRects(binary, squares);
+    findRects(binary, squares,s);
     drawSquares(img1, squares);
     waitKey(1);
     vector<RotatedRect> rects;
     clock_t end1 = clock();
     myfile << to_string(cIdx) << " : end1 - start "
            << (double)(end1 - start) / CLOCKS_PER_SEC << endl;
-    if (!checkRects(binary, squares, rects)) {
+    if (!checkRects(binary, squares, rects,s)) {
       // t3.join();
       target.x = -1;
       target.y = -1;
