@@ -45,5 +45,6 @@
 <mean>2.6</mean>
 <erodeSize1>3</erodeSize1>
 <erodeSize2>3</erodeSize2>
+<hitNumber>9</hitNumber>
 </ImgCPSetting>
 </opencv_storage>

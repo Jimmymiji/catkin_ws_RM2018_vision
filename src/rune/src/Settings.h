@@ -66,6 +66,7 @@ struct ImgCPSetting
 	double mean;
 	int erodeSize1;
 	int erodeSize2;
+	int hitNumbuer;
 	void read(const FileNode& node);
 };
 

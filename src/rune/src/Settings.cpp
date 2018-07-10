@@ -69,6 +69,7 @@ void ImgCPSetting::read(const FileNode &node)
 	node["mean"]>>mean;
 	node["erodeSize1"]>>erodeSize1;
 	node["erodeSize2"]>>erodeSize2;
+	node["hitNumber"]>>hitNumber;
 }
 bool Settings::load()
 {

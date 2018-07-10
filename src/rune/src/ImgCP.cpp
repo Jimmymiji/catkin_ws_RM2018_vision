@@ -213,7 +213,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
       }
       // imshow("a",img);
       // waitKey(1);
-      int hitIndex = mst.whichToShootSemiAuto(myfile, 5);
+      int hitIndex = mst.whichToShootSemiAuto(myfile, s.imgCPSetting.hitNumber);
       if (hitIndex == -1) {
         mst.Fail();
         continue;
