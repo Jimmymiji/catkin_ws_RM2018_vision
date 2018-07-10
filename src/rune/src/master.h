@@ -48,6 +48,7 @@ class Master
     {
         bool digitChaged = false;
         bool mnistChaged = false;
+        int numOfMnistChanged = 0;
         if(currentDigits.size()!=5 || currentMNIST.size()!=9)
         {
             record(file,true,-1);
@@ -67,9 +68,12 @@ class Master
         {
             if(previousMNIST[i]!=currentMNIST[i])
             {
-                mnistChaged = true;
-                break;
+                numOfMnistChanged++;
             }
+        }
+        if(numOfMnistChanged > 2)
+        {
+            mnistChaged = true;  
         }
         if(digitChaged)
         {
@@ -105,6 +109,7 @@ class Master
     int whichToShootSemiAuto(ofstream& file,int target)
     {
         bool mnistChaged = false;
+        int numOfMnistChanged = 0;
         if(currentMNIST.size()!=9)
         {
             //record(file,false,-1);
@@ -115,9 +120,12 @@ class Master
         {
             if(previousMNIST[i]!=currentMNIST[i])
             {
-                mnistChaged = true;
-                break;
+                numOfMnistChanged++;
             }
+        }
+        if(numOfMnistChanged > 2)
+        {
+            mnistChaged = true;
         }
         if(mnistChaged)
         {

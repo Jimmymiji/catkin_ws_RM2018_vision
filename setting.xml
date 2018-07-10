@@ -20,7 +20,7 @@
 </shooterSetting>
 
 <DigitRecognizerSetting>
-<RedMean>1.3</RedMean>
+<RedMean>2.5</RedMean>
 <RedThreshold>200</RedThreshold>
 <maxBoundingArea>25000</maxBoundingArea>
 <minBoundingArea>50</minBoundingArea>
@@ -28,6 +28,7 @@
 <dxPenalty>80</dxPenalty>
 <HighLowPenalty>50</HighLowPenalty>
 <erodeSize>3</erodeSize>
+<one>2.5</one>
 </DigitRecognizerSetting>
 
 <FindRectSetting>
@@ -42,7 +43,7 @@
 </FindRectSetting>
 
 <ImgCPSetting>
-<mean>2.6</mean>
+<mean>2.5</mean>
 <erodeSize1>3</erodeSize1>
 <erodeSize2>3</erodeSize2>
 <hitNumber>9</hitNumber>

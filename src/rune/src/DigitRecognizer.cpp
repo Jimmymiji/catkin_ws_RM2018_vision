@@ -10,46 +10,34 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     vector<Mat> channels;
     split(image,channels); 
     Mat Red = channels.at(2);
-    Mat Blue = channels.at(0);
-    Mat Green = channels.at(1);
-    Mat R_B = Red - Blue;
-    Mat R_G = Red - Green;
-    // imshow("R-B",R_B);
-    // waitKey(1);
-    // imshow("R-G",R_G);
-    // waitKey(1);
-    // imshow("R",Red);
-    // waitKey(1);
-    // imshow("G",Green);
-    // waitKey(1);
-    // imshow("B",Blue);
-    // waitKey(1);
+    // Mat Blue = channels.at(0);
+    // Mat Green = channels.at(1);
     double redMean = mean(Red)[0];
-    double blueMean = mean(Blue)[0];
-    double greenMean = mean(Green)[0];
-    double R_BMean = mean(R_B)[0];
-    for(int i = 0 ; i < R_B.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
+    // double blueMean = mean(Blue)[0];
+    // double greenMean = mean(Green)[0];
+    // double R_BMean = mean(R_B)[0];
+    for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
     {
-        for(int j = 0; j < R_B.cols;j++)
+        for(int j = 0; j <Red.cols;j++)
         {
-            if(R_B.at<uchar>(i,j)>R_BMean*s.digitRecognizerSetting.RedMean)
+            if(Red.at<uchar>(i,j)>redMean*s.digitRecognizerSetting.RedMean)
             {
-                R_B.at<uchar>(i,j) = 255;
+                Red.at<uchar>(i,j) = 255;
             }
             else
             {
-                R_B.at<uchar>(i,j) = 0;
+                Red.at<uchar>(i,j) = 0;
             }
         }
     }
-    threshold(R_B,R_B,s.digitRecognizerSetting.RedThreshold,255,THRESH_BINARY);
-    morphologyEx(R_B,R_B,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    morphologyEx(R_B,R_B,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    morphologyEx(R_B,R_B,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(5,5)));
-    morphologyEx(R_B,R_B,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    R_B.copyTo(this->binary);
-    imshow("result",R_B);
-    waitKey(3);
+    threshold(Red,Red,s.digitRecognizerSetting.RedThreshold,255,THRESH_BINARY);
+    morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    Red.copyTo(this->binary);
+    imshow("result",Red);
+    waitKey(1);
     return ;
 }
 
@@ -84,10 +72,14 @@ bool DigitRecognizer::findDigits()
         Mat a = Mat(contours[i]);
        // approxPolyDP(Mat(contours[i]),contours_poly[i],1,true);
         boundRect[i] = boundingRect(Mat(contours[i]));
-        if(boundRect[i].area() > s.digitRecognizerSetting.minBoundingArea &&  boundRect[i].area() < s.digitRecognizerSetting.minBoundingArea)
+        if(boundRect[i].area() > 50 &&  boundRect[i].area() < 2000)
         {
            possibleTargetRects.push_back(boundRect[i]);
            rectangle(binary,boundRect[i],Scalar(255,255,255));
+        }
+        else
+        {
+            cout<<boundRect[i].area()<<endl;
         }
     }
     imshow("hehe",binary);
@@ -129,11 +121,12 @@ bool DigitRecognizer::findDigits()
 int DigitRecognizer::recognize(Mat img)
 {
     double ratio = (double)img.rows/(double)img.cols;
+    cout<<ratio<<endl;
     if(ratio<1)
     {
         return -1;
     }
-    else if(ratio>3 && ratio < 10)
+    else if(ratio>s.digitRecognizerSetting.one && ratio < 20)
     {
         return 1;
     }

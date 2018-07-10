@@ -45,6 +45,7 @@ struct DigitRecognizerSetting
 	int dxPenalty;
 	int HighLowPenalty;
 	int erodeSize;
+	double one;
 	void read(const FileNode& node);
 };
 
@@ -66,7 +67,7 @@ struct ImgCPSetting
 	double mean;
 	int erodeSize1;
 	int erodeSize2;
-	int hitNumbuer;
+	int hitNumber;
 	void read(const FileNode& node);
 };
 

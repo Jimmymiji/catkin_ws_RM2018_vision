@@ -48,24 +48,29 @@ std::string exec(const char *cmd) {
   return result;
 }
 
-void DigitThread(Mat img, vector<int> &ans,Settings& s) {
+bool DigitThread(Mat img, vector<int> &answer,Settings& s) {
   DigitRecognizer dt(s);
   dt.preprocessRGB(img, img);
-  ans.clear();
+  answer.clear();
   if (!dt.findDigits()) {
     cout << " no digit found " << endl;
-    return;
+    return false;
   }
+  string haha ;
   if (dt.getAns()) {
+    cout<<"------2--------"<<endl;
     for (int i = 0; i < 5; i++) {
-      ans.push_back(ans[i]);
+      answer.push_back(dt.ans[i]);
+      haha = haha+" "+to_string(dt.ans[i]);
+      cout<<dt.ans[i]<<" ";
     }
+    cout<<endl;
     // dt.recordResults(cIdx);
-    return;
+    return true;
   }
-
+  
   // dt.recordResults(cIdx);
-  return;
+  return false;
 }
 void ImgCP::ImageProducer() {
   if (isVideoMode) {
@@ -157,10 +162,9 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
     // myfile<<"***********"<<to_string(cIdx)<<"********"<<endl;
     imshow("original",img);
     waitKey(1);
-    //mst.blueCount = lrb.countBlueBlock(img);
+    mst.blueCount = lrb.countBlueBlock(img);
 
     // thread t3(DigitThread,img1,mst.currentDigits,s);
-    //DigitThread(img1,mst.currentDigits,s);
     Mat image;
     cvtColor(img, image, CV_BGR2GRAY);
     Mat binary;
@@ -189,6 +193,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
       mst.Fail();
       continue;
     }
+
     bool outOfImg = false;
     MnistRecognizer MR;
 
@@ -206,14 +211,35 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
       continue;
     }
     if (MR.classify2()) {
-      for (int i = 1; i <= 9; i++) {
+      for (int i = 1; i <= 9; i++) 
+      {
         //     putText(img,to_string(i),rects[MR.mnistLabels[i]].center,
         //     FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
         mst.currentMNIST.push_back(MR.mnistLabels[i]);
       }
+      int DigitLeft = rects[0].center.x;
+      int DigitRight = rects[2].center.x;
+      int DigitDown  = (rects[0].boundingRect().y + rects[2].boundingRect().y)/2;
+      int DigitUp = DigitDown - (rects[0].boundingRect().height + rects[2].boundingRect().height);
+      if(DigitUp<0)
+      DigitUp = 0;
+      Mat ROIOfDigits = img1(Range(DigitUp,DigitDown),Range(DigitLeft,DigitRight));
+      if(!DigitThread(ROIOfDigits, mst.currentDigits,s))
+      {
+        mst.Fail();
+        continue;
+      }
+      string haha;
+      for(int i = 0; i< 5;i++)
+      {
+        haha  = haha +" "+to_string(mst.currentDigits[i]);
+      }
+      putText(img,haha,Point(400,100),
+             FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,0),3);
       // imshow("a",img);
       // waitKey(1);
-      int hitIndex = mst.whichToShootSemiAuto(myfile, s.imgCPSetting.hitNumber);
+      //int hitIndex = mst.whichToShootSemiAuto(myfile, s.imgCPSetting.hitNumber);
+      int hitIndex = mst.whichToShootAuto(myfile);
       if (hitIndex == -1) {
         mst.Fail();
         continue;

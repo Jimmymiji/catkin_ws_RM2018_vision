@@ -50,6 +50,8 @@ void DigitRecognizerSetting::read(const FileNode &node)
 	node["dxPenalty"]>>dxPenalty;
 	node["HighLowPenalty"]>>HighLowPenalty;
 	node["erodeSize"]>>erodeSize;
+	node["one"]>>one;
+
 }
 
 void FindRectSetting::read(const FileNode &node)
