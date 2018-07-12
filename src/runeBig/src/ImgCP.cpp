@@ -33,27 +33,28 @@ void preprocessRGB(Mat img, Mat& result)
     Mat Green = channels.at(1);
     Mat R_B = Red - Blue;
     Mat G_B = Green - Blue;
-    imshow("R-B",R_B);
-    waitKey(1);
-    imshow("G_B",G_B);
-    waitKey(1);
+    // imshow("R-B",R_B);
+    // waitKey(1);
+    // imshow("G_B",G_B);
+    // waitKey(1);
     result = R_B & G_B;
     imshow("result",result);
-    // result = R_B & R_G;
-    // threshold(result,result,90,255,THRESH_BINARY);
     waitKey(1);
     return ;
 }
-void DigitThread(Mat img,vector<int>& ans)
+bool DigitThread(Mat img,vector<int>& ans)
 {
     //cout<<"thread 3 running"<<endl;
+    imshow("digits",img);
+    waitKey(1);
     DigitRecognizer dt;
-    dt.preprocessRGB(img,img);
+   // dt.preprocessRGB(img,img);
+   img.copyTo(dt.binary);
     if(!dt.findDigits())
     {
         //cout<<"thread 3 end 1"<<endl
         cout<<" no digit found "<<endl;
-        return;
+        return false;
     }
     if(dt.getAns())
     {
@@ -61,14 +62,14 @@ void DigitThread(Mat img,vector<int>& ans)
         for(int i = 0; i<5;i++)
         {
             cout<< "  "<< dt.ans[i];
-            ans.push_back(ans[i]);
+            ans.push_back(dt.ans[i]);
         }
         //dt.recordResults(cIdx);
-        return;
+        return true;
     }
     
     //dt.recordResults(cIdx);
-    return;
+    return false;
 }
 void ImgCP::ImageProducer()
 {
@@ -148,8 +149,9 @@ void ImgCP::ImageConsumer(int argc, char** argv)
     {
         start = clock();
         while (pIdx - cIdx == 0);
-        Mat img,result;
+        Mat img,result, img1;
 		data[cIdx % BUFFER_SIZE].img.copyTo(img);
+        data[cIdx % BUFFER_SIZE].img.copyTo(img1);
 		unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
 		++cIdx;
         preprocessRGB(img,result);
@@ -158,11 +160,12 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         threshold(result,binary,Mean*15,255,CV_THRESH_BINARY);
         imshow("binary1",binary);
         waitKey(1);
-        morphologyEx( binary,binary, MORPH_DILATE, getStructuringElement(MORPH_RECT,Size(7,7)));
+        morphologyEx( binary,binary, MORPH_DILATE, getStructuringElement(MORPH_RECT,Size(5,5)));
         imshow("binary2",binary);
         waitKey(1);
         vector<vector<Point>> squares;
         findRects(binary,squares);
+        drawSquares(img1,squares);
         vector<RotatedRect> rects;
         if(!checkRects(img,squares,rects))
         {
@@ -174,8 +177,6 @@ void ImgCP::ImageConsumer(int argc, char** argv)
             continue;
         }
         FNRecognizer haha;
-        imshow("wtf",img);
-        waitKey(1);
         bool outOfImg = false;
         for (int i = 0; i < 9; i++) 
         {
@@ -207,9 +208,19 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         }
         for (int i = 1; i <= 9; i++) 
         {
-            //     putText(img,to_string(i),rects[MR.mnistLabels[i]].center,
-            //     FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
             mst.currentMNIST.push_back(haha.relations[i]);
+        }
+        int DigitLeft = rects[0].center.x;
+        int DigitRight = rects[2].center.x;
+        int DigitDown  = (rects[0].boundingRect().y + rects[2].boundingRect().y)/2;
+        int DigitUp = DigitDown - (rects[0].boundingRect().height + rects[2].boundingRect().height);
+        if(DigitUp<0)
+        DigitUp = 0;
+        Mat ROIOfDigits = binary(Range(DigitUp,DigitDown),Range(DigitLeft,DigitRight));
+        if(!DigitThread(ROIOfDigits, mst.currentDigits))
+        {
+            mst.Fail();
+            continue;
         }
         int hitNumber = mst.whichToShootSemiAuto(myfile, 5);
         if(hitNumber == -1)

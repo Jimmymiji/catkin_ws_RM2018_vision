@@ -187,9 +187,7 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
     for(int i = 0; i < squares.size();i++) 
     {
         RotatedRect minRect = minAreaRect(squares[i]);
-//#if debug
         //cout<< "size of "<< i << "  "<<minRect.size.width << " , "<<minRect.size.height<<endl;
-//#endif
         if(minRect.size.height<20||minRect.size.width<20)//||minRect.size.width>minRect.size.height*0.8)
         {
             continue;
@@ -199,18 +197,14 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
             rects.push_back(minRect);
         }
     }
-//#if debug
     //cout<< "_________________________"<<endl;
-
     if(rects.size()<9)
     {
         //cout<<"------rects.size()<9"<<endl;
     }
-//#endif
     sort(rects.begin(),rects.end(),ascendingX);
     vector<RotatedRect>::iterator p = rects.begin();
    
-    // eliminate the duplicated rects recognized 
     for(;p<rects.end();)
     {
         if(abs(p->center.x - (p+1)->center.x)<5 && abs(p->center.y - (p+1)->center.y)<5)
@@ -222,115 +216,15 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
             p++;
         }
     }
-
-    // too few rects
     if(rects.size()<9)
     {
       //  cout<<"rects.size()<9"<<endl;
     }
-    // if(rects.size()>0)
-    // {
-    //     sort(rects.begin(),rects.end(),[](RotatedRect& a, RotatedRect& b){return a.size.area() > b.size.area();});
-    //     double Area= rects[3].size.area()*0.8;
-    //     // eliminate too small rects
-    //     for(vector<RotatedRect>::iterator p = rects.begin(); p < rects.end();)
-    //     {
-    //         if(p->size.area() < Area)
-    //         {
-    //             p = rects.erase(p);
-    //         }
-    //         else
-    //         {
-    //             p++;
-    //         }
-    //     }
-    // }
-    // pick 9 sudoku from them
-    if (rects.size() > 9) 
-	{
-        float **dist_map = new float *[rects.size()];
-        int rsize = rects.size();
-		for (int i = 0; i < rsize; i++)
-		{
-			dist_map[i] = new float[rsize];
-			for (int j = 0; j < rsize; j++)
-			{
-				dist_map[i][j] = 0;
-			}
-		}
-		// calculate distance of each cell center
-		for (int i = 0; i < rsize; ++i)
-		{
-			for (int j = i + 1; j < rsize; ++j)
-			{
-				int dx = rects[i].center.x - rects[j].center.x;
-                int dy = rects[i].center.y - rects[j].center.y; 
-                double d = sqrt(dx*dx + dy*dy);   
-				dist_map[i][j] = d;
-				dist_map[j][i] = d;
-			}
-		}
-        // choose the minimun distance cell as center cell
-		int center_idx = 0;
-		float min_dist = 100000000;
-		for (int i = 0; i < rsize; ++i)
-		{
-			float cur_d = 0;
-			for (int j = 0; j < rsize; ++j)
-			{
-				cur_d += dist_map[i][j];
-			}
-			if (cur_d < min_dist)
-			{
-				min_dist = cur_d;
-				center_idx = i;
-			}
-		}
-        for (int i = 0; i < rsize; i++)
-		{
-			delete[] dist_map[i];
-		}
-		delete[] dist_map;
-        // find the distance between other rect and center rect
-        // rectangle(img,rects[center_idx].boundingRect(),Scalar(0,255,255),5);
-        // imshow("center",img);
-        // waitKey(1);
-        vector<RectWithDist> RWD;
-        for(int i=0; i<rsize; i++)
-        {
-            RectWithDist temp;
-            int dx = rects[i].center.x - rects[center_idx].center.x;
-            int dy = rects[i].center.y - rects[center_idx].center.y;
-            temp.d = sqrt( dx*dx + dy*dy);
-            temp.r = rects[i];
-            RWD.push_back(temp);
-        }
-
-		// sort distance between each cell and the center cell and choose the nearest 9 cell as suduku
-		std::sort(RWD.begin(),RWD.end(), [](RectWithDist &rwd1, RectWithDist &rwd2) { return rwd1.d < rwd2.d; });
-        rects.clear();
-        if(RWD.size()<9)
-        {
-//#if debug            
-            //cout<<"RWD.size()<9"<<endl;
-//#endif
-            return false;
-        }
-        int count = 0;
-        int i = 0;
-        while(count < 9 && i <RWD.size())
-        {
-            if(RWD[i].r.size.area() < RWD[0].r.size.area()*0.8)
-            {
-                i++;
-                continue;
-            }
-            rects.push_back(RWD[i].r);
-            i++;
-            count++;
-        }
-
-	}
+	if(rects.size()>9)	
+    {
+        std::sort(rects.begin(),rects.end(), [](RotatedRect &r1, RotatedRect &r2) { return r1.size.area() > r2.size.area(); });
+        rects.erase(rects.begin()+9,rects.end());
+    }
     // possibly what we want
     if(rects.size()==9)
     {

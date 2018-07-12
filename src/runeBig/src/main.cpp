@@ -25,17 +25,9 @@ int main(int argc, char** argv)
     Settings s("setting.xml","4.yml");
     if(!s.load())
     {
-	cout<<"where is my setting file?"<<endl;        
-	return -1;
+	    cout<<"where is my setting file?"<<endl;        
+	    return -1;
     }
-    // #if PT
-    // PtImgCP imgCP(argv[1][0], argv[2]);
-    // cout << "Pt initialized" << endl;
-	// thread t1(&PtImgCP::ImageProducer, imgCP,argc, argv); // pass by reference
-	// thread t2(&PtImgCP::ImageConsumer, imgCP, argc, argv);
-    // t1.join();
-	// t2.join();
-    // #else
     ImgCP imgCP(argv[1][0], argv[2]);
     cout << "imgCP initialized" << endl;
 	thread t1(&ImgCP::ImageProducer, imgCP); // pass by reference

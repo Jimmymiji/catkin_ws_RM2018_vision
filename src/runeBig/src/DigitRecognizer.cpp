@@ -14,24 +14,24 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     Mat Green = channels.at(1);
     Mat R_B = Red - Blue;
     Mat R_G = Red - Green;
-    imshow("R-B",R_B);
-    waitKey(1);
-    imshow("R-G",R_G);
-    waitKey(1);
+    // imshow("R-B",R_B);
+    // waitKey(1);
+    // imshow("R-G",R_G);
+    // waitKey(1);
     // result = R_B & R_G;
     // threshold(result,result,90,255,THRESH_BINARY);
     
     
-    imshow("R",Red);
-    waitKey(1);
-    imshow("G",Green);
-    waitKey(1);
-    imshow("B",Blue);
-    waitKey(1);
+    // imshow("R",Red);
+    // waitKey(1);
+    // imshow("G",Green);
+    // waitKey(1);
+    // imshow("B",Blue);
+    // waitKey(1);
     double redMean = mean(Red)[0];
     double blueMean = mean(Blue)[0];
     double greenMean = mean(Green)[0];
-    for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
+    for(int i = 0 ; i < Red.rows; i++)                                        
     {
         for(int j = 0; j < Red.cols;j++)
         {
@@ -46,14 +46,14 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
         }
     }
     threshold(Red,Red,200,255,THRESH_BINARY);
-   // morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    // morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
-    // morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(5,5)));
-    // morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+   morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    morphologyEx(result,result,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    morphologyEx(result,result,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
     Red.copyTo(this->binary);
 
 #if show1
-    imshow("result",result);
+    imshow("result",Red);
     waitKey(3);
 #endif
     return ;
@@ -69,10 +69,8 @@ void DigitRecognizer:: preprocessHSV(Mat& image, Mat& result)
 	merge(hsvSplit, tempHSV);
 	inRange(tempHSV, Scalar(0,35, 10), Scalar(230, 255,255), result);
     morphologyEx(result,result,MORPH_CLOSE,getStructuringElement(MORPH_RECT,Size(7,7)));
-#if show1
     imshow("result",result);
     waitKey(3);
-#endif
     return;
 }
 
@@ -88,170 +86,31 @@ bool DigitRecognizer::findDigits()
     for(int i = 0 ; i < contours.size();i++) 
     {
         Mat a = Mat(contours[i]);
-       // approxPolyDP(Mat(contours[i]),contours_poly[i],1,true);
         boundRect[i] = boundingRect(Mat(contours[i]));
         
         if(boundRect[i].area() > 50 &&  boundRect[i].area() < 25000)
         {
            possibleTargetRects.push_back(boundRect[i]);
-           rectangle(binary,boundRect[i],Scalar(255,255,255));
+           //rectangle(binary,boundRect[i],Scalar(255,255,255));
         }
     }
     if(possibleTargetRects.size()<5)
     {
-#if debug
         cout<<"original possibleTargetRects.size()<5"<<endl;
         cout<< possibleTargetRects.size()<<endl;
-#endif
         return false;
     }
-    // find the 3rd digit place by their distance 
-    float **dist_map = new float *[possibleTargetRects.size()];
-    int rsize = possibleTargetRects.size();
-	for (int i = 0; i < rsize; i++)
-	{
-		dist_map[i] = new float[rsize];
-        for (int j = 0; j < rsize; j++)
-		{
-			dist_map[i][j] = 0;
-		}
-	}
-    
-    for(int i = 0; i<rsize;i++)
-    {
-        for(int j = i+1;j <rsize;j++)
-        {
-            double dx  = (possibleTargetRects[i].x + possibleTargetRects[i].width/2) - (possibleTargetRects[j].x + possibleTargetRects[j].width/2); 
-            double dy  = (possibleTargetRects[i].y + possibleTargetRects[i].height/2) - (possibleTargetRects[j].y + possibleTargetRects[j].height/2); 
-            // more punishment on far points
-            if(dy>30)
-            {
-                dy = dy*2;
-            }
-             if(dx>80) 
-            {
-                dx = dx*2;
-            }
-            double td = sqrt( 3*dy*dy); // y distance weigh more as digit have almost same height
-            dist_map[i][j] = td;
-            dist_map[j][i] = td;
-        }
-    }
-    int center_idx = 0;
-	float min_dist = 100000000;
-	for (int i = 0; i < rsize; ++i)
-	{
-		float cur_d = 0;
-		for (int j = 0; j < rsize; ++j)
-		{
-			cur_d += dist_map[i][j];
-		}
-		if (cur_d < min_dist)
-		{
-			min_dist = cur_d;
-			center_idx = i;
-		}
-	}
-    for (int i = 0; i < rsize; i++)
-	{
-		delete[] dist_map[i];
-	}
-	delete[] dist_map;
-    // check if center place is valid judged by where we find soduku
-   
-    int x = possibleTargetRects[center_idx].x + possibleTargetRects[center_idx].width/2;
-    int y = possibleTargetRects[center_idx].y + possibleTargetRects[center_idx].height/2;
-    // rectangle(binary,possibleTargetRects[center_idx],Scalar(255,0,255),4);
-    /*
-    if(x > right || x < left || y < low)
-    {
-        return false;
-    }
-    */
-    // kick out rectangles too high or too low
-    for(vector<Rect>::iterator p = possibleTargetRects .begin();p < possibleTargetRects.end();)
-    {
-        if(abs((p->y + p->height/2) - y)>50)
-        {
-            rectangle(binary,*p,Scalar(255,255,255),1);
-            p = possibleTargetRects.erase(p);
-#if debug
-            cout<<" erase(p) -1"<<endl;
-#endif
-        }
-        else
-        {
-            p++;
-        }
-    }
-#if show1
-        imshow("p",binary);
-#endif
-    if(possibleTargetRects.size()<5)
-    {
-#if debug
-        cout<<"possibleTargetRects.size()<5"<<endl;
-#endif
-        return false;
-    }
-    sort(possibleTargetRects.begin(),possibleTargetRects.end(),[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.x + b.width/2);});
     if(possibleTargetRects.size()==5)
     {   
-#if debug
+
         cout<<" exactly 5"<<endl;
-#endif
         for(int i = 0; i<5;i++)
         {
             targets.push_back(possibleTargetRects[i]);
         }
         return true;
     }
-    else
-    {
-       for(int i = 1 ; i<5;i++)
-        {
-            if(possibleTargetRects[i] == possibleTargetRects[center_idx])
-            {
-                center_idx = i;
-                break;
-            }
-        }
-        if(center_idx < 2 || center_idx > (possibleTargetRects.size()-3))
-        {
-#if debug
-                cout<<"enter_idx < 2 || center_idx > (possibleTargetRects.size()-3)"<<endl;
-#endif            
-            return false;
-            /*
-            int templ = center_idx -1 ;
-            int tempr = center_idx + 1;
-            int step;
-            if(templ < 0)
-            {
-                step = abs((possibleTargetRects[center_idx].x+possibleTargetRects[center_idx].width/2)-(possibleTargetRects[tempr].x+possibleTargetRects[tempr].width/2));
-            }
-            else if(tempr >= possibleTargetRects.size())
-            {
-                step = abs((possibleTargetRects[center_idx].x+possibleTargetRects[center_idx].width/2)-(possibleTargetRects[templ].x+possibleTargetRects[templ].width/2));
-            }
-            else
-            {
-                int stepl = abs((possibleTargetRects[center_idx].x+possibleTargetRects[center_idx].width/2)-(possibleTargetRects[templ].x+possibleTargetRects[templ].width/2));
-                int stepr = abs((possibleTargetRects[center_idx].x+possibleTargetRects[center_idx].width/2)-(possibleTargetRects[tempr].x+possibleTargetRects[tempr].width/2));
-                step = (stepl + stepr)/2;
-            }
-            */
-        } 
-        else
-        {
-        targets.push_back(possibleTargetRects[center_idx-2]);
-        targets.push_back(possibleTargetRects[center_idx-1]);
-        targets.push_back(possibleTargetRects[center_idx]);
-        targets.push_back(possibleTargetRects[center_idx+1]);
-        targets.push_back(possibleTargetRects[center_idx+2]);
-        return true;
-        }
-    }
+    
 }
 
 int DigitRecognizer::recognize(Mat img)
@@ -388,8 +247,6 @@ bool DigitRecognizer::getAns()
         }
         morphologyEx(binary(targets[i]),a,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
         ans[i] = recognize(a);
-        namedWindow(to_string(i), CV_WINDOW_NORMAL);  
-        cout<<"*" <<ans[i]<<endl;
 	}
     for(int i = 0; i<5;i++)
     {
