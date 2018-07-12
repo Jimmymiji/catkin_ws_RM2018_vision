@@ -8,7 +8,7 @@ colse to eliminate tiny gaps and noise
 void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
 {
     vector<Mat> channels;
-    split(image,channels); 
+    split(image,channels);
     Mat Red = channels.at(2);
     // Mat Blue = channels.at(0);
     // Mat Green = channels.at(1);
@@ -67,15 +67,19 @@ bool DigitRecognizer::findDigits()
     vector<Rect> boundRect(contours.size());
     vector<Rect> possibleTargetRects;
     vector<vector<Point>> contours_poly(contours.size());
-    for(int i = 0 ; i < contours.size();i++) 
+    for(int i = 0 ; i < contours.size();i++)
     {
         Mat a = Mat(contours[i]);
        // approxPolyDP(Mat(contours[i]),contours_poly[i],1,true);
         boundRect[i] = boundingRect(Mat(contours[i]));
+        double HWRatio =   (double)boundRect[i].height/boundRect[i].width;
         if(boundRect[i].area() > 50 &&  boundRect[i].area() < 2000)
         {
-           possibleTargetRects.push_back(boundRect[i]);
-           rectangle(binary,boundRect[i],Scalar(255,255,255));
+            if(HWRatio > 1 && HWRatio < 6)
+            {
+              possibleTargetRects.push_back(boundRect[i]);
+              rectangle(binary,boundRect[i],Scalar(255,255,255));
+            }
         }
         else
         {
@@ -102,11 +106,11 @@ bool DigitRecognizer::findDigits()
     }
     else if(possibleTargetRects.size()>5)
     {
-        sort(possibleTargetRects.begin(),possibleTargetRects.begin()+5,[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.y + b.width/2);});
+        sort(possibleTargetRects.begin(),possibleTargetRects.end(),[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.y + b.width/2);});
+        possibleTargetRects.erase(possibleTargetRects.begin()+5,possibleTargetRects.end());
     }
-    sort(possibleTargetRects.begin(),possibleTargetRects.end(),[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.x + b.width/2);});
     if(possibleTargetRects.size()==5)
-    {   
+    {
 
         cout<<" exactly 5"<<endl;
         for(int i = 0; i<5;i++)
@@ -130,7 +134,7 @@ int DigitRecognizer::recognize(Mat img)
     {
         return 1;
     }
-    Mat row1 = img.rowRange(img.rows/3,img.rows/3 +1);    
+    Mat row1 = img.rowRange(img.rows/3,img.rows/3 +1);
     Mat row2 = img.rowRange(img.rows*2/3,img.rows*2/3 + 1);
     Mat col1 = img.colRange(img.cols/2,img.cols/2+1);
     int row1Count = 0;
@@ -233,7 +237,7 @@ bool DigitRecognizer::getAns()
 {
 	float data[] = {1, 0.1, 0,  0, 1, 0};
 	Mat affine(2, 3, CV_32FC1, data);
-    
+
     for (int i = 0;i < 5; i++)
 	{
 		// TODO:
@@ -279,4 +283,3 @@ void DigitRecognizer:: recordResults(int idx)
 	return;
 
 }
-

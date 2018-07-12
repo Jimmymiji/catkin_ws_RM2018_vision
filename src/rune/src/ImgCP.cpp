@@ -68,7 +68,7 @@ bool DigitThread(Mat img, vector<int> &answer,Settings& s) {
     // dt.recordResults(cIdx);
     return true;
   }
-  
+
   // dt.recordResults(cIdx);
   return false;
 }
@@ -178,7 +178,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
     morphologyEx(binary, binary, MORPH_ERODE,
                  getStructuringElement(MORPH_RECT, Size(erodeSize2, erodeSize2)));
     vector<vector<Point>> squares;
-    // imshow("binary",binary);
+   imshow("binary",binary);
     findRects(binary, squares,s);
     drawSquares(img1, squares);
     waitKey(1);
@@ -211,35 +211,35 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
       continue;
     }
     if (MR.classify2()) {
-      for (int i = 1; i <= 9; i++) 
+      for (int i = 1; i <= 9; i++)
       {
         //     putText(img,to_string(i),rects[MR.mnistLabels[i]].center,
         //     FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
         mst.currentMNIST.push_back(MR.mnistLabels[i]);
       }
-      int DigitLeft = rects[0].center.x;
-      int DigitRight = rects[2].center.x;
-      int DigitDown  = (rects[0].boundingRect().y + rects[2].boundingRect().y)/2;
-      int DigitUp = DigitDown - (rects[0].boundingRect().height + rects[2].boundingRect().height);
-      if(DigitUp<0)
-      DigitUp = 0;
-      Mat ROIOfDigits = img1(Range(DigitUp,DigitDown),Range(DigitLeft,DigitRight));
-      if(!DigitThread(ROIOfDigits, mst.currentDigits,s))
-      {
-        mst.Fail();
-        continue;
-      }
-      string haha;
-      for(int i = 0; i< 5;i++)
-      {
-        haha  = haha +" "+to_string(mst.currentDigits[i]);
-      }
-      putText(img,haha,Point(400,100),
-             FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,0),3);
+      // int DigitLeft = rects[0].center.x;
+      // int DigitRight = rects[2].center.x;
+      // int DigitDown  = (rects[0].boundingRect().y + rects[2].boundingRect().y)/2;
+      // int DigitUp = DigitDown - (rects[0].boundingRect().height + rects[2].boundingRect().height);
+      // if(DigitUp<0)
+      // DigitUp = 0;
+      // Mat ROIOfDigits = img1(Range(DigitUp,DigitDown),Range(DigitLeft,DigitRight));
+      // if(!DigitThread(ROIOfDigits, mst.currentDigits,s))
+      // {
+      //   mst.Fail();
+      //   continue;
+      // }
+      // string haha;
+      // for(int i = 0; i< 5;i++)
+      // {
+      //   haha  = haha +" "+to_string(mst.currentDigits[i]);
+      // }
+      // putText(img,haha,Point(400,100),
+      //        FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,0),3);
       // imshow("a",img);
       // waitKey(1);
-      //int hitIndex = mst.whichToShootSemiAuto(myfile, s.imgCPSetting.hitNumber);
-      int hitIndex = mst.whichToShootAuto(myfile);
+      int hitIndex = mst.whichToShootSemiAuto(myfile, s.imgCPSetting.hitNumber);
+      //int hitIndex = mst.whichToShootAuto(myfile);
       if (hitIndex == -1) {
         mst.Fail();
         continue;

@@ -35,7 +35,7 @@
 <maxRectArea>25000</maxRectArea>
 <minRectArea>2000</minRectArea>
 <maxHWRatio>0.9</maxHWRatio>
-<minHWRatio>0.45</minHWRatio>
+<minHWRatio>0.40</minHWRatio>
 <checkRectHeight>30</checkRectHeight>
 <checkRectWidth>30</checkRectWidth>
 <yOffset>5</yOffset>
@@ -43,7 +43,7 @@
 </FindRectSetting>
 
 <ImgCPSetting>
-<mean>2.5</mean>
+<mean>2.4</mean>
 <erodeSize1>3</erodeSize1>
 <erodeSize2>3</erodeSize2>
 <hitNumber>9</hitNumber>
