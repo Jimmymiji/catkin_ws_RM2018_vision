@@ -22,12 +22,6 @@ int RiLowV = 250;
 int RiHighV = 255;
 int main(int argc, char** argv)
 {
-    Settings s("setting.xml","4.yml");
-    if(!s.load())
-    {
-	cout<<"where is my setting file?"<<endl;
-	return -1;
-    }
 
     ImgCP imgCP(argv[1][0], argv[2]);
     cout << "imgCP initialized" << endl;
