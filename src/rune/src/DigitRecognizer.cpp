@@ -51,10 +51,6 @@ void DigitRecognizer:: preprocessHSV(Mat& image, Mat& result)
 	merge(hsvSplit, tempHSV);
 	inRange(tempHSV, Scalar(0,35, 10), Scalar(230, 255,255), result);
     morphologyEx(result,result,MORPH_CLOSE,getStructuringElement(MORPH_RECT,Size(7,7)));
-#if show1
-    imshow("result",result);
-    waitKey(3);
-#endif
     return;
 }
 
@@ -73,9 +69,9 @@ bool DigitRecognizer::findDigits()
        // approxPolyDP(Mat(contours[i]),contours_poly[i],1,true);
         boundRect[i] = boundingRect(Mat(contours[i]));
         double HWRatio =   (double)boundRect[i].height/boundRect[i].width;
-        if(boundRect[i].area() > 50 &&  boundRect[i].area() < 2000)
+        if(boundRect[i].area() > s.digitRecognizerSetting.minBoundingArea &&  boundRect[i].area() < s.digitRecognizerSetting.maxBoundingArea)
         {
-            if(HWRatio > 1 && HWRatio < 6)
+            if(HWRatio > s.digitRecognizerSetting.minHWRatio && HWRatio < s.digitRecognizerSetting.maxHWRatio)
             {
               possibleTargetRects.push_back(boundRect[i]);
               rectangle(binary,boundRect[i],Scalar(255,255,255));

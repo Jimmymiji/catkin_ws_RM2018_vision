@@ -126,7 +126,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
   cout << "start" << endl;
   while (pIdx == 0)
     ;
-  Settings s("setting.xml", "2.yml");
+  Settings s("smallSetting.xml", "2.yml");
   if (!s.load()) {
     cout << "where is my setting file?" << endl;
     return;

@@ -226,7 +226,7 @@ void AngleSolver:: sendAns(Mat& img)//show the distance in consloe
 	int d = sqrt(tx*tx+ty*ty+tz*tz); 
 	cout<<"distance: "<<d<<endl;
 	putText(img,to_string(d),Point(100,100),FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,0,255),3);
-	
+	imshow("hehe",img);
 }
  
 

@@ -46,6 +46,8 @@ struct DigitRecognizerSetting
 	int HighLowPenalty;
 	int erodeSize;
 	double one;
+	double maxHWRatio;
+	double minHWRatio;
 	void read(const FileNode& node);
 };
 

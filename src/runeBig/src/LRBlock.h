@@ -17,18 +17,20 @@ class LRBlock
         Mat B_R = Blue - Red;
         Mat B_G = Blue - Green;
         Mat result;
-        imshow("R-B",B_R);
-        waitKey(1);
-        imshow("R-G",B_R);
-        waitKey(1);
+        // imshow("R-B",B_R);
+        // waitKey(1);
+        // imshow("R-G",B_R);
+        // waitKey(1);
+        // result = B_R & B_G;
+        // imshow("result",result);
         result = B_R & B_G;
-        imshow("result",result);
-        imshow("R",Red);
-        waitKey(1);
-        imshow("G",Green);
-        waitKey(1);
-        imshow("B",Blue);
-        waitKey(1);
+        threshold(result,result,90,255,THRESH_BINARY);
+        // imshow("R",Red);
+        // waitKey(1);
+        // imshow("G",Green);
+        // waitKey(1);
+        // imshow("B",Blue);
+        // waitKey(1);
         result.copyTo(binary);
         return ;
     }
@@ -44,9 +46,9 @@ class LRBlock
         {
             Rect temp = boundingRect(contours[i]);
             double HWRatio = (double)temp.height/(double)temp.width;
-            if(HWRatio>minHWRatio && HWRatio <maxHWRatio)
+            if(HWRatio>0.2 && HWRatio <0.6)
             {
-                if(temp.area()>minRectArea && temp.area()<maxRectArea)
+                if(temp.area()>50 && temp.area()<10000)
                 {
                    blueBoxCount++;
                 }

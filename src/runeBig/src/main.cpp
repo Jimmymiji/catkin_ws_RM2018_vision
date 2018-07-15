@@ -1,7 +1,7 @@
-#include <opencv2/core/core.hpp>  
-#include <opencv2/highgui/highgui.hpp>  
-#include <opencv2/imgproc/imgproc.hpp>  
-#include <iostream>  
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <iostream>
 #include <cmath>
 #include "Settings.h"
 #include <thread>
@@ -22,12 +22,7 @@ int RiLowV = 250;
 int RiHighV = 255;
 int main(int argc, char** argv)
 {
-    Settings s("setting.xml","4.yml");
-    if(!s.load())
-    {
-	    cout<<"where is my setting file?"<<endl;        
-	    return -1;
-    }
+
     ImgCP imgCP(argv[1][0], argv[2]);
     cout << "imgCP initialized" << endl;
 	thread t1(&ImgCP::ImageProducer, imgCP); // pass by reference
@@ -35,5 +30,5 @@ int main(int argc, char** argv)
     t1.join();
 	t2.join();
     // #endif
-	
+
 }

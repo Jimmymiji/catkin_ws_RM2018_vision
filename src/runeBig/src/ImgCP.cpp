@@ -5,6 +5,9 @@
 #include <opencv2/imgproc/imgproc.hpp>  
 #include <iostream>  
 #include <cmath>
+#include <string>
+#include <limits.h>
+#include <unistd.h>
 #include "findRect.hpp"
 #include "FNRecognizer.h"
 #include "DigitRecognizer.h"
@@ -24,6 +27,12 @@ struct ImageData {
 	unsigned int frame;
 };
 ImageData data[BUFFER_SIZE];
+std::string getexepath()
+{
+  char result[ PATH_MAX ];
+  ssize_t count = readlink( "/proc/self/exe", result, PATH_MAX );
+  return std::string( result, (count > 0) ? count : 0 );
+}
 void preprocessRGB(Mat img, Mat& result)
 {
     vector<Mat> channels;
@@ -33,21 +42,17 @@ void preprocessRGB(Mat img, Mat& result)
     Mat Green = channels.at(1);
     Mat R_B = Red - Blue;
     Mat G_B = Green - Blue;
-    // imshow("R-B",R_B);
-    // waitKey(1);
-    // imshow("G_B",G_B);
-    // waitKey(1);
     result = R_B & G_B;
     imshow("result",result);
     waitKey(1);
     return ;
 }
-bool DigitThread(Mat img,vector<int>& ans)
+bool DigitThread(Mat img,vector<int>& ans,Settings & s)
 {
     //cout<<"thread 3 running"<<endl;
     imshow("digits",img);
     waitKey(1);
-    DigitRecognizer dt;
+    DigitRecognizer dt(s);
    // dt.preprocessRGB(img,img);
    img.copyTo(dt.binary);
     if(!dt.findDigits())
@@ -120,10 +125,11 @@ void ImgCP::ImageConsumer(int argc, char** argv)
 {
     cout<<"start"<<endl;
     while(pIdx == 0);
-    Settings s("setting.xml","4.yml");
+    Settings s("bigSetting.xml","2.yml");
     if(!s.load())
     {
-	    cout<<"where is my setting file?"<<endl;        
+	    cout<<"where is my setting file?"<<endl;  
+        cout<<"current path"<<  getexepath()<<endl;    
 	    return ;
     }
     cv::Ptr<cv::ml::KNearest>  kNearest(cv::ml::KNearest::create());
@@ -157,23 +163,25 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         preprocessRGB(img,result);
         Mat binary;
         double Mean = mean(result)[0];
-        threshold(result,binary,Mean*15,255,CV_THRESH_BINARY);
-        imshow("binary1",binary);
-        waitKey(1);
-        morphologyEx( binary,binary, MORPH_DILATE, getStructuringElement(MORPH_RECT,Size(5,5)));
-        imshow("binary2",binary);
-        waitKey(1);
+        threshold(result,binary,Mean*s.imgCPSetting.mean,255,CV_THRESH_BINARY);
+        // imshow("binary1",binary);
+        // waitKey(1);
+        int dilateSize1 = s.imgCPSetting.dilateSize1;
+        morphologyEx( binary,binary, MORPH_DILATE, getStructuringElement(MORPH_RECT,Size(dilateSize1,dilateSize1)));
+        // imshow("binary2",binary);
+        // waitKey(1);
         vector<vector<Point>> squares;
-        findRects(binary,squares);
+        findRects(binary,squares,s);
         drawSquares(img1,squares);
         vector<RotatedRect> rects;
-        if(!checkRects(img,squares,rects))
+        if(!checkRects(img,squares,rects,s))
         {
             target.x = -1;
             target.y = -1;
             target.z = -1;
             cout << "not enough mnists" << endl;
             mst.Fail();
+           // myfile<<to_string(cIdx)<<": 1"<<endl;
             continue;
         }
         FNRecognizer haha;
@@ -191,19 +199,21 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         if(outOfImg)
         {
             mst.Fail();
+             //myfile<<to_string(cIdx)<<": 2"<<endl;
             continue;
         }
         for(int i = 0;i<9;i++)
         {
            int result = haha.predict(kNearest,img(rects[i].boundingRect()));
            haha.relations[result] = i;
-           putText(img,to_string(result),rects[i].center,FONT_HERSHEY_SIMPLEX,1,Scalar(255,0,0),3);
-        }
-        imshow("haha",img);
-        waitKey(1);
+           //putText(img,to_string(result),rects[i].center,FONT_HERSHEY_SIMPLEX,1,Scalar(255,0,0),3);
+         }
+        // imshow("haha",img);
+        // waitKey(1);
         if(haha.relations.size()!=9)
         {
             mst.Fail();
+             //myfile<<to_string(cIdx)<<": 2"<<endl;
             continue;
         }
         for (int i = 1; i <= 9; i++) 
@@ -217,15 +227,21 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         if(DigitUp<0)
         DigitUp = 0;
         Mat ROIOfDigits = binary(Range(DigitUp,DigitDown),Range(DigitLeft,DigitRight));
-        if(!DigitThread(ROIOfDigits, mst.currentDigits))
+        //imwrite(to_string(cIdx)+"d.png",ROIOfDigits);
+        if(!DigitThread(ROIOfDigits, mst.currentDigits,s))
         {
             mst.Fail();
             continue;
         }
-        int hitNumber = mst.whichToShootSemiAuto(myfile, 5);
+        string anss = to_string(mst.currentDigits[0]) +to_string(mst.currentDigits[1]) +to_string(mst.currentDigits[2]) +to_string(mst.currentDigits[3]) + to_string(mst.currentDigits[4]);
+        putText(img,anss,Point(100,200),FONT_HERSHEY_SIMPLEX,1,Scalar(255,0,0),3);
+        imshow("digits",img);
+        myfile<<to_string(cIdx)<<" "<<anss<<endl;
+        int hitNumber = mst.whichToShootSemiAuto(myfile,s.imgCPSetting.hitNumber);
         if(hitNumber == -1)
         {
             mst.Fail();
+             //myfile<<to_string(cIdx)<<": 3"<<endl;
             continue;
         }
         int hitIndex = haha.relations[hitNumber];
@@ -244,9 +260,10 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         rune_pub.publish(target);
         ROS_INFO("x: %f y: %f z: %f", target.x, target.y, target.z);
         ag.sendAns(img);
-        end = clock();
-        cout<<"hz: "<<1/((double)(end-start)/CLOCKS_PER_SEC)<<endl;
-        
+        //imwrite(to_string(cIdx)+".png",img);
+        mst.Fail();
+        //myfile<<to_string(cIdx)<<": ********************"<<endl;
+    
     }
 }
 

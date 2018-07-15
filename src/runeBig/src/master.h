@@ -48,6 +48,7 @@ class Master
     {
         bool digitChaged = false;
         bool mnistChaged = false;
+        int numOfMnistChanged = 0;
         if(currentDigits.size()!=5 || currentMNIST.size()!=9)
         {
             record(file,true,-1);
@@ -67,9 +68,12 @@ class Master
         {
             if(previousMNIST[i]!=currentMNIST[i])
             {
-                mnistChaged = true;
-                break;
+                numOfMnistChanged++;
             }
+        }
+        if(numOfMnistChanged > 2)
+        {
+            mnistChaged = true;  
         }
         if(digitChaged)
         {
@@ -105,9 +109,10 @@ class Master
     int whichToShootSemiAuto(ofstream& file,int target)
     {
         bool mnistChaged = false;
+        int numOfMnistChanged = 0;
         if(currentMNIST.size()!=9)
         {
-            record(file,false,-1);
+            //record(file,false,-1);
             currentMNIST.clear();
             return -1;
         }
@@ -115,27 +120,30 @@ class Master
         {
             if(previousMNIST[i]!=currentMNIST[i])
             {
-                mnistChaged = true;
-                break;
+                numOfMnistChanged++;
             }
+        }
+        if(numOfMnistChanged > 2)
+        {
+            mnistChaged = true;
         }
         if(mnistChaged)
         {
             failureCount = 0;
-            record(file,false,target);
+            //record(file,false,target);
             clearVecor();
             return target;
         }
         else
         {
-            record(file,false,-1);
+            //record(file,false,-1);
             clearVecor();
             return -1;
         }   
     }
-    void record(ofstream& file,bool AUTO,int returnValue)
+    void record(ofstream& file,bool AUTO,int idx)
     {
-        file<<"*****************************"<<endl;
+        file<<"**************"<<to_string(idx)<<"***************"<<endl;
         if(AUTO)
         {
             file<<"current digits ";
@@ -156,7 +164,6 @@ class Master
         file<<"current MNISTS: ";
         for(int i = 0;i<currentMNIST.size();i++)
             file<<currentMNIST[i]<<" ";
-        file<<"return value "<<to_string(returnValue)<<endl;
         file<<"*****************************"<<endl;
     }
     void Fail()

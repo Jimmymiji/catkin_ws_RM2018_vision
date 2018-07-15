@@ -51,6 +51,8 @@ void DigitRecognizerSetting::read(const FileNode &node)
 	node["HighLowPenalty"]>>HighLowPenalty;
 	node["erodeSize"]>>erodeSize;
 	node["one"]>>one;
+	node["maxHWRatio"]>>maxHWRatio;
+	node["minHWRatio"]>>minHWRatio;
 
 }
 

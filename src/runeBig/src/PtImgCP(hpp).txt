@@ -1,0 +1,37 @@
+#pragma once
+#include <opencv2/core/core.hpp>  
+#include <opencv2/highgui/highgui.hpp>  
+#include <opencv2/imgproc/imgproc.hpp>  
+#include <iostream>  
+#include <cmath>
+#include "findRect.hpp"
+#include "MnistRecognizer.h"
+#include "DigitRecognizer.h"
+#include "Settings.h"
+#include "angleSol.h"
+#include "ros/ros.h"
+#include "define.hpp"
+#include "geometry_msgs/Point.h"
+#include <image_transport/image_transport.h>
+#include <cv_bridge/cv_bridge.h>
+#include <sensor_msgs/image_encodings.h>
+#include "RMVideoCapture.hpp"
+
+class PtImgCP {
+	public:
+		PtImgCP(char mode, char* path)
+		{
+			videoPath = path;
+			isVideoMode = mode == 'v';
+            this->cameraNumber = path; 
+		}
+		void ImageProducer(int argc, char** argv);
+		void ImageConsumer(int argc, char** argv);
+		void imageCb(const sensor_msgs::ImageConstPtr& msg);
+	private:
+		const char* videoPath;
+		char* cameraNumber;
+		bool isVideoMode;
+		
+	
+};
