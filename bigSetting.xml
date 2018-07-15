@@ -45,7 +45,7 @@
 </FindRectSetting>
 
 <ImgCPSetting>
-<mean>10</mean>
+<mean>4</mean>
 <erodeSize1>3</erodeSize1>
 <erodeSize2>3</erodeSize2>
 <dilateSize1>5</dilateSize1>

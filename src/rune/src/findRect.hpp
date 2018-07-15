@@ -154,7 +154,7 @@ bool ascendingY(const RotatedRect& a,const RotatedRect& b) {return (a.center.y<b
 bool ascendingX(const RotatedRect& a,const RotatedRect& b) {return (a.center.x<b.center.x);}
 bool descendingY(const RotatedRect& a,const RotatedRect& b) {return (a.center.y>b.center.y);}
 bool descendingX(const RotatedRect& a,const RotatedRect& b) {return (a.center.x>b.center.x);}
-bool ascendingArea(const RotatedRect& a,const RotatedRect& b)  {return (a.size.area()<b.size.area());}
+bool descendingArea(const RotatedRect& a,const RotatedRect& b)  {return (a.size.area()>b.size.area());}
 struct RectWithDist
 {
     RotatedRect r;
@@ -218,7 +218,7 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
 
     if (rects.size() > 9)
 	{
-    sort(rects.begin(),rects.end(),ascendingArea);
+    sort(rects.begin(),rects.end(),descendingArea);
     rects.erase(rects.begin()+9,rects.end());
 
 	}
