@@ -249,6 +249,7 @@ bool MnistRecognizer::classify2()
 	for(int i  = 0 ; i<9;i++)
 	{
 		Mat img,kimg;
+		imwrite("last.png",mnistImgs[i]);
 		kmeanPreprocess(mnistImgs[i]).copyTo(kimg);
         fitMnist(kimg,img);
 		scores.push_back( recognize_primary(img));
