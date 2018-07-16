@@ -107,7 +107,7 @@ void ImgCP::ImageProducer() {
       usb_video.push_back(result[found + usb_video.length()]);
     }
     // const char* cp =  cameraPath + cameraNumber;
-    RMVideoCapture cap(usb_video.c_str(), 3);
+    RMVideoCapture cap("/dev/v4l/by-id/usb-HD_Camera_Manufacturer_Stereo_Vision_1_Stereo_Vision_1-video-index0", 3);
     cap.setVideoFormat(640, 480, 1);
     cap.startStream();
     cap.info();

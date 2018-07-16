@@ -107,7 +107,7 @@ void ImgCP::ImageProducer()
 	else
 	{
 		std::string cameraPath = "/dev/video";
-        RMVideoCapture cap("/dev/video1", 3); 
+        RMVideoCapture cap("/dev/v4l/by-id/usb-HD_Camera_Manufacturer_Stereo_Vision_1_Stereo_Vision_1-video-index0"); 
 		cap.setVideoFormat(640, 480, 1);
 		cap.startStream();
 		cap.info();
@@ -160,7 +160,9 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         data[cIdx % BUFFER_SIZE].img.copyTo(img1);
 		unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
 		++cIdx;
+        cout<<"p1"<<endl;
         preprocessRGB(img,result);
+        cout<<"p2"<<endl;
         Mat binary;
         double Mean = mean(result)[0];
         threshold(result,binary,Mean*s.imgCPSetting.mean,255,CV_THRESH_BINARY);
@@ -171,11 +173,14 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         // imshow("binary2",binary);
         // waitKey(1);
         vector<vector<Point>> squares;
+        cout<<"________1________"<<endl;
         findRects(binary,squares,s);
         drawSquares(img1,squares);
         vector<RotatedRect> rects;
+        cout<<"_________2_____________"<<endl;
         if(!checkRects(img,squares,rects,s))
         {
+            cout<<"_______________3______________"<<endl;
             target.x = -1;
             target.y = -1;
             target.z = -1;
@@ -184,6 +189,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
            // myfile<<to_string(cIdx)<<": 1"<<endl;
             continue;
         }
+        cout<<"___________________4___________"<<endl;
         FNRecognizer haha;
         bool outOfImg = false;
         for (int i = 0; i < 9; i++) 
@@ -202,9 +208,12 @@ void ImgCP::ImageConsumer(int argc, char** argv)
              //myfile<<to_string(cIdx)<<": 2"<<endl;
             continue;
         }
+        cout<<"____________5__________"<<endl;
         for(int i = 0;i<9;i++)
         {
+           cout<<"_____________77_______"<<endl;
            int result = haha.predict(kNearest,img(rects[i].boundingRect()));
+           cout<<"_____________88_______________"<<endl;
            haha.relations[result] = i;
            //putText(img,to_string(result),rects[i].center,FONT_HERSHEY_SIMPLEX,1,Scalar(255,0,0),3);
          }
@@ -228,11 +237,13 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         DigitUp = 0;
         Mat ROIOfDigits = binary(Range(DigitUp,DigitDown),Range(DigitLeft,DigitRight));
         //imwrite(to_string(cIdx)+"d.png",ROIOfDigits);
+        cout<<"________________6___________________"<<endl;
         if(!DigitThread(ROIOfDigits, mst.currentDigits,s))
         {
             mst.Fail();
             continue;
         }
+        cout<<"___________________7________________"<<endl;
         string anss = to_string(mst.currentDigits[0]) +to_string(mst.currentDigits[1]) +to_string(mst.currentDigits[2]) +to_string(mst.currentDigits[3]) + to_string(mst.currentDigits[4]);
         putText(img,anss,Point(100,200),FONT_HERSHEY_SIMPLEX,1,Scalar(255,0,0),3);
         imshow("digits",img);

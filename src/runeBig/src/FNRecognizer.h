@@ -102,40 +102,48 @@ class FNRecognizer
 			validContoursWithData.push_back(allContoursWithData[i]);
 		}
 	}
-
-	sort(validContoursWithData.begin(), validContoursWithData.end(), ContourWithData::sortByArea);
-
-	ContourWithData Biggest = validContoursWithData[0];
-
-	string strFinalString;
-
-	rectangle(matTestingNumbers, Biggest.boundingRect, Scalar(0, 255, 0), 2);
-
-	Mat matROI = matThresh(Biggest.boundingRect);
-
-	Mat matROIResized;
-	resize(matROI, matROIResized, Size(RESIZED_IMAGE_WIDTH, RESIZED_IMAGE_HEIGHT));
-
-	Mat matROIFloat;
-	matROIResized.convertTo(matROIFloat, CV_32FC1);
-	Mat matROIFlattenedFloat = matROIFloat.reshape(1, 1);
-	Mat matCurrentChar(0, 0, CV_32F);
-	kNearest->findNearest(matROIFlattenedFloat, 1, matCurrentChar);
-	float fltCurrentChar = (float)matCurrentChar.at<float>(0, 0);
 	
-	int result = (int)fltCurrentChar - 48;
 
-	#ifdef DEBUG_RUNE
-	imshow("After InrangeResize", matInRangeResized);
-	imshow("After DE", matBlurred);
-	imshow("matROIResized", matROIResized);
-	cout << "\n\n" << "numbers read = " << result << "\n\n";
-	imshow("matTestingNumbers", matTestingNumbers);
-	waitKey(0);
-	#endif
+	if(validContoursWithData.size() > 0)
+	{
+		sort(validContoursWithData.begin(), validContoursWithData.end(), ContourWithData::sortByArea);
+
+		ContourWithData Biggest = validContoursWithData[0];
+
+		string strFinalString;
+
+		//rectarectangle(matTestingNumbers, Biggest.boundingRect, Scalar(0, 255, 0), 2);
+
+		Mat matROI = matThresh(Biggest.boundingRect);
+
+		Mat matROIResized;
+		resize(matROI, matROIResized, Size(RESIZED_IMAGE_WIDTH, RESIZED_IMAGE_HEIGHT));
+
+		Mat matROIFloat;
+		matROIResized.convertTo(matROIFloat, CV_32FC1);
+		Mat matROIFlattenedFloat = matROIFloat.reshape(1, 1);
+		Mat matCurrentChar(0, 0, CV_32F);
+		kNearest->findNearest(matROIFlattenedFloat, 1, matCurrentChar);
+		float fltCurrentChar = (float)matCurrentChar.at<float>(0, 0);
+		
+		int result = (int)fltCurrentChar - 48;
+
+		#ifdef DEBUG_RUNE
+		imshow("After InrangeResize", matInRangeResized);
+		imshow("After DE", matBlurred);
+		imshow("matROIResized", matROIResized);
+		cout << "\n\n" << "numbers read = " << result << "\n\n";
+		imshow("matTestingNumbers", matTestingNumbers);
+		waitKey(0);
+		#endif
 
 
-	return result;
+		return result;
+	}
+	else{
+		return 0;
+	}
+
 }
 
 };

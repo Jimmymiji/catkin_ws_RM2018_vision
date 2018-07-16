@@ -36,7 +36,7 @@
 <FindRectSetting>
 <maxRectArea>25000</maxRectArea>
 <minRectArea>800</minRectArea>
-<maxHWRatio>2</maxHWRatio>
+<maxHWRatio>1.8</maxHWRatio>
 <minHWRatio>0.8</minHWRatio>
 <checkRectHeight>20</checkRectHeight>
 <checkRectWidth>20</checkRectWidth>
