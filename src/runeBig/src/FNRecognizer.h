@@ -102,8 +102,6 @@ class FNRecognizer
 			validContoursWithData.push_back(allContoursWithData[i]);
 		}
 	}
-	
-
 	if(validContoursWithData.size() > 0)
 	{
 		sort(validContoursWithData.begin(), validContoursWithData.end(), ContourWithData::sortByArea);
@@ -112,7 +110,7 @@ class FNRecognizer
 
 		string strFinalString;
 
-		//rectarectangle(matTestingNumbers, Biggest.boundingRect, Scalar(0, 255, 0), 2);
+		rectangle(matTestingNumbers, Biggest.boundingRect, Scalar(0, 255, 0), 2);
 
 		Mat matROI = matThresh(Biggest.boundingRect);
 
@@ -125,7 +123,7 @@ class FNRecognizer
 		Mat matCurrentChar(0, 0, CV_32F);
 		kNearest->findNearest(matROIFlattenedFloat, 1, matCurrentChar);
 		float fltCurrentChar = (float)matCurrentChar.at<float>(0, 0);
-		
+
 		int result = (int)fltCurrentChar - 48;
 
 		#ifdef DEBUG_RUNE
@@ -137,12 +135,15 @@ class FNRecognizer
 		waitKey(0);
 		#endif
 
-
 		return result;
 	}
 	else{
 		return 0;
 	}
+
+		return result;
+	}
+	else{return 0;}
 
 }
 

@@ -199,8 +199,8 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
 
     for (int i = 0; i < 9; i++) {
       Rect t = rects[i].boundingRect();
-      if (!(0 <= t.x && 0 <= t.width && t.x + t.width <= img.cols && 0 <= t.y &&
-            0 <= t.height && t.y + t.height <= img.rows)) {
+      if (!(0 <= t.x && 0 < t.width && t.x + t.width <= img.cols && 0 <= t.y &&
+            0 < t.height && t.y + t.height <= img.rows)) {
         outOfImg = true;
         break;
       }

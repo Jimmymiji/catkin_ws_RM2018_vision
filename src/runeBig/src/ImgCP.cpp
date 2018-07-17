@@ -1,9 +1,9 @@
 #include "RMVideoCapture.hpp"
 #include "ImgCP.hpp"
-#include <opencv2/core/core.hpp>  
-#include <opencv2/highgui/highgui.hpp>  
-#include <opencv2/imgproc/imgproc.hpp>  
-#include <iostream>  
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <iostream>
 #include <cmath>
 #include <string>
 #include <limits.h>
@@ -36,13 +36,17 @@ std::string getexepath()
 void preprocessRGB(Mat img, Mat& result)
 {
     vector<Mat> channels;
-    split(img,channels); 
+    split(img,channels);
     Mat Red = channels.at(2);
     Mat Blue = channels.at(0);
     Mat Green = channels.at(1);
     Mat R_B = Red - Blue;
+		imshow("R_B",R_B);
+		waitKey(1);
     Mat G_B = Green - Blue;
-    result = R_B & G_B;
+		imshow("G_B",G_B);
+		waitKey(1);
+    result = R_B | G_B;
     imshow("result",result);
     waitKey(1);
     return ;
@@ -72,7 +76,7 @@ bool DigitThread(Mat img,vector<int>& ans,Settings & s)
         //dt.recordResults(cIdx);
         return true;
     }
-    
+
     //dt.recordResults(cIdx);
     return false;
 }
@@ -97,7 +101,7 @@ void ImgCP::ImageProducer()
 		{
 			while (pIdx - cIdx >= BUFFER_SIZE);
 			Mat temp;
-			cap >> temp; 
+			cap >> temp;
 			resize(temp, temp, Size(640, 480), 0, 0, INTER_CUBIC);
 			temp.copyTo(data[pIdx % BUFFER_SIZE].img);
 			data[pIdx % BUFFER_SIZE].frame++;
@@ -107,7 +111,7 @@ void ImgCP::ImageProducer()
 	else
 	{
 		std::string cameraPath = "/dev/video";
-        RMVideoCapture cap("/dev/v4l/by-id/usb-HD_Camera_Manufacturer_Stereo_Vision_1_Stereo_Vision_1-video-index0"); 
+        RMVideoCapture cap("/dev/video0", 3);
 		cap.setVideoFormat(640, 480, 1);
 		cap.startStream();
 		cap.info();
@@ -128,8 +132,8 @@ void ImgCP::ImageConsumer(int argc, char** argv)
     Settings s("bigSetting.xml","2.yml");
     if(!s.load())
     {
-	    cout<<"where is my setting file?"<<endl;  
-        cout<<"current path"<<  getexepath()<<endl;    
+	    cout<<"where is my setting file?"<<endl;
+        cout<<"current path"<<  getexepath()<<endl;
 	    return ;
     }
     cv::Ptr<cv::ml::KNearest>  kNearest(cv::ml::KNearest::create());
@@ -170,8 +174,8 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         // waitKey(1);
         int dilateSize1 = s.imgCPSetting.dilateSize1;
         morphologyEx( binary,binary, MORPH_DILATE, getStructuringElement(MORPH_RECT,Size(dilateSize1,dilateSize1)));
-        // imshow("binary2",binary);
-        // waitKey(1);
+        imshow("binary2",binary);
+        waitKey(1);
         vector<vector<Point>> squares;
         cout<<"________1________"<<endl;
         findRects(binary,squares,s);
@@ -192,11 +196,11 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         cout<<"___________________4___________"<<endl;
         FNRecognizer haha;
         bool outOfImg = false;
-        for (int i = 0; i < 9; i++) 
+        for (int i = 0; i < 9; i++)
         {
             Rect t = rects[i].boundingRect();
             if (!(0 <= t.x && 0 <= t.width && t.x + t.width <= img.cols && 0 <= t.y &&
-            0 <= t.height && t.y + t.height <= img.rows)) 
+            0 <= t.height && t.y + t.height <= img.rows))
             {
                 outOfImg = true;
                 break;
@@ -225,7 +229,7 @@ void ImgCP::ImageConsumer(int argc, char** argv)
              //myfile<<to_string(cIdx)<<": 2"<<endl;
             continue;
         }
-        for (int i = 1; i <= 9; i++) 
+        for (int i = 1; i <= 9; i++)
         {
             mst.currentMNIST.push_back(haha.relations[i]);
         }
@@ -257,8 +261,8 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         }
         int hitIndex = haha.relations[hitNumber];
         AngleSolver ag(s);
-        sort(rects.begin(),rects.end(),ascendingY);                
-        sort(rects.begin(),rects.begin()+3,ascendingX);          
+        sort(rects.begin(),rects.end(),ascendingY);
+        sort(rects.begin(),rects.begin()+3,ascendingX);
         sort(rects.begin()+3,rects.begin()+6,ascendingX);
         sort(rects.begin()+6,rects.begin()+9,ascendingX);
         for(int i = 0; i<9;i++)
@@ -274,7 +278,6 @@ void ImgCP::ImageConsumer(int argc, char** argv)
         //imwrite(to_string(cIdx)+".png",img);
         mst.Fail();
         //myfile<<to_string(cIdx)<<": ********************"<<endl;
-    
+
     }
 }
-

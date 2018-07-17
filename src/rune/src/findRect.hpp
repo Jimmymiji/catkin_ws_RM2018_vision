@@ -30,16 +30,16 @@ void findSquares(const Mat& image, vector<vector<Point> >& squares)
     Mat gray0(timg.size(), CV_8U), gray;
     vector<vector<Point> > contours;
 
-    
+
     for (int c = 0; c < 3; c++)
     {
         int ch[] = { c, 0 };
         mixChannels(&timg, 1, &gray0, 1, ch, 1);
 
-        
+
         for (int l = 0; l < N; l++)
         {
-            
+
             if (l == 0)
             {
                 Canny(gray0, gray, 5, thresh, 5);
@@ -154,7 +154,7 @@ bool ascendingY(const RotatedRect& a,const RotatedRect& b) {return (a.center.y<b
 bool ascendingX(const RotatedRect& a,const RotatedRect& b) {return (a.center.x<b.center.x);}
 bool descendingY(const RotatedRect& a,const RotatedRect& b) {return (a.center.y>b.center.y);}
 bool descendingX(const RotatedRect& a,const RotatedRect& b) {return (a.center.x>b.center.x);}
-
+bool descendingArea(const RotatedRect& a,const RotatedRect& b)  {return (a.size.area()>b.size.area());}
 struct RectWithDist
 {
     RotatedRect r;
@@ -218,79 +218,8 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
 
     if (rects.size() > 9)
 	{
-        float **dist_map = new float *[rects.size()];
-        int rsize = rects.size();
-		for (int i = 0; i < rsize; i++)
-		{
-			dist_map[i] = new float[rsize];
-			for (int j = 0; j < rsize; j++)
-			{
-				dist_map[i][j] = 0;
-			}
-		}
-		for (int i = 0; i < rsize; ++i)
-		{
-			for (int j = i + 1; j < rsize; ++j)
-			{
-				int dx = rects[i].center.x - rects[j].center.x;
-                int dy = rects[i].center.y - rects[j].center.y;
-                double d = sqrt(dx*dx + dy*dy);
-				dist_map[i][j] = d;
-				dist_map[j][i] = d;
-			}
-		}
-		int center_idx = 0;
-		float min_dist = 100000000;
-		for (int i = 0; i < rsize; ++i)
-		{
-			float cur_d = 0;
-			for (int j = 0; j < rsize; ++j)
-			{
-				cur_d += dist_map[i][j];
-			}
-			if (cur_d < min_dist)
-			{
-				min_dist = cur_d;
-				center_idx = i;
-			}
-		}
-        for (int i = 0; i < rsize; i++)
-		{
-			delete[] dist_map[i];
-		}
-		delete[] dist_map;
-        rectangle(img,rects[center_idx].boundingRect(),Scalar(0,255,255),5);
-        imshow("center",img);
-        waitKey(1);
-        vector<RectWithDist> RWD;
-        for(int i=0; i<rsize; i++)
-        {
-            RectWithDist temp;
-            int dx = rects[i].center.x - rects[center_idx].center.x;
-            int dy = rects[i].center.y - rects[center_idx].center.y;
-            temp.d = sqrt( dx*dx + dy*dy);
-            temp.r = rects[i];
-            RWD.push_back(temp);
-        }
-		std::sort(RWD.begin(),RWD.end(), [](RectWithDist &rwd1, RectWithDist &rwd2) { return rwd1.d < rwd2.d; });
-        rects.clear();
-        if(RWD.size()<9)
-        {
-            return false;
-        }
-        int count = 0;
-        int i = 0;
-        while(count < 9 && i <RWD.size())
-        {
-            if(RWD[i].r.size.area() < RWD[0].r.size.area()*0.8)
-            {
-                i++;
-                continue;
-            }
-            rects.push_back(RWD[i].r);
-            i++;
-            count++;
-        }
+    sort(rects.begin(),rects.end(),descendingArea);
+    rects.erase(rects.begin()+9,rects.end());
 
 	}
     if(rects.size()==9)

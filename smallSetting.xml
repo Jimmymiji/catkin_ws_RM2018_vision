@@ -8,8 +8,8 @@
 </cameraSetting>
 
 <smallRuneSetting>
-<width>320</width>
-<height>150</height>
+<width>257</width>
+<height>158</height>
 </smallRuneSetting>
 
 <shooterSetting>
@@ -37,7 +37,7 @@
 <maxRectArea>25000</maxRectArea>
 <minRectArea>500</minRectArea>
 <maxHWRatio>0.8</maxHWRatio>
-<minHWRatio>0.45</minHWRatio>
+<minHWRatio>0.53</minHWRatio>
 <checkRectHeight>20</checkRectHeight>
 <checkRectWidth>20</checkRectWidth>
 <yOffset>5</yOffset>
@@ -45,7 +45,7 @@
 </FindRectSetting>
 
 <ImgCPSetting>
-<mean>2.4</mean>
+<mean>1.8</mean>
 <erodeSize1>3</erodeSize1>
 <erodeSize2>3</erodeSize2>
 <dilateSize1>5</dilateSize1>
