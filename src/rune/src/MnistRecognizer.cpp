@@ -64,7 +64,6 @@ vector<pair<double, int> > MnistRecognizer::recognize_primary( Mat& inputImg)
 	convert_image(inputImg, -1.0, 1.0, 28, 28, data);
 	// recognize
 	//cout<<0;
-	imwrite("hoho.png",inputImg);
 	auto res = nn.predict(data);
 	vector<pair<double, int>> scores;
 	// sort & print
@@ -139,7 +138,6 @@ bool MnistRecognizer::fitMnist( Mat& inputImg, Mat& resImg)
 	inputImg(curBoundingRect).copyTo(mnistCore);
 	mnistCore.copyTo(white(curBoundingRect));
 	white.copyTo(resImg);
-	imwrite("lala.png",resImg);
 	return true;
 }
 
