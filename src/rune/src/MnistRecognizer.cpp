@@ -64,6 +64,7 @@ vector<pair<double, int> > MnistRecognizer::recognize_primary( Mat& inputImg)
 	convert_image(inputImg, -1.0, 1.0, 28, 28, data);
 	// recognize
 	//cout<<0;
+	imwrite("hoho.png",inputImg);
 	auto res = nn.predict(data);
 	vector<pair<double, int>> scores;
 	// sort & print
@@ -116,11 +117,6 @@ Mat MnistRecognizer::kmeanPreprocess( Mat& img)
 		}
 	}
 	cvtColor(redImg, redImg, CV_BGR2GRAY);
-	/*
-	imshow("before", redImg);
-	//imshow("after", redImg);
-	waitKey(0);
-	*/
 	return redImg;
 }
 
@@ -143,6 +139,7 @@ bool MnistRecognizer::fitMnist( Mat& inputImg, Mat& resImg)
 	inputImg(curBoundingRect).copyTo(mnistCore);
 	mnistCore.copyTo(white(curBoundingRect));
 	white.copyTo(resImg);
+	imwrite("lala.png",resImg);
 	return true;
 }
 
@@ -152,6 +149,8 @@ int MnistRecognizer::recognize( Mat& img)
     Mat kimg = kmeanPreprocess(img);
 	//cout<<" fitMnist(kimg,img);"<<endl;
     fitMnist(kimg,img);
+	if(mean(img)[0] == 0)
+	return 22;
 	//cout<<"recognize_primary(img).at(0).second;"<<endl;
 	return recognize_primary(img).at(0).second;
 }
@@ -165,6 +164,8 @@ bool MnistRecognizer::classify()
 		Mat img,kimg;
 		kmeanPreprocess(mnistImgs[i]).copyTo(kimg);
         fitMnist(kimg,img);
+		if(mean(img)[0] == 0)
+		return false;
 		scores.push_back( recognize_primary(img));
     }
 
@@ -252,6 +253,8 @@ bool MnistRecognizer::classify2()
 		imwrite("last.png",mnistImgs[i]);
 		kmeanPreprocess(mnistImgs[i]).copyTo(kimg);
         fitMnist(kimg,img);
+		if(mean(img)[0] == 0)
+		return false;
 		scores.push_back( recognize_primary(img));
     }
 	clock_t end0 = clock();

@@ -141,9 +141,7 @@ class FNRecognizer
 		return 0;
 	}
 
-		return result;
-	}
-	else{return 0;}
+	
 
 }
 
