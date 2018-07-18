@@ -22,23 +22,23 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     double redMean = mean(Red)[0];
     // double blueMean = mean(Blue)[0];
     // double greenMean = mean(Green)[0];
-    // double R_BMean = mean(R_B)[0];
-    // for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
-    // {
-    //     for(int j = 0; j <Red.cols;j++)
-    //     {
-    //         if(Red.at<uchar>(i,j)>redMean*s.digitRecognizerSetting.RedMean)
-    //         {
-    //             Red.at<uchar>(i,j) = 255;
-    //         }
-    //         else
-    //         {
-    //             Red.at<uchar>(i,j) = 0;
-    //         }
-    //     }
-    // }
-    //threshold(Red,Red,s.digitRecognizerSetting.RedThreshold,255,THRESH_BINARY);
-    threshold(Red, Red, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
+    double R_BMean = mean(R_B)[0];
+    for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
+    {
+        for(int j = 0; j <Red.cols;j++)
+        {
+            if(Red.at<uchar>(i,j)>redMean*s.digitRecognizerSetting.RedMean)
+            {
+                Red.at<uchar>(i,j) = 255;
+            }
+            else
+            {
+                Red.at<uchar>(i,j) = 0;
+            }
+        }
+    }
+    threshold(Red,Red,s.digitRecognizerSetting.RedThreshold,255,THRESH_BINARY);
+   // threshold(Red, Red, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
     morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
     morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
     morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));

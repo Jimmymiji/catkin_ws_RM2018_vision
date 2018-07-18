@@ -157,6 +157,8 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
     Mat img, img1;
     data[cIdx % BUFFER_SIZE].img.copyTo(img);
     data[cIdx % BUFFER_SIZE].img.copyTo(img1);
+    //img1.convertTo(img1, -1, 1, -100);
+    //imshow("dark",img1);
     unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
     ++cIdx;
     // myfile<<"***********"<<to_string(cIdx)<<"********"<<endl;
