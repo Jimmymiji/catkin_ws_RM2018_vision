@@ -20,14 +20,14 @@
 </shooterSetting>
 
 <DigitRecognizerSetting>
-<RedMean>2.5</RedMean>
+<RedMean>3</RedMean>
 <RedThreshold>200</RedThreshold>
 <maxBoundingArea>25000</maxBoundingArea>
 <minBoundingArea>50</minBoundingArea>
 <dyPenalty>30</dyPenalty>
 <dxPenalty>80</dxPenalty>
 <HighLowPenalty>50</HighLowPenalty>
-<erodeSize>3</erodeSize>
+<erodeSize>5</erodeSize>
 <one>2.5</one>
 <maxHWRatio>6</maxHWRatio>
 <minHWRatio>1</minHWRatio>

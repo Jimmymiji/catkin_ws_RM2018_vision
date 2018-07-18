@@ -10,27 +10,35 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     vector<Mat> channels;
     split(image,channels);
     Mat Red = channels.at(2);
-    // Mat Blue = channels.at(0);
-    // Mat Green = channels.at(1);
+    Mat Blue = channels.at(0);
+    Mat Green = channels.at(1);
+    Mat R_B = Red - Blue;
+    Mat R_G = Red - Green;
+    imshow("R",Red);
+    imshow("R_B",R_B);
+    waitKey(1);
+    imshow("R_G",R_G);
+    waitKey(1);
     double redMean = mean(Red)[0];
     // double blueMean = mean(Blue)[0];
     // double greenMean = mean(Green)[0];
     // double R_BMean = mean(R_B)[0];
-    for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
-    {
-        for(int j = 0; j <Red.cols;j++)
-        {
-            if(Red.at<uchar>(i,j)>redMean*s.digitRecognizerSetting.RedMean)
-            {
-                Red.at<uchar>(i,j) = 255;
-            }
-            else
-            {
-                Red.at<uchar>(i,j) = 0;
-            }
-        }
-    }
-    threshold(Red,Red,s.digitRecognizerSetting.RedThreshold,255,THRESH_BINARY);
+    // for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
+    // {
+    //     for(int j = 0; j <Red.cols;j++)
+    //     {
+    //         if(Red.at<uchar>(i,j)>redMean*s.digitRecognizerSetting.RedMean)
+    //         {
+    //             Red.at<uchar>(i,j) = 255;
+    //         }
+    //         else
+    //         {
+    //             Red.at<uchar>(i,j) = 0;
+    //         }
+    //     }
+    // }
+    //threshold(Red,Red,s.digitRecognizerSetting.RedThreshold,255,THRESH_BINARY);
+    threshold(Red, Red, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
     morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
     morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
     morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
@@ -93,7 +101,7 @@ bool DigitRecognizer::findDigits()
     {
        cout<<"maybe mnist included"<<endl;
        sort(possibleTargetRects.begin(),possibleTargetRects.end(),[](Rect& a, Rect& b){return (a.y + a.height/2) < (b.y + b.height/2);});
-       sort(possibleTargetRects.begin(),possibleTargetRects.begin()+5,[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.y + b.width/2);});
+       sort(possibleTargetRects.begin(),possibleTargetRects.begin()+5,[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.x + b.width/2);});
        for(int i = 0; i<5;i++)
        {
            targets.push_back(possibleTargetRects[i]);
@@ -102,12 +110,12 @@ bool DigitRecognizer::findDigits()
     }
     else if(possibleTargetRects.size()>5)
     {
-        sort(possibleTargetRects.begin(),possibleTargetRects.end(),[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.y + b.width/2);});
+        sort(possibleTargetRects.begin(),possibleTargetRects.end(),[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.x + b.width/2);});
         possibleTargetRects.erase(possibleTargetRects.begin()+5,possibleTargetRects.end());
     }
     if(possibleTargetRects.size()==5)
     {
-
+        sort(possibleTargetRects.begin(),possibleTargetRects.end(),[](Rect& a, Rect& b){return (a.x + a.width/2) < (b.x + b.width/2);});
         cout<<" exactly 5"<<endl;
         for(int i = 0; i<5;i++)
         {
