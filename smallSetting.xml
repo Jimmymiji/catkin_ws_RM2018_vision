@@ -8,8 +8,8 @@
 </cameraSetting>
 
 <smallRuneSetting>
-<width>257</width>
-<height>158</height>
+<width>272</width>
+<height>152</height>
 </smallRuneSetting>
 
 <shooterSetting>
@@ -45,7 +45,7 @@
 </FindRectSetting>
 
 <ImgCPSetting>
-<mean>2.5</mean>
+<mean>2.3</mean>
 <erodeSize1>3</erodeSize1>
 <erodeSize2>3</erodeSize2>
 <dilateSize1>5</dilateSize1>

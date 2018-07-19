@@ -83,14 +83,14 @@ void ImgCP::ImageProducer() {
       cout << "video not open" << endl;
       return;
     }
-    cap.set(CV_CAP_PROP_FRAME_WIDTH, 640);
-    cap.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+    cap.set(CV_CAP_PROP_FRAME_WIDTH, 1280);
+    cap.set(CV_CAP_PROP_FRAME_HEIGHT, 720);
     while (1) {
       while (pIdx - cIdx >= BUFFER_SIZE)
         ;
       Mat temp;
       cap >> temp;
-      resize(temp, temp, Size(640, 480), 0, 0, INTER_CUBIC);
+      resize(temp, temp, Size(1280,720), 0, 0, INTER_CUBIC);
       temp.copyTo(data[pIdx % BUFFER_SIZE].img);
       data[pIdx % BUFFER_SIZE].frame++;
       ++pIdx;
@@ -108,7 +108,7 @@ void ImgCP::ImageProducer() {
     }
     // const char* cp =  cameraPath + cameraNumber;
     RMVideoCapture cap("/dev/v4l/by-id/usb-HD_Camera_Manufacturer_Stereo_Vision_1_Stereo_Vision_1-video-index0", 3);
-    cap.setExposureTime(false,100);
+    cap.setExposureTime(false,90);
     cap.setVideoFormat(1280, 720, 1);
     cap.startStream();
     cap.info();
@@ -127,7 +127,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
   cout << "start" << endl;
   while (pIdx == 0)
     ;
-  Settings s("smallSetting.xml", "2s.yml");
+  Settings s("smallSetting.xml", "2.yml");
   if (!s.load()) {
     cout << "where is my setting file?" << endl;
     return;
