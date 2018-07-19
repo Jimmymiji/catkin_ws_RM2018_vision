@@ -14,20 +14,20 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     Mat Green = channels.at(1);
     Mat R_B = Red - Blue;
     Mat R_G = Red - Green;
-    imshow("R",Red);
-    imshow("R_B",R_B);
-    waitKey(1);
-    imshow("R_G",R_G);
-    waitKey(1);
+    // imshow("R",Red);
+    // imshow("R_B",R_B);
+    // waitKey(1);
+    // imshow("R_G",R_G);
+    // waitKey(1);
     double redMean = mean(Red)[0];
     // double blueMean = mean(Blue)[0];
     // double greenMean = mean(Green)[0];
-    double R_BMean = mean(R_B)[0];
+    //double R_BMean = mean(R_B)[0];
     for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
     {
         for(int j = 0; j <Red.cols;j++)
         {
-            if(Red.at<uchar>(i,j)>redMean*s.digitRecognizerSetting.RedMean)
+            if(Red.at<uchar>(i,j)>redMean*s.digitRecognizerSetting.RedMean && Red.at<uchar>(i,j) < (Green.at<uchar>(i,j)+130) && Red.at<uchar>(i,j) < (Blue.at<uchar>(i,j)+150))
             {
                 Red.at<uchar>(i,j) = 255;
             }
@@ -40,11 +40,13 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     threshold(Red,Red,s.digitRecognizerSetting.RedThreshold,255,THRESH_BINARY);
    // threshold(Red, Red, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
     morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
     morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
     morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
     Red.copyTo(this->binary);
-    imshow("result",Red);
+  //  morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
+   // imshow("result",Red);
     waitKey(1);
     return ;
 }
