@@ -176,7 +176,7 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
     for(int i = 0; i < squares.size();i++)
     {
         RotatedRect minRect = minAreaRect(squares[i]);
-        cout<< "size of "<< i << "  "<<minRect.size.width << " , "<<minRect.size.height<<endl;
+       // cout<< "size of "<< i << "  "<<minRect.size.width << " , "<<minRect.size.height<<endl;
         if(minRect.size.height<checkRectHeight||minRect.size.width<checkRectWidth)//||minRect.size.width>minRect.size.height*0.8)
         {
             continue;

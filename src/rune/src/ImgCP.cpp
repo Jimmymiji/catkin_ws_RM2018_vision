@@ -58,7 +58,7 @@ bool DigitThread(Mat img, vector<int> &answer,Settings& s) {
   }
   string haha ;
   if (dt.getAns()) {
-    cout<<"------2--------"<<endl;
+    //cout<<"------2--------"<<endl;
     for (int i = 0; i < 5; i++) {
       answer.push_back(dt.ans[i]);
       haha = haha+" "+to_string(dt.ans[i]);
@@ -108,7 +108,8 @@ void ImgCP::ImageProducer() {
     }
     // const char* cp =  cameraPath + cameraNumber;
     RMVideoCapture cap("/dev/v4l/by-id/usb-HD_Camera_Manufacturer_Stereo_Vision_1_Stereo_Vision_1-video-index0", 3);
-    cap.setVideoFormat(640, 480, 1);
+    cap.setExposureTime(false,30);
+    cap.setVideoFormat(1280, 720, 1);
     cap.startStream();
     cap.info();
     while (1) {
@@ -126,7 +127,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
   cout << "start" << endl;
   while (pIdx == 0)
     ;
-  Settings s("smallSetting.xml", "2.yml");
+  Settings s("smallSetting.xml", "green.yml");
   if (!s.load()) {
     cout << "where is my setting file?" << endl;
     return;
@@ -240,8 +241,8 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
              FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,0),3);
       imshow("a",img);
       waitKey(1);
-      int hitIndex = mst.whichToShootSemiAuto(myfile, s.imgCPSetting.hitNumber);
-      //int hitIndex = mst.whichToShootAuto(myfile);
+      //int hitIndex = mst.whichToShootSemiAuto(myfile, s.imgCPSetting.hitNumber);
+      int hitIndex = mst.whichToShootAuto(myfile);
       if (hitIndex == -1) {
         mst.Fail();
         continue;
