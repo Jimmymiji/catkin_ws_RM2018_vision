@@ -27,7 +27,7 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     {
         for(int j = 0; j <Red.cols;j++)
         {
-            if(Red.at<uchar>(i,j)>redMean*s.digitRecognizerSetting.RedMean && Red.at<uchar>(i,j) < (Green.at<uchar>(i,j)+130) && Red.at<uchar>(i,j) < (Blue.at<uchar>(i,j)+150))
+            if(Red.at<uchar>(i,j)>redMean*s.digitRecognizerSetting.RedMean)// && Red.at<uchar>(i,j) < (Green.at<uchar>(i,j)+130) && Red.at<uchar>(i,j) < (Blue.at<uchar>(i,j)+150))
             {
                 Red.at<uchar>(i,j) = 255;
             }
@@ -39,11 +39,11 @@ void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
     }
     threshold(Red,Red,s.digitRecognizerSetting.RedThreshold,255,THRESH_BINARY);
    // threshold(Red, Red, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
-    morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
-    morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    // morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    // morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(7,7)));
+    // morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+     morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+    // morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
     Red.copyTo(this->binary);
   //  morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
    // imshow("result",Red);
@@ -92,7 +92,7 @@ bool DigitRecognizer::findDigits()
             cout<<boundRect[i].area()<<endl;
         }
     }
-    imshow("hehe",binary);
+   imshow("hehe",binary);
     if(possibleTargetRects.size()<5)
     {
         cout<<"original possibleTargetRects.size()<5"<<endl;

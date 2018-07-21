@@ -83,14 +83,14 @@ void ImgCP::ImageProducer() {
       cout << "video not open" << endl;
       return;
     }
-    cap.set(CV_CAP_PROP_FRAME_WIDTH, 640);
-    cap.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+    cap.set(CV_CAP_PROP_FRAME_WIDTH, 1280);
+    cap.set(CV_CAP_PROP_FRAME_HEIGHT, 720);
     while (1) {
       while (pIdx - cIdx >= BUFFER_SIZE)
         ;
       Mat temp;
       cap >> temp;
-      resize(temp, temp, Size(640, 480), 0, 0, INTER_CUBIC);
+      resize(temp, temp, Size(1280, 720), 0, 0, INTER_CUBIC);
       temp.copyTo(data[pIdx % BUFFER_SIZE].img);
       data[pIdx % BUFFER_SIZE].frame++;
       ++pIdx;
@@ -108,7 +108,7 @@ void ImgCP::ImageProducer() {
     }
     // const char* cp =  cameraPath + cameraNumber;
     RMVideoCapture cap("/dev/v4l/by-id/usb-HD_Camera_Manufacturer_Stereo_Vision_1_Stereo_Vision_1-video-index0", 3);
-    cap.setExposureTime(false,30);
+    cap.setExposureTime(false,50);
     cap.setVideoFormat(1280, 720, 1);
     cap.startStream();
     cap.info();
@@ -142,8 +142,9 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
   waitKey(100);
   cout << "start loop" << endl;
   Master mst;
-   ofstream myfile;
+   ofstream myfile,myfile1;
    myfile.open("record.txt");
+   myfile1.open("record1.txt");
   LRBlock lrb;
   while (true) {
     // if(cIdx>1500)
@@ -158,6 +159,10 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
     Mat img, img1;
     data[cIdx % BUFFER_SIZE].img.copyTo(img);
     data[cIdx % BUFFER_SIZE].img.copyTo(img1);
+    // transpose(img,img);
+    // transpose(img1,img1);
+    // flip(img,img,0);
+    // flip(img1,img1,0);
     //img1.convertTo(img1, -1, 1, -100);
     //imshow("dark",img1);
     unsigned int frameNum = data[cIdx % BUFFER_SIZE].frame;
@@ -216,10 +221,16 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
     if (MR.classify2()) {
       for (int i = 1; i <= 9; i++)
       {
-        //     putText(img,to_string(i),rects[MR.mnistLabels[i]].center,
-        //     FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,255),3);
+         putText(img,to_string(i),rects[MR.mnistLabels[i]].center,
+         FONT_HERSHEY_SIMPLEX, 1 , Scalar(255,255,0),3);
         mst.currentMNIST.push_back(MR.mnistLabels[i]);
       }
+      myfile1<<"fire : "<<to_string(cIdx)<<endl;
+      for(int i = 1;i<10;i++)
+      {
+          myfile1<<to_string(i)<<","<<to_string(MR.mnistLabels[i])<<" | ";
+      }
+      myfile1<<endl;
       int DigitLeft = rects[0].center.x;
       int DigitRight = rects[2].center.x;
       int DigitDown  = (rects[0].boundingRect().y + rects[2].boundingRect().y)/2;
@@ -229,7 +240,8 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
       Mat ROIOfDigits = img1(Range(DigitUp,DigitDown),Range(DigitLeft,DigitRight));
       if(!DigitThread(ROIOfDigits, mst.currentDigits,s))
       {
-        mst.Fail();
+        mst.currentDigits.clear();
+        mst.currentMNIST.clear();
         continue;
       }
       string haha;
@@ -239,10 +251,14 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
       }
       putText(img,haha,Point(400,100),
              FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,0),3);
+      putText(img,to_string(cIdx),Point(100,100),
+             FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,0),3);
       imshow("a",img);
-      waitKey(1);
+      waitKey(0);
       //int hitIndex = mst.whichToShootSemiAuto(myfile, s.imgCPSetting.hitNumber);
+      myfile<<cIdx<<endl;
       int hitIndex = mst.whichToShootAuto(myfile);
+      myfile<<"*************"<<endl;
       if (hitIndex == -1) {
         mst.Fail();
         continue;
@@ -258,7 +274,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
       input.push_back(Point2f(t.x, t.y + t.height));
       input.push_back(Point2f(t.x + t.width, t.y));
       input.push_back(Point2f(t.x + t.width, t.y + t.height));
-      string filename = "MNISTRecord/pic" + to_string(cIdx) + ".png";
+      //string filename = "MNISTRecord/pic" + to_string(cIdx) + ".png";
       // imwrite(filename,img);
       // MR.recordResults(cIdx);
       // myfile<<"fire : "<<to_string(cIdx)<<endl;
@@ -287,6 +303,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
         ROS_INFO("x: %f y: %f z: %f", target.x, target.y, target.z);
         // waitKey(shootingDelay);
         ag.sendAns(img);
+        waitKey(1);
         // string filename = "pic" + to_string(cIdx)+".png";
         // imwrite(filename,img);
 
