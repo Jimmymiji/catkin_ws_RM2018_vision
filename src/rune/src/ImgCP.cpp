@@ -254,7 +254,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
       putText(img,to_string(cIdx),Point(100,100),
              FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,0),3);
       imshow("a",img);
-      waitKey(0);
+      waitKey(1);
       //int hitIndex = mst.whichToShootSemiAuto(myfile, s.imgCPSetting.hitNumber);
       myfile<<cIdx<<endl;
       int hitIndex = mst.whichToShootAuto(myfile);
@@ -303,7 +303,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
         ROS_INFO("x: %f y: %f z: %f", target.x, target.y, target.z);
         // waitKey(shootingDelay);
         ag.sendAns(img);
-        waitKey(1);
+        waitKey(0);
         // string filename = "pic" + to_string(cIdx)+".png";
         // imwrite(filename,img);
 

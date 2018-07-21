@@ -8,8 +8,8 @@
 </cameraSetting>
 
 <smallRuneSetting>
-<width>257</width>
-<height>158</height>
+<width>320</width>
+<height>150</height>
 </smallRuneSetting>
 
 <shooterSetting>
@@ -20,22 +20,22 @@
 </shooterSetting>
 
 <DigitRecognizerSetting>
-<RedMean>2</RedMean>
+<RedMean>2.6</RedMean>
 <RedThreshold>200</RedThreshold>
 <maxBoundingArea>25000</maxBoundingArea>
 <minBoundingArea>50</minBoundingArea>
 <dyPenalty>30</dyPenalty>
 <dxPenalty>80</dxPenalty>
 <HighLowPenalty>50</HighLowPenalty>
-<erodeSize>3</erodeSize>
-<one>2.3</one>
-<maxHWRatio>6</maxHWRatio>
+<erodeSize>5</erodeSize>
+<one>2.5</one>
 <minHWRatio>1</minHWRatio>
+<maxHWRatio>5</maxHWRatio>
 </DigitRecognizerSetting>
 
 <FindRectSetting>
-<maxRectArea>100000</maxRectArea>
-<minRectArea>500</minRectArea>
+<maxRectArea>25000</maxRectArea>
+<minRectArea>1000</minRectArea>
 <maxHWRatio>0.8</maxHWRatio>
 <minHWRatio>0.5</minHWRatio>
 <checkRectHeight>20</checkRectHeight>
@@ -45,7 +45,7 @@
 </FindRectSetting>
 
 <ImgCPSetting>
-<mean>2.5</mean>
+<mean>1.5</mean>
 <erodeSize1>3</erodeSize1>
 <erodeSize2>3</erodeSize2>
 <dilateSize1>5</dilateSize1>
