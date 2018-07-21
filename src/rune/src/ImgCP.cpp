@@ -127,7 +127,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
   cout << "start" << endl;
   while (pIdx == 0)
     ;
-  Settings s("smallSetting.xml", "2.yml");
+  Settings s("smallSetting.xml", "green.yml");
   if (!s.load()) {
     cout << "where is my setting file?" << endl;
     return;
@@ -284,6 +284,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
         // myfile<<"target result: "<<to_string(target.x)<<"
         // "<<to_string(target.y)<<" "<<to_string(target.z)<<endl;
         rune_pub.publish(target);
+        waitKey(200);
         ROS_INFO("x: %f y: %f z: %f", target.x, target.y, target.z);
         // waitKey(shootingDelay);
         ag.sendAns(img);
