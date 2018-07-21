@@ -218,9 +218,21 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
 
     if (rects.size() > 9)
 	{
-    sort(rects.begin(),rects.end(),descendingArea);
-    rects.erase(rects.begin()+9,rects.end());
-
+        sort(rects.begin(),rects.end(),descendingArea);
+        rects.erase(rects.begin()+9,rects.end());
+        double area = 0;
+        for (int i = 0; i<9; i++)
+        {
+            area = area + rects[i].size.area();
+        }
+        double meanArea = area/9;
+        for (int i = 0; i<9; i++)
+        {
+            if(rects[i].size.area() < meanArea * 0.5)
+            {
+                return false;
+            }
+        }
 	}
     if(rects.size()==9)
     {
@@ -230,10 +242,32 @@ bool checkRects(Mat& img, vector<vector<Point> >& squares,vector<RotatedRect>& r
                3 4 5
                6 7 8
         */
+        double area = 0;
+        for (int i = 0; i<9; i++)
+        {
+            area = area + rects[i].size.area();
+        }
+        double meanArea = area/9;
+        for (int i = 0; i<9; i++)
+        {
+            if(rects[i].size.area() < meanArea * 0.5)
+            {
+                return false;
+            }
+        }
         sort(rects.begin(),rects.end(),ascendingY);
         sort(rects.begin(),rects.begin()+3,ascendingX);
         sort(rects.begin()+3,rects.begin()+6,ascendingX);
         sort(rects.begin()+6,rects.begin()+9,ascendingX);
+        // Mat haha;
+        // img.copyTo(haha);
+        // for(int i = 0;i<9;i++)
+        // {
+        //      putText(haha,to_string(i+1),rects[i].center,
+        //      FONT_HERSHEY_SIMPLEX, 1 , Scalar(0,255,0),3);
+        // }
+        // imshow("hehe",haha);
+        // waitKey(1);
         return true;
     }
     return false;

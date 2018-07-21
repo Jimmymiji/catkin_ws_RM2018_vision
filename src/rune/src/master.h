@@ -49,6 +49,7 @@ class Master
         bool digitChaged = false;
         bool mnistChaged = false;
         int numOfMnistChanged = 0;
+        int numOfDigitChanged = 0;
         if(currentDigits.size()!=5 || currentMNIST.size()!=9)
         {
             record(file,true,-1);
@@ -60,8 +61,7 @@ class Master
         {
             if(previousDigits[i]!=currentDigits[i])
             {
-                digitChaged = true;
-                break;
+                numOfDigitChanged++;
             }
         }
         for(int i = 0;i<9;i++)
@@ -75,13 +75,18 @@ class Master
         {
             mnistChaged = true;  
         }
+        if(numOfDigitChanged > 2)
+        {
+            digitChaged = true;
+        }
         if(digitChaged)
         {
             shootIndex = 0;
             failureCount = 0;
-            record(file,true,previousDigits[0]);
+            record(file,true,currentDigits[0]);
+            int returnvalue = currentDigits[0];
             clearVecor();
-            return  previousDigits[0];
+            return  returnvalue;
         }
         else if((!digitChaged)&&mnistChaged)
         {
@@ -89,9 +94,6 @@ class Master
             if(shootIndex > 4)
             {
                 shootIndex = 0;
-                record(file,true,-1);
-                clearVecor();
-                return -1; 
             }
             failureCount = 0;
             record(file,true,previousDigits[shootIndex]);
