@@ -90,11 +90,7 @@ void ImgCP::ImageProducer() {
         ;
       Mat temp;
       cap >> temp;
-<<<<<<< HEAD
       resize(temp, temp, Size(1280,720), 0, 0, INTER_CUBIC);
-=======
-      resize(temp, temp, Size(1280, 720), 0, 0, INTER_CUBIC);
->>>>>>> 4a413e2eb843b52a115d85bb947c9ce0786473fe
       temp.copyTo(data[pIdx % BUFFER_SIZE].img);
       data[pIdx % BUFFER_SIZE].frame++;
       ++pIdx;
@@ -112,11 +108,7 @@ void ImgCP::ImageProducer() {
     }
     // const char* cp =  cameraPath + cameraNumber;
     RMVideoCapture cap("/dev/v4l/by-id/usb-HD_Camera_Manufacturer_Stereo_Vision_1_Stereo_Vision_1-video-index0", 3);
-<<<<<<< HEAD
-    cap.setExposureTime(false,90);
-=======
     cap.setExposureTime(false,50);
->>>>>>> 4a413e2eb843b52a115d85bb947c9ce0786473fe
     cap.setVideoFormat(1280, 720, 1);
     cap.startStream();
     cap.info();
@@ -196,8 +188,8 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
     vector<vector<Point>> squares;
    imshow("binary",binary);
     findRects(binary, squares,s);
-    drawSquares(img1, squares);
-    waitKey(1);
+    // drawSquares(img1, squares);
+    // waitKey(1);
     vector<RotatedRect> rects;
     clock_t end1 = clock();
     if (!checkRects(binary, squares, rects,s)) {
@@ -312,7 +304,7 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
         ROS_INFO("x: %f y: %f z: %f", target.x, target.y, target.z);
         // waitKey(shootingDelay);
         ag.sendAns(img);
-        waitKey(0);
+        waitKey(1);
         // string filename = "pic" + to_string(cIdx)+".png";
         // imwrite(filename,img);
 

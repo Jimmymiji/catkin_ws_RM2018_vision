@@ -8,13 +8,8 @@
 </cameraSetting>
 
 <smallRuneSetting>
-<<<<<<< HEAD
 <width>280</width>
 <height>160</height>
-=======
-<width>320</width>
-<height>150</height>
->>>>>>> 4a413e2eb843b52a115d85bb947c9ce0786473fe
 </smallRuneSetting>
 
 <shooterSetting>
@@ -25,11 +20,7 @@
 </shooterSetting>
 
 <DigitRecognizerSetting>
-<<<<<<< HEAD
-<RedMean>4.8</RedMean>
-=======
-<RedMean>2.6</RedMean>
->>>>>>> 4a413e2eb843b52a115d85bb947c9ce0786473fe
+<RedMean>2.8</RedMean>
 <RedThreshold>200</RedThreshold>
 <maxBoundingArea>25000</maxBoundingArea>
 <minBoundingArea>50</minBoundingArea>
@@ -37,26 +28,16 @@
 <dxPenalty>80</dxPenalty>
 <HighLowPenalty>50</HighLowPenalty>
 <erodeSize>5</erodeSize>
-<<<<<<< HEAD
 <one>2.3</one>
-<maxHWRatio>6</maxHWRatio>
-=======
-<one>2.5</one>
->>>>>>> 4a413e2eb843b52a115d85bb947c9ce0786473fe
 <minHWRatio>1</minHWRatio>
 <maxHWRatio>5</maxHWRatio>
 </DigitRecognizerSetting>
 
 <FindRectSetting>
-<<<<<<< HEAD
-<maxRectArea>100000</maxRectArea>
-<minRectArea>800</minRectArea>
-=======
 <maxRectArea>25000</maxRectArea>
 <minRectArea>1000</minRectArea>
->>>>>>> 4a413e2eb843b52a115d85bb947c9ce0786473fe
 <maxHWRatio>0.8</maxHWRatio>
-<minHWRatio>0.5</minHWRatio>
+<minHWRatio>0.45</minHWRatio>
 <checkRectHeight>20</checkRectHeight>
 <checkRectWidth>20</checkRectWidth>
 <yOffset>5</yOffset>
@@ -64,11 +45,7 @@
 </FindRectSetting>
 
 <ImgCPSetting>
-<<<<<<< HEAD
-<mean>1.7</mean>
-=======
-<mean>1.5</mean>
->>>>>>> 4a413e2eb843b52a115d85bb947c9ce0786473fe
+<mean>2</mean>
 <erodeSize1>3</erodeSize1>
 <erodeSize2>3</erodeSize2>
 <dilateSize1>5</dilateSize1>

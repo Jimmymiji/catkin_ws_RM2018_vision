@@ -1,4 +1,4 @@
-#include <iostream>  
+#include <iostream>
 using namespace std;
 //TODO:
 // make use of blue count  !!!
@@ -43,7 +43,7 @@ class Master
         currentDigits.clear();
         currentMNIST.clear();
     }
-    
+
     int whichToShootAuto(ofstream& file)
     {
         bool digitChaged = false;
@@ -73,7 +73,7 @@ class Master
         }
         if(numOfMnistChanged > 2)
         {
-            mnistChaged = true;  
+            mnistChaged = true;
         }
         if(numOfDigitChanged > 2)
         {
@@ -81,16 +81,26 @@ class Master
         }
         if(digitChaged)
         {
+          if(!mnistChaged)
+          {
+            record(file,true,-1);
+            currentMNIST.clear();
+            currentDigits.clear();
+            return -1;
+          }
+          else
+          {
             shootIndex = 0;
             failureCount = 0;
             record(file,true,currentDigits[0]);
             int returnvalue = currentDigits[0];
             clearVecor();
             return  returnvalue;
+          }
         }
         else if((!digitChaged)&&mnistChaged)
         {
-            
+
             if(shootIndex > 4)
             {
                 shootIndex = 0;
@@ -106,7 +116,7 @@ class Master
             record(file,true,-1);
             clearVecor();
             return -1;
-        }   
+        }
     }
     int whichToShootSemiAuto(ofstream& file,int target)
     {
@@ -141,7 +151,7 @@ class Master
             //record(file,false,-1);
             clearVecor();
             return -1;
-        }   
+        }
     }
     void record(ofstream& file,bool AUTO,int returnValue)
     {
