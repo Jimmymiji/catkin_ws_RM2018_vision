@@ -177,7 +177,8 @@ void ImgCP::ImageConsumer(int argc, char **argv) {
     cvtColor(img, image, CV_BGR2GRAY);
     Mat binary;
     double Mean = mean(image)[0];
-    threshold(image, binary, Mean * s.imgCPSetting.mean, 255, CV_THRESH_BINARY);
+    //threshold(image, binary, Mean * s.imgCPSetting.mean, 255, CV_THRESH_BINARY);
+    threshold(image, binary, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
     clock_t m1 = clock();
     int erodeSize1 = s.imgCPSetting.erodeSize1;
     int erodeSize2 = s.imgCPSetting.erodeSize2;
