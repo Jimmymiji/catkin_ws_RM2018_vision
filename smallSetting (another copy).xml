@@ -20,8 +20,8 @@
 </shooterSetting>
 
 <DigitRecognizerSetting>
-<RedMean>4.3</RedMean>
-<RedThreshold>230</RedThreshold>
+<RedMean>2.8</RedMean>
+<RedThreshold>200</RedThreshold>
 <maxBoundingArea>25000</maxBoundingArea>
 <minBoundingArea>50</minBoundingArea>
 <dyPenalty>30</dyPenalty>

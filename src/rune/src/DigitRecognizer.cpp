@@ -7,48 +7,54 @@ colse to eliminate tiny gaps and noise
 */
 void DigitRecognizer::preprocessRGB(Mat image,Mat& result)
 {
-    vector<Mat> channels;
-    split(image,channels);
-    Mat Red = channels.at(2);
-    Mat Blue = channels.at(0);
-    Mat Green = channels.at(1);
-    Mat R_B = Red - Blue;
-    Mat R_G = Red - Green;
-    // imshow("R",Red);
-    // imshow("R_B",R_B);
-    // waitKey(1);
-    // imshow("R_G",R_G);
-    // waitKey(1);
-    double redMean = mean(Red)[0];
-    // double blueMean = mean(Blue)[0];
-    // double greenMean = mean(Green)[0];
-    //double R_BMean = mean(R_B)[0];
-    for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
-    {
-        for(int j = 0; j <Red.cols;j++)
-        {
-            if(Red.at<uchar>(i,j)>redMean*s.digitRecognizerSetting.RedMean)  // Red.at<uchar>(i,j) < (Green.at<uchar>(i,j)+130) && Red.at<uchar>(i,j) < (Blue.at<uchar>(i,j)+150))
-            {
-                Red.at<uchar>(i,j) = 255;
-            }
-            else
-            {
-                Red.at<uchar>(i,j) = 0;
-            }
-        }
-    }
-    threshold(Red,Red,s.digitRecognizerSetting.RedThreshold,255,THRESH_BINARY);
-   // threshold(Red, Red, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
+//     vector<Mat> channels;
+//     split(image,channels);
+//     Mat Red = channels.at(2);
+//     Mat Blue = channels.at(0);
+//     Mat Green = channels.at(1);
+//     Mat R_B = Red - Blue;
+//     Mat R_G = Red - Green;
+//     imshow("R",Red);
+//     imshow("R_B",R_B);
+//     waitKey(1);
+//     imshow("R_G",R_G);
+//     waitKey(1);
+//     double redMean = mean(Red)[0];
+//     // double blueMean = mean(Blue)[0];
+//     // double greenMean = mean(Green)[0];
+//     //double R_BMean = mean(R_B)[0];
+//     // for(int i = 0 ; i < Red.rows; i++)                                                // TODO : try to speed up this process , NOT ROBUST ENOUGH
+//     // {
+//     //     for(int j = 0; j <Red.cols;j++)
+//     //     {
+//     //         if(Red.at<uchar>(i,j)>redMean*s.digitRecognizerSetting.RedMean)  // Red.at<uchar>(i,j) < (Green.at<uchar>(i,j)+130) && Red.at<uchar>(i,j) < (Blue.at<uchar>(i,j)+150))
+//     //         {
+//     //             Red.at<uchar>(i,j) = 255;
+//     //         }
+//     //         else
+//     //         {
+//     //             Red.at<uchar>(i,j) = 0;
+//     //         }
+//     //     }
+//     // }
+//     threshold(Red,Red,s.digitRecognizerSetting.RedThreshold,255,THRESH_BINARY);
+//     //threshold(Red, Red, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
+//     //adaptiveThreshold(Red,Red,255,ADAPTIVE_THRESH_MEAN_C,THRESH_BINARY_INV,3,redMean*0.5);
+//      morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+//     // morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(7,7)));
+//     // morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
+//     //morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(3,3)));
+//     // morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
 
-    // morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-    // morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(7,7)));
-    // morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-     morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
-    // morphologyEx(Red,Red,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(3,3)));
-
-    Red.copyTo(this->binary);
-  //  morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
-   // imshow("result",Red);
+//     Red.copyTo(this->binary);
+//   //  morphologyEx(Red,Red,MORPH_ERODE,getStructuringElement(MORPH_RECT,Size(5,5)));
+//    // imshow("result",Red);
+//     waitKey(1);
+    cvtColor(image,image,COLOR_BGR2GRAY);
+    threshold(image, image, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
+    morphologyEx(image,image,MORPH_DILATE,getStructuringElement(MORPH_RECT,Size(5,5)));
+    image.copyTo(this->binary);
+    imshow("hahaha",image);
     waitKey(1);
     return ;
 }
